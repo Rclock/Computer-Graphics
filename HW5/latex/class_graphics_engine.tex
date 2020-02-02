@@ -1,0 +1,168 @@
+\hypertarget{class_graphics_engine}{}\section{Graphics\+Engine Class Reference}
+\label{class_graphics_engine}\index{Graphics\+Engine@{Graphics\+Engine}}
+
+
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program.  
+
+
+
+
+{\ttfamily \#include $<$Graphics\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Graphics\+Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Graphics\+Engine\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}{Graphics\+Engine} (std\+::string title=\char`\"{}Open\+GL Window\char`\"{}, G\+Lint Major\+Ver=3, G\+Lint Minor\+Ver=3, int width=600, int height=600)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}{$\sim$\+Graphics\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}{display} ()
+\begin{DoxyCompactList}\small\item\em The function responsible for drawing to the Open\+GL frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}\label{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}} 
+void \hyperlink{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}{change\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Changes the fill, line, and point mode being used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}\label{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}} 
+void \hyperlink{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}{screenshot} ()
+\begin{DoxyCompactList}\small\item\em Saves a screenshot of the current display to a file, Screen\+Shot\#\#\#.png. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}\label{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}} 
+void \hyperlink{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}{resize} ()
+\begin{DoxyCompactList}\small\item\em Handles the resizing events of the window. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}{set\+Size} (unsigned int, unsigned int)
+\begin{DoxyCompactList}\small\item\em Sets the size of the rendering window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_ad54e730c88430d0650dc695d08a33712}\label{class_graphics_engine_ad54e730c88430d0650dc695d08a33712}} 
+\hyperlink{class_box}{Box} \hyperlink{class_graphics_engine_ad54e730c88430d0650dc695d08a33712}{get\+Box} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the box object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a9c4622979bc82bba99dfa25851d9d4cb}\label{class_graphics_engine_a9c4622979bc82bba99dfa25851d9d4cb}} 
+void \hyperlink{class_graphics_engine_a9c4622979bc82bba99dfa25851d9d4cb}{print\+Open\+G\+L\+Errors} ()
+\begin{DoxyCompactList}\small\item\em Prints all Open\+GL errors to stderr. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_ad08e9c3cefa14b160d478520b3f9b376}{set\+Projection\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Calculates the aspect ratio projection matrix for the current screen size and loads it into the shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a06253e3976fa7b6436f58ec3f472de15}{print\+\_\+\+G\+L\+M\+\_\+\+Matrix} (glm\+::mat4 m)
+\begin{DoxyCompactList}\small\item\em Prints the glm matrix to the console window. Remember that glm matrices are column major. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a865593938e62d6de6a229be7fc4a971a}{set\+Image} (int option)
+\begin{DoxyCompactList}\small\item\em Used to send a uniform int to the shaders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}\label{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{Graphics\+Engine()}{GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::\+Graphics\+Engine (\begin{DoxyParamCaption}\item[{std\+::string}]{title = {\ttfamily \char`\"{}OpenGL~Window\char`\"{}},  }\item[{G\+Lint}]{Major\+Ver = {\ttfamily 3},  }\item[{G\+Lint}]{Minor\+Ver = {\ttfamily 3},  }\item[{int}]{width = {\ttfamily 600},  }\item[{int}]{height = {\ttfamily 600} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & --- Title to be placed in the titlebar of the graphics window. \\
+\hline
+{\em Major\+Ver} & --- The Open\+GL major version that is requested. \\
+\hline
+{\em Minor\+Ver} & --- The Open\+GL minor version that is requested. \\
+\hline
+{\em width} & --- The width (in pixels) of the graphics window. \\
+\hline
+{\em height} & --- The height (in pixels) of the graphics window.\\
+\hline
+\end{DoxyParams}
+Creates rendering window, loads the shaders, and sets some initial data settings. \mbox{\Hypertarget{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}\label{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}}
+\index{````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Graphics\+Engine()}{~GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::$\sim$\+Graphics\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Clear memory allocations 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}\label{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!display@{display}}
+\index{display@{display}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function responsible for drawing to the Open\+GL frame buffer. 
+
+This function clears the screen and calls the draw functions of the box and circle. \mbox{\Hypertarget{class_graphics_engine_a06253e3976fa7b6436f58ec3f472de15}\label{class_graphics_engine_a06253e3976fa7b6436f58ec3f472de15}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!print\+\_\+\+G\+L\+M\+\_\+\+Matrix@{print\+\_\+\+G\+L\+M\+\_\+\+Matrix}}
+\index{print\+\_\+\+G\+L\+M\+\_\+\+Matrix@{print\+\_\+\+G\+L\+M\+\_\+\+Matrix}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{print\+\_\+\+G\+L\+M\+\_\+\+Matrix()}{print\_GLM\_Matrix()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::print\+\_\+\+G\+L\+M\+\_\+\+Matrix (\begin{DoxyParamCaption}\item[{glm\+::mat4}]{m }\end{DoxyParamCaption})}
+
+
+
+Prints the glm matrix to the console window. Remember that glm matrices are column major. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & --- the glm matrix to be displayed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a865593938e62d6de6a229be7fc4a971a}\label{class_graphics_engine_a865593938e62d6de6a229be7fc4a971a}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Image@{set\+Image}}
+\index{set\+Image@{set\+Image}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Image()}{setImage()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Image (\begin{DoxyParamCaption}\item[{int}]{option }\end{DoxyParamCaption})}
+
+
+
+Used to send a uniform int to the shaders. 
+
+This function takes care of sending the uniform int to the shader based on the user\textquotesingle{}s input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & option --- Passed in from \hyperlink{class_u_i}{UI} to send to shader. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_ad08e9c3cefa14b160d478520b3f9b376}\label{class_graphics_engine_ad08e9c3cefa14b160d478520b3f9b376}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Projection\+Matrix@{set\+Projection\+Matrix}}
+\index{set\+Projection\+Matrix@{set\+Projection\+Matrix}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Projection\+Matrix()}{setProjectionMatrix()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the aspect ratio projection matrix for the current screen size and loads it into the shader. 
+
+The later portion of the method calculates the \char`\"{}screen coordinates\char`\"{} and displays them along with the projection matrix to the console window. \mbox{\Hypertarget{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}\label{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Size()}{setSize()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Size (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets the size of the rendering window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & --- the width in pixels of the new size.\\
+\hline
+{\em height} & --- the height in pixels of the new size. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_graphics_engine_8h}{Graphics\+Engine.\+h}\item 
+\hyperlink{_graphics_engine_8cpp}{Graphics\+Engine.\+cpp}\end{DoxyCompactItemize}

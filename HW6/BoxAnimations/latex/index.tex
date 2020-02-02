@@ -1,0 +1,107 @@
+\hypertarget{index_intro}{}\section{Introduction}\label{index_intro}
+This program is an update of the basic Cameras \& 3D example program. It incorporates classes for axes and a simple multi-\/colored cube. It also has classes for a spherical camera and yaw-\/pitch-\/roll camera, as the original did.
+
+As far as the updates go, there are now 10 different animations that happen to the boxes depending on user interface. 1-\/9 are as they were supposed to be according to the assignment (I hope), and number 0 will give you a simple but cool one that I made. It looks cool in wireframe mode in my opinion so I decided to keep it even though it was not one of the 9.\hypertarget{index_options}{}\subsection{User Options}\label{index_options}
+
+\begin{DoxyItemize}
+\item Escape\+: Ends the program.
+\item M\+: Toggles between fill mode and line mode to draw the triangles.
+\item F1\+: Sets the flag to draw a single box.
+\item F2\+: Sets the flag to draw a grid of boxes.
+\item F3\+: Sets the flag to draw boxes.
+\item F4\+: Sets the flag to hide boxes.
+\item F5\+: Turn the drawing of the axes off.
+\item F6\+: Draws the axes.
+\item F10\+: Saves a screen shot of the graphics window to a png file.
+\item F11 or O\+: Turns on the spherical camera.
+\item F12 or P\+: Turns on the yaw-\/pitch-\/roll camera.
+\item S\+: Turns the animations on or off.
+\item 1\+: Gives an animation where the boxes rotate around their origin.
+\item 2\+: Gives an animation where the boxes rotate around an axis as a whole.
+\item 3\+: Gives an animation where the boxes grow larger and smaller with time. -\/4\+: Animation where the boxes move closer to you and further from you with time.
+\item 5\+: Animation where the boxes spread out and collapse back into the center.
+\item 6\+: An animation where the boxes start at the origin (0, 0, 0) and expand from the center.
+\item 7\+: Animation where the boxes rotate around an axis as a whole but with a \char`\"{}ferris wheel\char`\"{} type animation where the boxes stay upright around the axis they are rotating about.
+\item 8\+: Animation where the boxes rotate around the axis (1, 1, 1) as a whole and keep the ferris wheel type animation.
+\item 9\+: Animation where the boxes rotate around their (i, j, k) axis before translating out to their (i, j, k) position
+\item 0\+: An animation I discovered and decided to keep, all boxes combing to form one box and that box rotates around the z axis. You can see the outline of each individual box.
+\end{DoxyItemize}
+
+If the spherical camera is currently selected,
+
+If no modifier keys are pressed\+:
+
+
+\begin{DoxyItemize}
+\item Left\+: Increases the camera\textquotesingle{}s theta value.
+\item Right\+: Decreases the camera\textquotesingle{}s theta value.
+\item Up\+: Increases the camera\textquotesingle{}s psi value.
+\item Down\+: Decreases the camera\textquotesingle{}s psi value.
+\end{DoxyItemize}
+
+If the control or Z key is down\+:
+
+
+\begin{DoxyItemize}
+\item Up\+: Decreases the camera\textquotesingle{}s radius.
+\item Down\+: Increases the camera\textquotesingle{}s radius.
+\end{DoxyItemize}
+
+If the yaw-\/pitch-\/roll camera is currently selected,
+
+If no modifier keys are pressed\+:
+
+
+\begin{DoxyItemize}
+\item Left\+: Increases the yaw.
+\item Right\+: Decreases the yaw.
+\item Up\+: Increases the pitch.
+\item Down\+: Decreases the pitch.
+\end{DoxyItemize}
+
+If the control or Z key is down\+:
+
+
+\begin{DoxyItemize}
+\item Left\+: Increases the roll.
+\item Right\+: Decreases the roll.
+\item Up\+: Moves the camera forward.
+\item Down\+: Moves the camera backward.
+\end{DoxyItemize}
+
+If the shift or S key is down\+:
+
+
+\begin{DoxyItemize}
+\item Left\+: Moves the camera left.
+\item Right\+: Moves the camera right.
+\item Up\+: Moves the camera up.
+\item Down\+: Moves the camera down.
+\end{DoxyItemize}
+
+If the spherical camera is currently selected, a click and drag with the left mouse button will alter the theta and psi angles of the spherical camera to give the impression of the mouse grabbing and moving the coordinate system.
+
+\begin{DoxyNote}{Note}
+Note that the shader programs \char`\"{}\+Vertex\+Shader\+Basic3\+D.\+glsl\char`\"{} and \char`\"{}\+Pass\+Through\+Frag.\+glsl\char`\"{} are expected to be in the same folder as the executable. Your graphics card must also be able to support Open\+GL version 3.\+3 to run this program.
+\end{DoxyNote}
+
+
+\hypertarget{index_copyright}{}\subsection{Copyright}\label{index_copyright}
+\begin{DoxyAuthor}{Author}
+Ryan Clocker 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3/27/2019 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+2018
+\end{DoxyCopyright}
+
+
+\hypertarget{index_license}{}\subsection{License}\label{index_license}
+G\+NU Public License
+
+This software is provided as-\/is, without warranty of A\+NY K\+I\+ND, either expressed or implied, including but not limited to the implied warranties of merchant ability and/or fitness for a particular purpose. The authors shall N\+OT be held liable for A\+NY damage to you, your computer, or to anyone or anything else, that may result from its use, or misuse. All trademarks and other registered names contained in this package are the property of their respective owners. U\+SE OF T\+H\+IS S\+O\+F\+T\+W\+A\+RE I\+N\+D\+I\+C\+A\+T\+ES T\+H\+AT Y\+OU A\+G\+R\+EE TO T\+HE A\+B\+O\+VE C\+O\+N\+D\+I\+T\+I\+O\+NS. 

@@ -1,0 +1,69 @@
+\hypertarget{teapot_8h}{}\section{teapot.\+h File Reference}
+\label{teapot_8h}\index{teapot.\+h@{teapot.\+h}}
+
+
+Contains vertex and normal data for the Utah teapot.  
+
+
+{\ttfamily \#include $<$G\+L/glew.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Shape.\+h\char`\"{}}\newline
+Include dependency graph for teapot.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classteapot}{teapot}
+\begin{DoxyCompactList}\small\item\em The teapot class creates a Utah Teapot model and has methods for loading the model to the graphics card as well as drawing the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{teapot_8h_a25c313caf789c52f8abe6c5b2727be33}\label{teapot_8h_a25c313caf789c52f8abe6c5b2727be33}} 
+\#define {\bfseries B\+U\+F\+F\+E\+R\+\_\+\+O\+F\+F\+S\+ET}(x)~((const void$\ast$) (x))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains vertex and normal data for the Utah teapot. 
+
+\begin{DoxyAuthor}{Author}
+Jon Macey with updates by Don Spickler 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+1/24/2018
+\end{DoxyDate}
+\hypertarget{teapot_8h_use}{}\subsection{Usage}\label{teapot_8h_use}
+Using this class is simple, first declare a teapot object, call the load method where the parameters are the data positions of the vertices and the normals expected by the shader, and finally call the draw method in the display function of your program.
+
+
+\begin{DoxyCode}
+\hyperlink{classteapot}{teapot} pot;
+...
+pot.load(0, 2);
+...
+pot.draw();
+\end{DoxyCode}
+\hypertarget{teapot_8h_data}{}\subsection{Data Format}\label{teapot_8h_data}
+V\+BO in the format tx,ty,nx,ny,nz,vx,vy,vz Data for a unit teapot stored in G\+L\+\_\+\+T2\+\_\+\+N3\+\_\+\+V3 format
+
+\begin{DoxyCopyright}{Copyright}
+2009-\/2014
+\end{DoxyCopyright}
+2009 Jon Macey
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+2014 Don Spickler
+
+Bottom of teapot and teapot class structure added.
+
+
+

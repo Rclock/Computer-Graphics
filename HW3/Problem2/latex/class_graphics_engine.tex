@@ -1,0 +1,117 @@
+\hypertarget{class_graphics_engine}{}\section{Graphics\+Engine Class Reference}
+\label{class_graphics_engine}\index{Graphics\+Engine@{Graphics\+Engine}}
+
+
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program.  
+
+
+
+
+{\ttfamily \#include $<$Graphics\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Graphics\+Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Graphics\+Engine\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}{Graphics\+Engine} (std\+::string title=\char`\"{}Open\+GL Window\char`\"{}, G\+Lint Major\+Ver=3, G\+Lint Minor\+Ver=3, int width=600, int height=600)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}{$\sim$\+Graphics\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}{display} ()
+\begin{DoxyCompactList}\small\item\em The function responsible for drawing to the Open\+GL frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}\label{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}} 
+void \hyperlink{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}{change\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Changes the fill, line, and point mode being used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}\label{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}} 
+void \hyperlink{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}{screenshot} ()
+\begin{DoxyCompactList}\small\item\em Saves a screenshot of the current display to a file, Screen\+Shot\#\#\#.png. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}\label{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}} 
+void \hyperlink{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}{resize} ()
+\begin{DoxyCompactList}\small\item\em Handles the resizing events of the window. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}{set\+Size} (unsigned int, unsigned int)
+\begin{DoxyCompactList}\small\item\em Sets the size of the rendering window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a99e353c417f559a437e19f96d85b4bd7}\label{class_graphics_engine_a99e353c417f559a437e19f96d85b4bd7}} 
+\hyperlink{class_box}{Box} $\ast$ \hyperlink{class_graphics_engine_a99e353c417f559a437e19f96d85b4bd7}{get\+Box} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the box object, i.\+e. the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}\label{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{Graphics\+Engine()}{GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::\+Graphics\+Engine (\begin{DoxyParamCaption}\item[{std\+::string}]{title = {\ttfamily \char`\"{}OpenGL~Window\char`\"{}},  }\item[{G\+Lint}]{Major\+Ver = {\ttfamily 3},  }\item[{G\+Lint}]{Minor\+Ver = {\ttfamily 3},  }\item[{int}]{width = {\ttfamily 600},  }\item[{int}]{height = {\ttfamily 600} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & --- Title to be placed in the titlebar of the graphics window. \\
+\hline
+{\em Major\+Ver} & --- The Open\+GL major version that is requested. \\
+\hline
+{\em Minor\+Ver} & --- The Open\+GL minor version that is requested. \\
+\hline
+{\em width} & --- The width (in pixels) of the graphics window. \\
+\hline
+{\em height} & --- The height (in pixels) of the graphics window.\\
+\hline
+\end{DoxyParams}
+Creates rendering window, enables G\+L\+EW, loads the shaders, and sets some initial data settings. \mbox{\Hypertarget{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}\label{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}}
+\index{````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Graphics\+Engine()}{~GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::$\sim$\+Graphics\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Currently empty, no allocated memory to clear. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}\label{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!display@{display}}
+\index{display@{display}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function responsible for drawing to the Open\+GL frame buffer. 
+
+This function clears the screen and calls the draw functions of the box and circle. \mbox{\Hypertarget{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}\label{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Size()}{setSize()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Size (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets the size of the rendering window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & --- the width in pixels of the new size.\\
+\hline
+{\em height} & --- the height in pixels of the new size. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_graphics_engine_8h}{Graphics\+Engine.\+h}\item 
+\hyperlink{_graphics_engine_8cpp}{Graphics\+Engine.\+cpp}\end{DoxyCompactItemize}

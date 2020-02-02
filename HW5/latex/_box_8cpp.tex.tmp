@@ -1,0 +1,26 @@
+\hypertarget{_box_8cpp}{}\section{Box.\+cpp File Reference}
+\label{_box_8cpp}\index{Box.\+cpp@{Box.\+cpp}}
+
+
+Simple rectangle object for drawing.  
+
+
+{\ttfamily \#include \char`\"{}Box.\+h\char`\"{}}\newline
+Include dependency graph for Box.\+cpp\+:
+% FIG 0
+
+
+\subsection{Detailed Description}
+Simple rectangle object for drawing. 
+
+Simple rectangle object with Open\+GL data loading and drawing interfaces. The data that is being stored is a single array of 30 floats that represent two triangles. The lower left triangle of the rectangle and the upper right triangle. For each of these 6 vertices the array holds 5 floating point values of the form \mbox{[}r, g, b, x, y\mbox{]} where the (r, g, b) is the color of the vertex and the (x, y) is the vertex position.
+
+\begin{DoxyAuthor}{Author}
+Don Spickler 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+1/4/2018 
+\end{DoxyDate}

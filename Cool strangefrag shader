@@ -1,0 +1,163 @@
+#version 330 core
+#define PI 3.14159265358979323846264338328
+/**
+\file StrangeFrag.glsl
+
+\brief Strange fragment shader that colors fragments by the gl_FragCoord.
+
+The example also shows the use of functions inside a glsl shader.
+
+*/
+
+in vec4 pos;
+out vec4 col;
+
+
+uniform int option;
+uniform float time;
+
+
+int t = 0;
+
+vec4 setColor(vec4 p)
+{
+
+
+
+    float r = length(vec2(p));
+
+    if (option == 0)
+    return vec4(0, 0, 0, 1);
+
+//if (r > 0.1 && r < 0.25)
+
+    if (option == 1)
+    return vec4(sin(30*r), 0, 0, 1);
+
+    if (option == 2)
+    return vec4(sin(30*r+2), sin(30*r), 0, 1);
+
+    if (option == 3)
+    {
+    //draws the box lines... try to add another line cutting through the middle of each box. Ceil/2?
+    if (((20*p.x > floor(20*p.x)+.1 && 20*p.x < ceil(20*p.x)-.1) && (20*p.y > floor(20*p.y)+.1 && 20*p.y < ceil(20*p.y)-.1)) )
+    return vec4(0, 0, 0, 1);//after pixels are seperated into boxes, color them black
+    else if (20*p.x < floor(20*p.x)+.1 || 20*p.x > ceil(20*p.x)-.1)
+    return vec4(.75, 0, .2, 1);
+    else if (20*p.y < floor(20*p.y)+.1 || 20*p.y > ceil(20*p.y)-.1)
+    return vec4(.5, 0, 1, 1);
+    }
+
+if (option == 4)
+{
+//seperates everything into boxes to color
+    if ((5*p.x > floor(5*p.x) && 5*p.x < ceil(5*p.x)) && (5*p.y > floor(5*p.y) && 5*p.y < ceil(5*p.y)) )
+    {
+
+    if (mod(floor(5*p.x), 2) == 0 && mod(floor(5*p.y), 2) != 0)//red
+    return vec4(1, 0, 0, 1);
+    else if (mod(floor(5*p.x), 2) != 0 && mod(floor(5*p.y), 2) == 0)//red
+    return vec4(1, 0, 0, 1);
+    else
+    return vec4(0, 0, 0, 1);//black
+    }
+
+
+
+}
+if (option == 5)
+{
+    return vec4(0, 0, sin(15*r-time), 1);
+
+}
+
+if (option == 6)
+{
+if ((5*p.x > floor(5*p.x) && 5*p.x < ceil(5*p.x)) && (5*p.y > floor(5*p.y) && 5*p.y < ceil(5*p.y)) )//narrow it down to a box
+    {
+
+    if (mod(floor(5*p.x), 2) == 0 && mod(floor(5*p.y), 2) != 0)//both red cases
+    return vec4(abs(cos(time/3)), 0, sin(15*r-time), 1);
+    else if (mod(floor(5*p.x), 2) != 0 && mod(floor(5*p.y), 2) == 0)//red
+    return vec4(abs(cos(time/3)), 0, sin(15*r-time), 1);
+    else
+    return vec4(0, abs(sin(time/3)), sin(15*r-time), 1);//blacks
+
+    }
+
+
+}
+if (option == 7)
+{
+    //float i = sqrt(-1); did not work
+
+    float cX = p.x;
+    float cY = p.y;//multiplied by i to treat as imaginary??
+
+    float qX = p.x;//initial values
+    float qY = p.y;
+
+
+    float dist = 0;
+
+for (int i = 0; i < 100; i++)
+{
+float tempQx = qX;
+float tempQy = qY;
+
+//find out the q = q^2 + c;
+    //do (a+bi)^2 = (aa-bb) + (ab + ba)i = q^2 and then add cX and cY
+    //in this case, a = qX and b = qY
+    //and (ab+ba) is the imaginary part so that is qY of q;
+    //so qX + qY = (aa-bb) + (ab + ba)
+
+    qX = tempQx*tempQx - tempQy*tempQy;
+    qY = tempQx*tempQy + tempQx*tempQy;
+    //now we have q^2
+
+    qX = qX + cX;
+    qY = qY + cY;
+    //now we have q^2 + c
+
+    //now we have to find the length
+    dist = length(qX) + length(qY);//same as length(q) if it was a point
+
+    if (dist > 4)
+    {
+        break;
+    }
+}
+
+ if (dist <= 25)
+ {
+    return vec4(dist/25, 0, 0, 1);
+
+ }
+ else if (dist > 25)
+    return vec4(1, 1, 1, 1);
+/*
+if (dist <= 4)
+{
+    return vec4(0, 0, 0, 1);
+}
+
+if (dist > 4)
+{
+
+if (t < 25)
+return vec4(.5, 0, 0, 1);
+
+else if (t > 25)
+return vec4(1, 1, 1, 1);
+
+}*/
+
+}
+
+
+}
+
+void main()
+{
+    col = setColor(pos);
+}

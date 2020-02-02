@@ -1,0 +1,130 @@
+\hypertarget{class_sphere}{}\section{Sphere Class Reference}
+\label{class_sphere}\index{Sphere@{Sphere}}
+
+
+The \hyperlink{class_sphere}{Sphere} class creates a sphere of radius 1, centered at the origin, with normals, colors, and texture coordinates.  
+
+
+
+
+{\ttfamily \#include $<$Sphere.\+h$>$}
+
+
+
+Inheritance diagram for Sphere\+:
+% FIG 0
+
+
+Collaboration diagram for Sphere\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sphere_a890a63ff583cb88e7ec4e840b4ef5eb9}{Sphere} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_sphere_a569c071e50a3e11f678630ee1a17737e}{$\sim$\+Sphere} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_sphere_a9166231c6ca8f5b266d8c9546081ee8b}{set\+Color} (G\+Lfloat r, G\+Lfloat g, G\+Lfloat b)
+\begin{DoxyCompactList}\small\item\em Sets the color of the plane and reloads the data. \end{DoxyCompactList}\item 
+void \hyperlink{class_sphere_a7232eabaf8efe2b0be48988312079e71}{reset\+Array\+Size} (G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Resets the data array sizes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sphere_a67e0120a932b0caf5c967f24be43b885}\label{class_sphere_a67e0120a932b0caf5c967f24be43b885}} 
+void \hyperlink{class_sphere_a67e0120a932b0caf5c967f24be43b885}{Load\+Data\+To\+Graphics\+Card} ()
+\begin{DoxyCompactList}\small\item\em Creates the data needed for the plane and loads it to the graphics card. \end{DoxyCompactList}\item 
+void \hyperlink{class_sphere_ae7781b43596bd0d45e0effa6c039c8af}{Load\+Data\+To\+Graphics\+Card} (G\+Lint v, G\+Lint c, G\+Lint n, G\+Lint t)
+\begin{DoxyCompactList}\small\item\em Sets the location values and calls the load method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sphere_a34a34167b7544c95155d3ff30638d045}\label{class_sphere_a34a34167b7544c95155d3ff30638d045}} 
+void \hyperlink{class_sphere_a34a34167b7544c95155d3ff30638d045}{draw} ()
+\begin{DoxyCompactList}\small\item\em Draws the sphere. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_sphere}{Sphere} class creates a sphere of radius 1, centered at the origin, with normals, colors, and texture coordinates. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sphere_a890a63ff583cb88e7ec4e840b4ef5eb9}\label{class_sphere_a890a63ff583cb88e7ec4e840b4ef5eb9}} 
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{Sphere()}{Sphere()}}
+{\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Creates the data for the sphere and loads it to the graphics card. \mbox{\Hypertarget{class_sphere_a569c071e50a3e11f678630ee1a17737e}\label{class_sphere_a569c071e50a3e11f678630ee1a17737e}} 
+\index{Sphere@{Sphere}!````~Sphere@{$\sim$\+Sphere}}
+\index{````~Sphere@{$\sim$\+Sphere}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{$\sim$\+Sphere()}{~Sphere()}}
+{\footnotesize\ttfamily Sphere\+::$\sim$\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Clears the buffer data on the graphics card. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sphere_ae7781b43596bd0d45e0effa6c039c8af}\label{class_sphere_ae7781b43596bd0d45e0effa6c039c8af}} 
+\index{Sphere@{Sphere}!Load\+Data\+To\+Graphics\+Card@{Load\+Data\+To\+Graphics\+Card}}
+\index{Load\+Data\+To\+Graphics\+Card@{Load\+Data\+To\+Graphics\+Card}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{Load\+Data\+To\+Graphics\+Card()}{LoadDataToGraphicsCard()}}
+{\footnotesize\ttfamily void Sphere\+::\+Load\+Data\+To\+Graphics\+Card (\begin{DoxyParamCaption}\item[{G\+Lint}]{v,  }\item[{G\+Lint}]{c,  }\item[{G\+Lint}]{n,  }\item[{G\+Lint}]{t }\end{DoxyParamCaption})}
+
+
+
+Sets the location values and calls the load method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & --- Location of the vertex data. \\
+\hline
+{\em c} & --- Location of the color data. \\
+\hline
+{\em n} & --- Location of the normal data. \\
+\hline
+{\em t} & --- Location of the texture data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sphere_a7232eabaf8efe2b0be48988312079e71}\label{class_sphere_a7232eabaf8efe2b0be48988312079e71}} 
+\index{Sphere@{Sphere}!reset\+Array\+Size@{reset\+Array\+Size}}
+\index{reset\+Array\+Size@{reset\+Array\+Size}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{reset\+Array\+Size()}{resetArraySize()}}
+{\footnotesize\ttfamily void Sphere\+::reset\+Array\+Size (\begin{DoxyParamCaption}\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Resets the data array sizes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sphere_a9166231c6ca8f5b266d8c9546081ee8b}\label{class_sphere_a9166231c6ca8f5b266d8c9546081ee8b}} 
+\index{Sphere@{Sphere}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void Sphere\+::set\+Color (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r,  }\item[{G\+Lfloat}]{g,  }\item[{G\+Lfloat}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the color of the plane and reloads the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & --- Red component. \\
+\hline
+{\em g} & --- Green component. \\
+\hline
+{\em b} & --- Blue component. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sphere_8h}{Sphere.\+h}\item 
+\hyperlink{_sphere_8cpp}{Sphere.\+cpp}\end{DoxyCompactItemize}

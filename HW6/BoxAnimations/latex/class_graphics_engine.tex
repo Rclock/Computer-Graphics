@@ -1,0 +1,242 @@
+\hypertarget{class_graphics_engine}{}\section{Graphics\+Engine Class Reference}
+\label{class_graphics_engine}\index{Graphics\+Engine@{Graphics\+Engine}}
+
+
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program.  
+
+
+
+
+{\ttfamily \#include $<$Graphics\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Graphics\+Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Graphics\+Engine\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}{Graphics\+Engine} (std\+::string title=\char`\"{}Open\+GL Window\char`\"{}, G\+Lint Major\+Ver=3, G\+Lint Minor\+Ver=3, int width=600, int height=600)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}{$\sim$\+Graphics\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}{display} ()
+\begin{DoxyCompactList}\small\item\em The function responsible for drawing to the Open\+GL frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}\label{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}} 
+void \hyperlink{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}{change\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Changes the fill and line mode being used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}\label{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}} 
+void \hyperlink{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}{screenshot} ()
+\begin{DoxyCompactList}\small\item\em Saves a screenshot of the current display to a file, Screen\+Shot\#\#\#.png. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}{resize} ()
+\begin{DoxyCompactList}\small\item\em Handles the resizing events of the window. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}{set\+Size} (unsigned int, unsigned int)
+\begin{DoxyCompactList}\small\item\em Sets the size of the rendering window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a95a17b256079f26ca2b73ec3210317d2}\label{class_graphics_engine_a95a17b256079f26ca2b73ec3210317d2}} 
+G\+Lfloat $\ast$ {\bfseries get\+Screen\+Bounds} ()
+\item 
+\mbox{\Hypertarget{class_graphics_engine_a4f7faa74e2864431263006c70559ab9c}\label{class_graphics_engine_a4f7faa74e2864431263006c70559ab9c}} 
+\hyperlink{class_cube}{Cube} $\ast$ \hyperlink{class_graphics_engine_a4f7faa74e2864431263006c70559ab9c}{get\+Box} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the box object. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_ac1e139e3fb1cc18560f085f752ef871b}{set\+Draw\+Many\+Boxes} (G\+Lboolean b)
+\begin{DoxyCompactList}\small\item\em Sets the boolean to draw a grid of boxes if true and a single box if false. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_abe5ac289b57dbb1b2270efbeeeccda04}{set\+Draw\+Boxes} (G\+Lboolean b)
+\begin{DoxyCompactList}\small\item\em Sets the boolean to draw any boxes or not. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_abc1591d1873ad66188c5b7613606e8ab}{set\+Draw\+Axes} (G\+Lboolean b)
+\begin{DoxyCompactList}\small\item\em Sets the boolean to draw the axes or not. \end{DoxyCompactList}\item 
+G\+Lboolean \hyperlink{class_graphics_engine_a45375adf56d4769b0f33206dc760a1f6}{is\+Spherical\+Camera\+On} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the spherical camera is currently in use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a82227c52191595cf7ca7aaea82396a01}\label{class_graphics_engine_a82227c52191595cf7ca7aaea82396a01}} 
+void \hyperlink{class_graphics_engine_a82227c52191595cf7ca7aaea82396a01}{set\+Spherical\+Camera\+On} ()
+\begin{DoxyCompactList}\small\item\em Turns the spherical camera on. \end{DoxyCompactList}\item 
+G\+Lboolean \hyperlink{class_graphics_engine_a8ed6b779b8696620241ba701afd6de67}{is\+Y\+P\+R\+Camera\+On} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the yaw-\/pitch-\/roll camera is currently in use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a322229c8ad08ee37b26c047761ca7b80}\label{class_graphics_engine_a322229c8ad08ee37b26c047761ca7b80}} 
+void \hyperlink{class_graphics_engine_a322229c8ad08ee37b26c047761ca7b80}{set\+Y\+P\+R\+Camera\+On} ()
+\begin{DoxyCompactList}\small\item\em Turns the Y\+PR camera on. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a20b5121989df95fd4deaefae6e81a168}{set\+Trans\+No} (int trans)
+\begin{DoxyCompactList}\small\item\em Sets the current transformation number from the \hyperlink{class_u_i}{UI}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a59db7ebc8df55b658a856e335814f8ee}\label{class_graphics_engine_a59db7ebc8df55b658a856e335814f8ee}} 
+void \hyperlink{class_graphics_engine_a59db7ebc8df55b658a856e335814f8ee}{anim} ()
+\begin{DoxyCompactList}\small\item\em Takes care of pressing S to turn the animations on and off. Works by resetting anim clock if animations are turned back on and setting stop time when animations are turned off. Animations rely on these two things often. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a08fa5ea5485b0bab2d902dd71ac995d9}\label{class_graphics_engine_a08fa5ea5485b0bab2d902dd71ac995d9}} 
+\hyperlink{class_spherical_camera}{Spherical\+Camera} $\ast$ \hyperlink{class_graphics_engine_a08fa5ea5485b0bab2d902dd71ac995d9}{get\+Spherical\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the spherical camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a99c1b6f36ce3c8e02cba2a97b08eab05}\label{class_graphics_engine_a99c1b6f36ce3c8e02cba2a97b08eab05}} 
+\hyperlink{class_y_p_r_camera}{Y\+P\+R\+Camera} $\ast$ \hyperlink{class_graphics_engine_a99c1b6f36ce3c8e02cba2a97b08eab05}{get\+Y\+P\+R\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the yaw-\/pitch-\/roll camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}\label{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{Graphics\+Engine()}{GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::\+Graphics\+Engine (\begin{DoxyParamCaption}\item[{std\+::string}]{title = {\ttfamily \char`\"{}OpenGL~Window\char`\"{}},  }\item[{G\+Lint}]{Major\+Ver = {\ttfamily 3},  }\item[{G\+Lint}]{Minor\+Ver = {\ttfamily 3},  }\item[{int}]{width = {\ttfamily 600},  }\item[{int}]{height = {\ttfamily 600} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & --- Title to be placed in the titlebar of the graphics window. \\
+\hline
+{\em Major\+Ver} & --- The Open\+GL major version that is requested. \\
+\hline
+{\em Minor\+Ver} & --- The Open\+GL minor version that is requested. \\
+\hline
+{\em width} & --- The width (in pixels) of the graphics window. \\
+\hline
+{\em height} & --- The height (in pixels) of the graphics window.\\
+\hline
+\end{DoxyParams}
+Creates rendering window, loads the shaders, and sets some initial data settings. \mbox{\Hypertarget{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}\label{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}}
+\index{````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Graphics\+Engine()}{~GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::$\sim$\+Graphics\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Currently empty, no allocated memory to clear. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}\label{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!display@{display}}
+\index{display@{display}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function responsible for drawing to the Open\+GL frame buffer. 
+
+This function does the majority of the work, taking care of all animating and drawing of the boxes. It also takes care of setting cameras and axes. Lots of transformations are being drawn here. \mbox{\Hypertarget{class_graphics_engine_a45375adf56d4769b0f33206dc760a1f6}\label{class_graphics_engine_a45375adf56d4769b0f33206dc760a1f6}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!is\+Spherical\+Camera\+On@{is\+Spherical\+Camera\+On}}
+\index{is\+Spherical\+Camera\+On@{is\+Spherical\+Camera\+On}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{is\+Spherical\+Camera\+On()}{isSphericalCameraOn()}}
+{\footnotesize\ttfamily G\+Lboolean Graphics\+Engine\+::is\+Spherical\+Camera\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the spherical camera is currently in use. 
+
+\begin{DoxyReturn}{Returns}
+True if the spherical camera is currently in use and false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graphics_engine_a8ed6b779b8696620241ba701afd6de67}\label{class_graphics_engine_a8ed6b779b8696620241ba701afd6de67}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!is\+Y\+P\+R\+Camera\+On@{is\+Y\+P\+R\+Camera\+On}}
+\index{is\+Y\+P\+R\+Camera\+On@{is\+Y\+P\+R\+Camera\+On}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{is\+Y\+P\+R\+Camera\+On()}{isYPRCameraOn()}}
+{\footnotesize\ttfamily G\+Lboolean Graphics\+Engine\+::is\+Y\+P\+R\+Camera\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the yaw-\/pitch-\/roll camera is currently in use. 
+
+\begin{DoxyReturn}{Returns}
+True if the yaw-\/pitch-\/roll camera is currently in use and false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}\label{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!resize@{resize}}
+\index{resize@{resize}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::resize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the resizing events of the window. 
+
+Sets the viewport to the entire screen and recalculates the projection matrix. \mbox{\Hypertarget{class_graphics_engine_abc1591d1873ad66188c5b7613606e8ab}\label{class_graphics_engine_abc1591d1873ad66188c5b7613606e8ab}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Draw\+Axes@{set\+Draw\+Axes}}
+\index{set\+Draw\+Axes@{set\+Draw\+Axes}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Draw\+Axes()}{setDrawAxes()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Draw\+Axes (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the boolean to draw the axes or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & --- Draws the axes if true and not if false. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_abe5ac289b57dbb1b2270efbeeeccda04}\label{class_graphics_engine_abe5ac289b57dbb1b2270efbeeeccda04}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Draw\+Boxes@{set\+Draw\+Boxes}}
+\index{set\+Draw\+Boxes@{set\+Draw\+Boxes}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Draw\+Boxes()}{setDrawBoxes()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Draw\+Boxes (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the boolean to draw any boxes or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & --- Draws boxes if true and not if false. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_ac1e139e3fb1cc18560f085f752ef871b}\label{class_graphics_engine_ac1e139e3fb1cc18560f085f752ef871b}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Draw\+Many\+Boxes@{set\+Draw\+Many\+Boxes}}
+\index{set\+Draw\+Many\+Boxes@{set\+Draw\+Many\+Boxes}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Draw\+Many\+Boxes()}{setDrawManyBoxes()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Draw\+Many\+Boxes (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the boolean to draw a grid of boxes if true and a single box if false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & --- Draws a grid of boxes if true and a single box if false. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}\label{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Size()}{setSize()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Size (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets the size of the rendering window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & --- the width in pixels of the new size. \\
+\hline
+{\em height} & --- the height in pixels of the new size. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a20b5121989df95fd4deaefae6e81a168}\label{class_graphics_engine_a20b5121989df95fd4deaefae6e81a168}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Trans\+No@{set\+Trans\+No}}
+\index{set\+Trans\+No@{set\+Trans\+No}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Trans\+No()}{setTransNo()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Trans\+No (\begin{DoxyParamCaption}\item[{int}]{trans }\end{DoxyParamCaption})}
+
+
+
+Sets the current transformation number from the \hyperlink{class_u_i}{UI}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trans} & --- Number of the new animation to be done. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/rclocker1/\+Graphics/\+H\+W6/\+Box\+Animations/\hyperlink{_graphics_engine_8h}{Graphics\+Engine.\+h}\item 
+/home/rclocker1/\+Graphics/\+H\+W6/\+Box\+Animations/\hyperlink{_graphics_engine_8cpp}{Graphics\+Engine.\+cpp}\end{DoxyCompactItemize}

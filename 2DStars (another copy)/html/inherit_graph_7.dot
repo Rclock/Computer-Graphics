@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="TextRendererTTFPoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_text_renderer_t_t_f_point.html",tooltip="Coordinate and texture coordinate positions needed for the font rendering shader. ..."];
+}

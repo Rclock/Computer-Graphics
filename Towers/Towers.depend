@@ -1,0 +1,128 @@
+# depslib dependency file v1.0
+1516460340 source:/home/rclocker1/Graphics/Towers/Axes.cpp
+	"Axes.h"
+
+1515990034 /home/rclocker1/Graphics/Towers/Axes.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1516488496 /home/rclocker1/Graphics/Towers/ProgramDefines.h
+
+1555381478 source:/home/rclocker1/Graphics/Towers/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+
+1555351782 /home/rclocker1/Graphics/Towers/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<vector>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"SphericalCamera.h"
+	"YPRCamera.h"
+	"Axes.h"
+	"Material.h"
+	"Light.h"
+	"MaterialPresets.h"
+	"Models.h"
+
+1514175394 /home/rclocker1/Graphics/Towers/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1516237996 /home/rclocker1/Graphics/Towers/SphericalCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<math.h>
+	"ProgramDefines.h"
+
+1516466034 /home/rclocker1/Graphics/Towers/YPRCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1516465148 /home/rclocker1/Graphics/Towers/Material.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1516465124 /home/rclocker1/Graphics/Towers/Light.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1554646379 /home/rclocker1/Graphics/Towers/MaterialPresets.h
+	"Material.h"
+
+1516244970 /home/rclocker1/Graphics/Towers/Models.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1515306440 /home/rclocker1/Graphics/Towers/Shape.h
+
+1458852310 source:/home/rclocker1/Graphics/Towers/Light.cpp
+	"Light.h"
+
+1514174390 source:/home/rclocker1/Graphics/Towers/LoadShaders.cpp
+	"LoadShaders.h"
+
+1555381363 source:/home/rclocker1/Graphics/Towers/main.cpp
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1516322894 /home/rclocker1/Graphics/Towers/UI.h
+	"GraphicsEngine.h"
+
+1458854976 source:/home/rclocker1/Graphics/Towers/Material.cpp
+	"Material.h"
+
+1516460554 source:/home/rclocker1/Graphics/Towers/Models.cpp
+	"Models.h"
+
+1515306700 source:/home/rclocker1/Graphics/Towers/Shape.cpp
+	"Shape.h"
+
+1516238648 source:/home/rclocker1/Graphics/Towers/SphericalCamera.cpp
+	"SphericalCamera.h"
+
+1555381429 source:/home/rclocker1/Graphics/Towers/UI.cpp
+	"UI.h"
+
+1516466086 source:/home/rclocker1/Graphics/Towers/YPRCamera.cpp
+	"YPRCamera.h"
+

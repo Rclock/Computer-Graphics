@@ -1,0 +1,416 @@
+\hypertarget{class_obj_model}{}\section{Obj\+Model Class Reference}
+\label{class_obj_model}\index{Obj\+Model@{Obj\+Model}}
+
+
+Model loader class for simple Wavefront obj files.  
+
+
+
+
+{\ttfamily \#include $<$Obj\+Model.\+h$>$}
+
+
+
+Inheritance diagram for Obj\+Model\+:
+% FIG 0
+
+
+Collaboration diagram for Obj\+Model\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_obj_model_af7c00f757992e626f2dd959f4c829125}{Obj\+Model} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_obj_model_a78d50e0da345b8b2438bbc93ae01eab8}{$\sim$\+Obj\+Model} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_obj_model_ad248db3133fb781c2aebabe2e083f917}\label{class_obj_model_ad248db3133fb781c2aebabe2e083f917}} 
+void \hyperlink{class_obj_model_ad248db3133fb781c2aebabe2e083f917}{Load\+Data\+To\+Graphics\+Card} ()
+\begin{DoxyCompactList}\small\item\em Default for derived class. \end{DoxyCompactList}\item 
+bool \hyperlink{class_obj_model_a3aa8527dfa60ff71adb8a11833c164a5}{Load} (std\+::string path, std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Loads the data from a Wavefront obj file and stores the data in the vertex, normal, and texture coordinate vectors. Finally, the loader method is called to load the data to the graphics card. This is done for each segment of the model. In addition, the material file is read from the obj file and the material loader is called to load in the material information. This method also calls the texture loader to load the testures that are referenced in the materials file. At the end of the method, the program loader is called to create a shader program for each material. \end{DoxyCompactList}\item 
+bool \hyperlink{class_obj_model_ac67e39ccdee938c1666f1d20542fd1d0}{Load\+Mateials} (std\+::string path, std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Loads the set of materials in the materials file that is referenced from the Wavefromt obj file. At the end the method the texture loader is called to load in the texture images that are referenced in the materials file. \end{DoxyCompactList}\item 
+bool \hyperlink{class_obj_model_a209faf29a9d9a22793c9d599df492350}{Load\+Textures} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Loads in the texture images that are referenced in the materials file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_obj_model_a75ee68d8cbae0563c0f8c66a98a66904}\label{class_obj_model_a75ee68d8cbae0563c0f8c66a98a66904}} 
+bool \hyperlink{class_obj_model_a75ee68d8cbae0563c0f8c66a98a66904}{Load\+Programs} ()
+\begin{DoxyCompactList}\small\item\em Loads the G\+L\+SL programs to the graphics card. There is one shader program for each material in the Wavwefront model. In the draw method, the material is stored for each segment of the model, matched to the correct shader program and the porgram is used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_obj_model_a05d65d3b5fbc7a45468f741221154718}\label{class_obj_model_a05d65d3b5fbc7a45468f741221154718}} 
+void {\bfseries load\+Material} ()
+\item 
+\mbox{\Hypertarget{class_obj_model_a3db5915c97763cb64d6bcea84dc96578}\label{class_obj_model_a3db5915c97763cb64d6bcea84dc96578}} 
+void {\bfseries load\+Material} (\hyperlink{class_material}{Material} Mat)
+\item 
+void \hyperlink{class_obj_model_adda1040ead23e4a616c4068063f25598}{load\+Material} (G\+Luint program, \hyperlink{class_material}{Material} mat)
+\begin{DoxyCompactList}\small\item\em Loads the material structure to the shader material structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_obj_model_a44fb873d0cb0d0bb862f5a5ec3b91d7d}\label{class_obj_model_a44fb873d0cb0d0bb862f5a5ec3b91d7d}} 
+void {\bfseries set\+Material} (\hyperlink{class_material}{Material} Mat)
+\item 
+void \hyperlink{class_obj_model_af7149df564ffbaa22bded4ba201431c7}{load\+Texture} (G\+Luint program, sf\+::\+Image tex, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Loads a texture image to the graphics card. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_a99417a3c2103544059483d601959bf35}{set\+Number\+Of\+Lights} (int num)
+\begin{DoxyCompactList}\small\item\em Sets the number of lights to use. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_abe58ee93a5a91f88c52f7b28c1fa6723}{set\+Light} (int num, \hyperlink{class_light}{Light} light)
+\begin{DoxyCompactList}\small\item\em Sets a light value. \end{DoxyCompactList}\item 
+\hyperlink{class_light}{Light} \hyperlink{class_obj_model_adadab74f1605b3f1b6b778f6c78a8796}{get\+Light} (int num)
+\begin{DoxyCompactList}\small\item\em Gets a light value. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_a3fc48bd65930bf35da9d44aef4cd3313}{set\+Global\+Ambient} (glm\+::vec4 ga)
+\begin{DoxyCompactList}\small\item\em Sets the global ambient color. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_a14bb9c395cd453db4be2a8fdfeb57ae8}{turn\+Light\+On} (int num)
+\begin{DoxyCompactList}\small\item\em Turns a light on. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_abd41d77a204c443fd9f2bd94cda3a514}{turn\+Light\+Off} (int num)
+\begin{DoxyCompactList}\small\item\em Turns a light off. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_a17a3c9348453c872b3d90c880a49098d}{turn\+Light\+On\+Off} (int num, bool setting)
+\begin{DoxyCompactList}\small\item\em Turns a light on or off. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_a579f8130f3f30d9a0bc8e8add3d585ed}{set\+View\+Matrix} (glm\+::mat4 view\+Matrix)
+\begin{DoxyCompactList}\small\item\em Sets the view matrix. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_ad446f9410a25203f013f8f72d5cd4838}{set\+Projection\+Matrix} (glm\+::mat4 projection\+Matrix)
+\begin{DoxyCompactList}\small\item\em Sets the projection matrix. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_a0f4eabd61e3874a123b2fe5dc44c4ca7}{set\+Model\+Matrix} (glm\+::mat4 model\+Matrix)
+\begin{DoxyCompactList}\small\item\em Sets the model matrix. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_a9e3bf6cd3571558c235aa732e54f9676}{set\+Eye} (glm\+::vec3 Eye)
+\begin{DoxyCompactList}\small\item\em Sets the eye position. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_ae31ffd11ef840ac59f9d622f520d7797}{set\+Texture\+Ratio} (float texR)
+\begin{DoxyCompactList}\small\item\em Sets the texture to material ratio, r to texture and (1-\/r) to material. \end{DoxyCompactList}\item 
+void \hyperlink{class_obj_model_aace5675f73bf6d839428a5ce9dbfeac3}{draw} ()
+\begin{DoxyCompactList}\small\item\em \begin{quote}
+Has it\textquotesingle{}s own Y\+PR camera to control it\textquotesingle{}s orientation. \end{quote}
+\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_obj_model_a50b9db5bc0b8cc05a13ff5d74dd3fe98}\label{class_obj_model_a50b9db5bc0b8cc05a13ff5d74dd3fe98}} 
+\hyperlink{class_y_p_r_camera}{Y\+P\+R\+Camera} {\bfseries shipypr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Model loader class for simple Wavefront obj files. 
+
+Loads in a simple Wavefront obj file, one that contains vertex, normal, and texture coordinate data. The vertex data must be in triangulated form. This version also reads in material data and segments face groups by material type, including textures.
+
+Tags that are supported are the standard ambient, diffuse, specular, emission, and shininess exponent in addition to textures, that is, Ka, Kd, Ks, Ke, Ns, map\+\_\+\+Ka, map\+\_\+\+Kd, and map\+\_\+\+Ks.
+
+This version uses its own shader programs in order to keep the loading and graphing of the models encapsulated, there is one shader program for each segment of the model. It is also designed to be easily manipulated from an external method. Since this version uses its own shaders, lights, along with the projection, viewing, and model matrices must be loaded from an external controling method.
+
+Code was altered from Tutorial 7 \+: Model loading from \href{http://www.opengl-tutorial.org/}{\tt http\+://www.\+opengl-\/tutorial.\+org/}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_obj_model_af7c00f757992e626f2dd959f4c829125}\label{class_obj_model_af7c00f757992e626f2dd959f4c829125}} 
+\index{Obj\+Model@{Obj\+Model}!Obj\+Model@{Obj\+Model}}
+\index{Obj\+Model@{Obj\+Model}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{Obj\+Model()}{ObjModel()}}
+{\footnotesize\ttfamily Obj\+Model\+::\+Obj\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Default constructor. \mbox{\Hypertarget{class_obj_model_a78d50e0da345b8b2438bbc93ae01eab8}\label{class_obj_model_a78d50e0da345b8b2438bbc93ae01eab8}} 
+\index{Obj\+Model@{Obj\+Model}!````~Obj\+Model@{$\sim$\+Obj\+Model}}
+\index{````~Obj\+Model@{$\sim$\+Obj\+Model}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Obj\+Model()}{~ObjModel()}}
+{\footnotesize\ttfamily Obj\+Model\+::$\sim$\+Obj\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Removes the stored data. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_obj_model_aace5675f73bf6d839428a5ce9dbfeac3}\label{class_obj_model_aace5675f73bf6d839428a5ce9dbfeac3}} 
+\index{Obj\+Model@{Obj\+Model}!draw@{draw}}
+\index{draw@{draw}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Obj\+Model\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\begin{quote}
+Has it\textquotesingle{}s own Y\+PR camera to control it\textquotesingle{}s orientation. \end{quote}
+
+
+Draws the object. 
+
+Implements \hyperlink{class_shape}{Shape}.
+
+\mbox{\Hypertarget{class_obj_model_adadab74f1605b3f1b6b778f6c78a8796}\label{class_obj_model_adadab74f1605b3f1b6b778f6c78a8796}} 
+\index{Obj\+Model@{Obj\+Model}!get\+Light@{get\+Light}}
+\index{get\+Light@{get\+Light}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{get\+Light()}{getLight()}}
+{\footnotesize\ttfamily \hyperlink{class_light}{Light} Obj\+Model\+::get\+Light (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Gets a light value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- the number of the light to get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_light}{Light} object in position num. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_obj_model_a3aa8527dfa60ff71adb8a11833c164a5}\label{class_obj_model_a3aa8527dfa60ff71adb8a11833c164a5}} 
+\index{Obj\+Model@{Obj\+Model}!Load@{Load}}
+\index{Load@{Load}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily bool Obj\+Model\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads the data from a Wavefront obj file and stores the data in the vertex, normal, and texture coordinate vectors. Finally, the loader method is called to load the data to the graphics card. This is done for each segment of the model. In addition, the material file is read from the obj file and the material loader is called to load in the material information. This method also calls the texture loader to load the testures that are referenced in the materials file. At the end of the method, the program loader is called to create a shader program for each material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & --- path from the program to the folder containing the data.\\
+\hline
+{\em filename} & --- name of the obj file containing the data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_ac67e39ccdee938c1666f1d20542fd1d0}\label{class_obj_model_ac67e39ccdee938c1666f1d20542fd1d0}} 
+\index{Obj\+Model@{Obj\+Model}!Load\+Mateials@{Load\+Mateials}}
+\index{Load\+Mateials@{Load\+Mateials}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{Load\+Mateials()}{LoadMateials()}}
+{\footnotesize\ttfamily bool Obj\+Model\+::\+Load\+Mateials (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads the set of materials in the materials file that is referenced from the Wavefromt obj file. At the end the method the texture loader is called to load in the texture images that are referenced in the materials file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & --- path from the program to the folder containing the data.\\
+\hline
+{\em filename} & --- name of the obj file containing the data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_adda1040ead23e4a616c4068063f25598}\label{class_obj_model_adda1040ead23e4a616c4068063f25598}} 
+\index{Obj\+Model@{Obj\+Model}!load\+Material@{load\+Material}}
+\index{load\+Material@{load\+Material}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{load\+Material()}{loadMaterial()}}
+{\footnotesize\ttfamily void Obj\+Model\+::load\+Material (\begin{DoxyParamCaption}\item[{G\+Luint}]{program,  }\item[{\hyperlink{class_material}{Material}}]{mat }\end{DoxyParamCaption})}
+
+
+
+Loads the material structure to the shader material structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em program} & --- The address of the program to alter.\\
+\hline
+{\em mat} & --- \hyperlink{class_material}{Material} to load. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_af7149df564ffbaa22bded4ba201431c7}\label{class_obj_model_af7149df564ffbaa22bded4ba201431c7}} 
+\index{Obj\+Model@{Obj\+Model}!load\+Texture@{load\+Texture}}
+\index{load\+Texture@{load\+Texture}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{load\+Texture()}{loadTexture()}}
+{\footnotesize\ttfamily void Obj\+Model\+::load\+Texture (\begin{DoxyParamCaption}\item[{G\+Luint}]{program,  }\item[{sf\+::\+Image}]{tex,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Loads a texture image to the graphics card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em program} & --- The address of the program to alter.\\
+\hline
+{\em tex} & --- Image to load.\\
+\hline
+{\em name} & --- The name of the texture in the shader. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_a209faf29a9d9a22793c9d599df492350}\label{class_obj_model_a209faf29a9d9a22793c9d599df492350}} 
+\index{Obj\+Model@{Obj\+Model}!Load\+Textures@{Load\+Textures}}
+\index{Load\+Textures@{Load\+Textures}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{Load\+Textures()}{LoadTextures()}}
+{\footnotesize\ttfamily bool Obj\+Model\+::\+Load\+Textures (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Loads in the texture images that are referenced in the materials file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & --- path from the program to the folder containing the images. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_a9e3bf6cd3571558c235aa732e54f9676}\label{class_obj_model_a9e3bf6cd3571558c235aa732e54f9676}} 
+\index{Obj\+Model@{Obj\+Model}!set\+Eye@{set\+Eye}}
+\index{set\+Eye@{set\+Eye}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{set\+Eye()}{setEye()}}
+{\footnotesize\ttfamily void Obj\+Model\+::set\+Eye (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{Eye }\end{DoxyParamCaption})}
+
+
+
+Sets the eye position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Eye} & --- glm\+::vec3 holding the (x, y, z) position of the eye. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_a3fc48bd65930bf35da9d44aef4cd3313}\label{class_obj_model_a3fc48bd65930bf35da9d44aef4cd3313}} 
+\index{Obj\+Model@{Obj\+Model}!set\+Global\+Ambient@{set\+Global\+Ambient}}
+\index{set\+Global\+Ambient@{set\+Global\+Ambient}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{set\+Global\+Ambient()}{setGlobalAmbient()}}
+{\footnotesize\ttfamily void Obj\+Model\+::set\+Global\+Ambient (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{ga }\end{DoxyParamCaption})}
+
+
+
+Sets the global ambient color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ga} & --- glm\+::vec4 holding the (r, g, b, a) for the global ambient. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_abe58ee93a5a91f88c52f7b28c1fa6723}\label{class_obj_model_abe58ee93a5a91f88c52f7b28c1fa6723}} 
+\index{Obj\+Model@{Obj\+Model}!set\+Light@{set\+Light}}
+\index{set\+Light@{set\+Light}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{set\+Light()}{setLight()}}
+{\footnotesize\ttfamily void Obj\+Model\+::set\+Light (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{\hyperlink{class_light}{Light}}]{light }\end{DoxyParamCaption})}
+
+
+
+Sets a light value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- the number of the light to set.\\
+\hline
+{\em light} & --- the \hyperlink{class_light}{Light} struct with the light information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_a0f4eabd61e3874a123b2fe5dc44c4ca7}\label{class_obj_model_a0f4eabd61e3874a123b2fe5dc44c4ca7}} 
+\index{Obj\+Model@{Obj\+Model}!set\+Model\+Matrix@{set\+Model\+Matrix}}
+\index{set\+Model\+Matrix@{set\+Model\+Matrix}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{set\+Model\+Matrix()}{setModelMatrix()}}
+{\footnotesize\ttfamily void Obj\+Model\+::set\+Model\+Matrix (\begin{DoxyParamCaption}\item[{glm\+::mat4}]{model\+Matrix }\end{DoxyParamCaption})}
+
+
+
+Sets the model matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Matrix} & --- glm\+::mat4 that represents the model matrix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_a99417a3c2103544059483d601959bf35}\label{class_obj_model_a99417a3c2103544059483d601959bf35}} 
+\index{Obj\+Model@{Obj\+Model}!set\+Number\+Of\+Lights@{set\+Number\+Of\+Lights}}
+\index{set\+Number\+Of\+Lights@{set\+Number\+Of\+Lights}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{set\+Number\+Of\+Lights()}{setNumberOfLights()}}
+{\footnotesize\ttfamily void Obj\+Model\+::set\+Number\+Of\+Lights (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Sets the number of lights to use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- the number of the lights. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_ad446f9410a25203f013f8f72d5cd4838}\label{class_obj_model_ad446f9410a25203f013f8f72d5cd4838}} 
+\index{Obj\+Model@{Obj\+Model}!set\+Projection\+Matrix@{set\+Projection\+Matrix}}
+\index{set\+Projection\+Matrix@{set\+Projection\+Matrix}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{set\+Projection\+Matrix()}{setProjectionMatrix()}}
+{\footnotesize\ttfamily void Obj\+Model\+::set\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{glm\+::mat4}]{projection\+Matrix }\end{DoxyParamCaption})}
+
+
+
+Sets the projection matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projection\+Matrix} & --- glm\+::mat4 that represents the projection matrix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_ae31ffd11ef840ac59f9d622f520d7797}\label{class_obj_model_ae31ffd11ef840ac59f9d622f520d7797}} 
+\index{Obj\+Model@{Obj\+Model}!set\+Texture\+Ratio@{set\+Texture\+Ratio}}
+\index{set\+Texture\+Ratio@{set\+Texture\+Ratio}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{set\+Texture\+Ratio()}{setTextureRatio()}}
+{\footnotesize\ttfamily void Obj\+Model\+::set\+Texture\+Ratio (\begin{DoxyParamCaption}\item[{float}]{texR }\end{DoxyParamCaption})}
+
+
+
+Sets the texture to material ratio, r to texture and (1-\/r) to material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texR} & --- ratio value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_a579f8130f3f30d9a0bc8e8add3d585ed}\label{class_obj_model_a579f8130f3f30d9a0bc8e8add3d585ed}} 
+\index{Obj\+Model@{Obj\+Model}!set\+View\+Matrix@{set\+View\+Matrix}}
+\index{set\+View\+Matrix@{set\+View\+Matrix}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{set\+View\+Matrix()}{setViewMatrix()}}
+{\footnotesize\ttfamily void Obj\+Model\+::set\+View\+Matrix (\begin{DoxyParamCaption}\item[{glm\+::mat4}]{view\+Matrix }\end{DoxyParamCaption})}
+
+
+
+Sets the view matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Matrix} & --- glm\+::mat4 that represents the view matrix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_abd41d77a204c443fd9f2bd94cda3a514}\label{class_obj_model_abd41d77a204c443fd9f2bd94cda3a514}} 
+\index{Obj\+Model@{Obj\+Model}!turn\+Light\+Off@{turn\+Light\+Off}}
+\index{turn\+Light\+Off@{turn\+Light\+Off}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{turn\+Light\+Off()}{turnLightOff()}}
+{\footnotesize\ttfamily void Obj\+Model\+::turn\+Light\+Off (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Turns a light off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- number of the light to turn off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_a14bb9c395cd453db4be2a8fdfeb57ae8}\label{class_obj_model_a14bb9c395cd453db4be2a8fdfeb57ae8}} 
+\index{Obj\+Model@{Obj\+Model}!turn\+Light\+On@{turn\+Light\+On}}
+\index{turn\+Light\+On@{turn\+Light\+On}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{turn\+Light\+On()}{turnLightOn()}}
+{\footnotesize\ttfamily void Obj\+Model\+::turn\+Light\+On (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Turns a light on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- number of the light to turn on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obj_model_a17a3c9348453c872b3d90c880a49098d}\label{class_obj_model_a17a3c9348453c872b3d90c880a49098d}} 
+\index{Obj\+Model@{Obj\+Model}!turn\+Light\+On\+Off@{turn\+Light\+On\+Off}}
+\index{turn\+Light\+On\+Off@{turn\+Light\+On\+Off}!Obj\+Model@{Obj\+Model}}
+\subsubsection{\texorpdfstring{turn\+Light\+On\+Off()}{turnLightOnOff()}}
+{\footnotesize\ttfamily void Obj\+Model\+::turn\+Light\+On\+Off (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{bool}]{setting }\end{DoxyParamCaption})}
+
+
+
+Turns a light on or off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- number of the light to turn off.\\
+\hline
+{\em setting} & --- boolean for light value. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_obj_model_8h}{Obj\+Model.\+h}\item 
+\hyperlink{_obj_model_8cpp}{Obj\+Model.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1552008963 source:/home/rclocker1/Graphics/HW4/Circles/Circle.cpp
+	"Circle.h"
+	<cmath>
+
+1552010524 /home/rclocker1/Graphics/HW4/Circles/Circle.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1453216104 /home/rclocker1/Graphics/HW4/Circles/ProgramDefines.h
+
+1552009354 source:/home/rclocker1/Graphics/HW4/Circles/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+	<math.h>
+
+1552010520 /home/rclocker1/Graphics/HW4/Circles/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<vector>
+	"Circle.h"
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1514175394 /home/rclocker1/Graphics/HW4/Circles/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1514174390 source:/home/rclocker1/Graphics/HW4/Circles/LoadShaders.cpp
+	"LoadShaders.h"
+
+1552010538 source:/home/rclocker1/Graphics/HW4/Circles/UI.cpp
+	"UI.h"
+
+1552010541 /home/rclocker1/Graphics/HW4/Circles/UI.h
+	"GraphicsEngine.h"
+
+1552010488 source:/home/rclocker1/Graphics/HW4/Circles/main.cpp
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+

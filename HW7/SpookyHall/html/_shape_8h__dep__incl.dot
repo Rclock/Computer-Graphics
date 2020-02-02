@@ -1,0 +1,34 @@
+digraph "Shape.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Shape.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="teapot.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$teapot_8h.html",tooltip="Contains vertex and normal data for the Utah teapot. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="GraphicsEngine.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_graphics_engine_8h.html",tooltip="Header file for GraphicsEngine.cpp. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="GraphicsEngine.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_graphics_engine_8cpp.html",tooltip="Main graphics driver for the program. "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Main driver for the program. "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="UI.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_u_i_8h.html",tooltip="Header file for UI.cpp. "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="UI.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_u_i_8cpp.html",tooltip="User interface processor for the program. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Models.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_models_8h.html",tooltip="Header file for Models.cpp. "];
+  Node8 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Models.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_models_8cpp.html",tooltip="Implementation file for the Models class. "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Plane.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_plane_8h.html",tooltip="Header file for Plane.cpp. "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Plane.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_plane_8cpp.html",tooltip="Implementation of the Plane class. "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Shape.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_shape_8cpp.html",tooltip="Base class for shape objects. "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Sphere.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_sphere_8h.html",tooltip="Header file for Sphere.cpp. "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Sphere.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_sphere_8cpp.html",tooltip="Implementation of the Sphere class. "];
+}

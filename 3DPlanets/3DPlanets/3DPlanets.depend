@@ -1,0 +1,616 @@
+# depslib dependency file v1.0
+1516460340 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Axes.cpp
+	"Axes.h"
+
+1516849346 
+
+1515990034 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Axes.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1557297261 fines.h"
+
+1557621100 /home/rclocker1/Graphics/3DPlanets/3DPlanets/ProgramDefines.h
+
+1458852310 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Light.cpp
+	"Light.h"
+
+1516465124 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Light.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1516468724 ype_ptr.hpp>
+
+1514174390 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/LoadShaders.cpp
+	"LoadShaders.h"
+
+1514177990 rs.h"
+
+1514175394 /home/rclocker1/Graphics/3DPlanets/3DPlanets/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1555125323 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/main.cpp
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1557624772 ngine.h"
+
+1557855122 /home/rclocker1/Graphics/3DPlanets/3DPlanets/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<iomanip>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"SphericalCamera.h"
+	"YPRCamera.h"
+	"Axes.h"
+	"teapot.h"
+	"Material.h"
+	"Light.h"
+	"MaterialPresets.h"
+	"Models.h"
+	"ObjModel.h"
+	"TextRendererTTF.h"
+	<vector>
+
+1516237996 /home/rclocker1/Graphics/3DPlanets/3DPlanets/SphericalCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<math.h>
+	"ProgramDefines.h"
+
+1557293661 /home/rclocker1/Graphics/3DPlanets/3DPlanets/YPRCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1516841510 /home/rclocker1/Graphics/3DPlanets/3DPlanets/teapot.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	"Shape.h"
+
+1515306440 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Shape.h
+
+1516465148 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Material.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1459030624 /home/rclocker1/Graphics/3DPlanets/3DPlanets/MaterialPresets.h
+	"Material.h"
+
+1556293247 h"
+
+1517364898 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Models.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1556365836 /home/rclocker1/Graphics/3DPlanets/3DPlanets/ObjModel.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"Material.h"
+	"Light.h"
+	"Shape.h"
+	"YPRCamera.h"
+
+1557363471 .h"
+
+1515903122 /home/rclocker1/Graphics/3DPlanets/3DPlanets/TextRendererTTF.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<ft2build.h>
+	"LoadShaders.h"
+
+1557621172 /home/rclocker1/Graphics/3DPlanets/3DPlanets/UI.h
+	"GraphicsEngine.h"
+
+1458854976 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Material.cpp
+	"Material.h"
+
+1518290022 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Models.cpp
+	"Models.h"
+
+1556289647 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/ObjModel.cpp
+	"ObjModel.h"
+
+1516839706 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Plane.cpp
+	"Plane.h"
+
+1516839684 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Plane.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1515306700 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Shape.cpp
+	"Shape.h"
+
+1516845746 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Sphere.cpp
+	"Sphere.h"
+
+1516845896 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Sphere.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1555036112 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/SphericalCamera.cpp
+	"SphericalCamera.h"
+
+1555039712 Camera.h"
+
+1515903134 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/TextRendererTTF.cpp
+	"TextRendererTTF.h"
+
+1515906734 rerTTF.h"
+
+1557667635 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/UI.cpp
+	"UI.h"
+
+1557359871 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/YPRCamera.cpp
+	"YPRCamera.h"
+
+1557861042 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+
+1516463940 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\axes.cpp
+	"Axes.h"
+
+1515993634 c:\users\rclocker1\downloads\3dplanets\3dplanets\axes.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1557624700 c:\users\rclocker1\downloads\3dplanets\3dplanets\programdefines.h
+
+1557873325 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\graphicsengine.cpp
+	"GraphicsEngine.h"
+
+1557858722 c:\users\rclocker1\downloads\3dplanets\3dplanets\graphicsengine.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<iomanip>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"SphericalCamera.h"
+	"YPRCamera.h"
+	"Axes.h"
+	"teapot.h"
+	"Material.h"
+	"Light.h"
+	"MaterialPresets.h"
+	"Models.h"
+	"ObjModel.h"
+	"TextRendererTTF.h"
+	<vector>
+
+1514178994 c:\users\rclocker1\downloads\3dplanets\3dplanets\loadshaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1516241596 c:\users\rclocker1\downloads\3dplanets\3dplanets\sphericalcamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<math.h>
+	"ProgramDefines.h"
+
+1557297261 c:\users\rclocker1\downloads\3dplanets\3dplanets\yprcamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1516845110 c:\users\rclocker1\downloads\3dplanets\3dplanets\teapot.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	"Shape.h"
+
+1515310040 c:\users\rclocker1\downloads\3dplanets\3dplanets\shape.h
+
+1516468748 c:\users\rclocker1\downloads\3dplanets\3dplanets\material.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1516468724 c:\users\rclocker1\downloads\3dplanets\3dplanets\light.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1459034224 c:\users\rclocker1\downloads\3dplanets\3dplanets\materialpresets.h
+	"Material.h"
+
+1517368498 c:\users\rclocker1\downloads\3dplanets\3dplanets\models.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1556369436 c:\users\rclocker1\downloads\3dplanets\3dplanets\objmodel.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"Material.h"
+	"Light.h"
+	"Shape.h"
+	"YPRCamera.h"
+
+1515906722 c:\users\rclocker1\downloads\3dplanets\3dplanets\textrendererttf.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<ft2build.h>
+	"LoadShaders.h"
+
+1458855910 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\light.cpp
+	"Light.h"
+
+1514177990 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\loadshaders.cpp
+	"LoadShaders.h"
+
+1458858576 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\material.cpp
+	"Material.h"
+
+1518293622 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\models.cpp
+	"Models.h"
+
+1556293247 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\objmodel.cpp
+	"ObjModel.h"
+
+1516843306 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\plane.cpp
+	"Plane.h"
+
+1516843284 c:\users\rclocker1\downloads\3dplanets\3dplanets\plane.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1515310300 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\shape.cpp
+	"Shape.h"
+
+1516849346 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\sphere.cpp
+	"Sphere.h"
+
+1516849496 c:\users\rclocker1\downloads\3dplanets\3dplanets\sphere.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1555039712 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\sphericalcamera.cpp
+	"SphericalCamera.h"
+
+1515906734 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\textrendererttf.cpp
+	"TextRendererTTF.h"
+
+1557671235 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\ui.cpp
+	"UI.h"
+
+1557624772 c:\users\rclocker1\downloads\3dplanets\3dplanets\ui.h
+	"GraphicsEngine.h"
+
+1557363471 source:c:\users\rclocker1\downloads\3dplanets\3dplanets\yprcamera.cpp
+	"YPRCamera.h"
+
+1516460340 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Axes.cpp
+	"Axes.h"
+
+1515990034 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Axes.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1557621100 /home/rclocker1/Graphics/3DPlanets/3DPlanets/ProgramDefines.h
+
+1458852310 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Light.cpp
+	"Light.h"
+
+1516465124 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Light.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1514174390 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/LoadShaders.cpp
+	"LoadShaders.h"
+
+1514175394 /home/rclocker1/Graphics/3DPlanets/3DPlanets/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1557885163 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/main.cpp
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1557876151 /home/rclocker1/Graphics/3DPlanets/3DPlanets/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<iomanip>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"SphericalCamera.h"
+	"YPRCamera.h"
+	"Axes.h"
+	"teapot.h"
+	"Material.h"
+	"Light.h"
+	"MaterialPresets.h"
+	"Models.h"
+	"ObjModel.h"
+	"TextRendererTTF.h"
+	<vector>
+
+1516237996 /home/rclocker1/Graphics/3DPlanets/3DPlanets/SphericalCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<math.h>
+	"ProgramDefines.h"
+
+1557293661 /home/rclocker1/Graphics/3DPlanets/3DPlanets/YPRCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1516841510 /home/rclocker1/Graphics/3DPlanets/3DPlanets/teapot.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	"Shape.h"
+
+1515306440 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Shape.h
+
+1516465148 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Material.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1459030624 /home/rclocker1/Graphics/3DPlanets/3DPlanets/MaterialPresets.h
+	"Material.h"
+
+1517364898 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Models.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1557877160 /home/rclocker1/Graphics/3DPlanets/3DPlanets/ObjModel.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"Material.h"
+	"Light.h"
+	"Shape.h"
+	"YPRCamera.h"
+
+1515903122 /home/rclocker1/Graphics/3DPlanets/3DPlanets/TextRendererTTF.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<ft2build.h>
+	"LoadShaders.h"
+
+1557621172 /home/rclocker1/Graphics/3DPlanets/3DPlanets/UI.h
+	"GraphicsEngine.h"
+
+1458854976 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Material.cpp
+	"Material.h"
+
+1518290022 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Models.cpp
+	"Models.h"
+
+1557877038 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/ObjModel.cpp
+	"ObjModel.h"
+
+1516839706 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Plane.cpp
+	"Plane.h"
+
+1516839684 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Plane.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1515306700 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Shape.cpp
+	"Shape.h"
+
+1516845746 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/Sphere.cpp
+	"Sphere.h"
+
+1516845896 /home/rclocker1/Graphics/3DPlanets/3DPlanets/Sphere.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1555036112 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/SphericalCamera.cpp
+	"SphericalCamera.h"
+
+1515903134 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/TextRendererTTF.cpp
+	"TextRendererTTF.h"
+
+1557887417 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/UI.cpp
+	"UI.h"
+
+1557987307 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/YPRCamera.cpp
+	"YPRCamera.h"
+
+1557988523 source:/home/rclocker1/Graphics/3DPlanets/3DPlanets/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+

@@ -1,0 +1,129 @@
+# depslib dependency file v1.0
+1514174390 source:/home/rclocker1/Graphics/HW4/Problem1/LoadShaders.cpp
+	"LoadShaders.h"
+
+1514175394 /home/rclocker1/Graphics/HW4/Problem1/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1551799365 source:/home/rclocker1/Graphics/HW4/Problem1/Circle.cpp
+	"Circle.h"
+	<cmath>
+
+1551797784 /home/rclocker1/Graphics/HW4/Problem1/Circle.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1453216104 /home/rclocker1/Graphics/HW4/Problem1/ProgramDefines.h
+
+1551797729 source:/home/rclocker1/Graphics/HW4/Problem1/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+	<math.h>
+
+1551796394 /home/rclocker1/Graphics/HW4/Problem1/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<vector>
+	"Circle.h"
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1551217290 source:/home/rclocker1/Graphics/HW4/Problem1/main.cpp
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1551205057 /home/rclocker1/Graphics/HW4/Problem1/UI.h
+	"GraphicsEngine.h"
+
+1551549197 source:/home/rclocker1/Graphics/HW4/Problem1/UI.cpp
+	"UI.h"
+
+1552009354 source:/home/rclocker1/Graphics/HW4/Circles/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+	<math.h>
+
+1552009390 /home/rclocker1/Graphics/HW4/Circles/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<vector>
+	"Circle.h"
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1552009457 /home/rclocker1/Graphics/HW4/Circles/Circle.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1453216104 /home/rclocker1/Graphics/HW4/Circles/ProgramDefines.h
+
+1514175394 /home/rclocker1/Graphics/HW4/Circles/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1514174390 source:/home/rclocker1/Graphics/HW4/Circles/LoadShaders.cpp
+	"LoadShaders.h"
+
+1552007576 source:/home/rclocker1/Graphics/HW4/Circles/main.cpp
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1552009271 /home/rclocker1/Graphics/HW4/Circles/UI.h
+	"GraphicsEngine.h"
+
+1552009262 source:/home/rclocker1/Graphics/HW4/Circles/UI.cpp
+	"UI.h"
+
+1552008963 source:/home/rclocker1/Graphics/HW4/Circles/Circle.cpp
+	"Circle.h"
+	<cmath>
+

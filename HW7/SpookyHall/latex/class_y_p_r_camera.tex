@@ -1,0 +1,395 @@
+\hypertarget{class_y_p_r_camera}{}\section{Y\+P\+R\+Camera Class Reference}
+\label{class_y_p_r_camera}\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+
+
+Creates a Yaw-\/\+Pitch-\/\+Roll camera.  
+
+
+
+
+{\ttfamily \#include $<$Y\+P\+R\+Camera.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_y_p_r_camera_a65230f172270f51a11dec6750ef295d3}{Y\+P\+R\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a82b133d21e8ea170a7877553ad243621}{Position\+Camera} (float X, float Y, float Z, float vX, float vY, float vZ, float upX, float upY, float upZ)
+\begin{DoxyCompactList}\small\item\em Sets the position, view and up for the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a3956419f485ded9249af83864a88745b}{Position\+Camera} (glm\+::vec3 pos, glm\+::vec3 view, glm\+::vec3 up)
+\begin{DoxyCompactList}\small\item\em Sets the position, view and up for the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a2f84f79488d64b59bbed60af935b37cb}{set\+Position} (float X, float Y, float Z)
+\begin{DoxyCompactList}\small\item\em Sets the position for the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a2527de172c8ea8bcc5166a8e725219e9}{set\+Position} (glm\+::vec3 pos)
+\begin{DoxyCompactList}\small\item\em Sets the position for the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a18213984138d7dd35a8434cf80b8acb0}{set\+View} (float X, float Y, float Z)
+\begin{DoxyCompactList}\small\item\em Sets the view vector for the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a9ec16fa6a9421d69fb97f66ee9ba7d03}{set\+View} (glm\+::vec3 view)
+\begin{DoxyCompactList}\small\item\em Sets the view vector for the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_ae8ae30855f7d97e28f21c4d6b80104cc}{set\+Up} (float X, float Y, float Z)
+\begin{DoxyCompactList}\small\item\em Sets the up vector for the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_ad3c0c7d126b03f4c2974cdbea1040ba4}{set\+Up} (glm\+::vec3 up)
+\begin{DoxyCompactList}\small\item\em Sets the up vector for the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a1f704e1375b335a01d6b8bb9affecce1}{set\+Up\+ViaY} ()
+\begin{DoxyCompactList}\small\item\em Sets the up vector for the camera in the positive y direction. \end{DoxyCompactList}\item 
+glm\+::vec3 \hyperlink{class_y_p_r_camera_a7a8964c4ec47fea7ffd7942449237788}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Returns the current position of the camera. \end{DoxyCompactList}\item 
+glm\+::vec3 \hyperlink{class_y_p_r_camera_ad30888384ec6b348403c85ad0aef83c9}{get\+View} ()
+\begin{DoxyCompactList}\small\item\em Returns the current viewing vector of the camera. \end{DoxyCompactList}\item 
+glm\+::vec3 \hyperlink{class_y_p_r_camera_a3441eafb88882eb670d7eeb8bdc433fc}{get\+Up} ()
+\begin{DoxyCompactList}\small\item\em Returns the current up vector of the camera. \end{DoxyCompactList}\item 
+glm\+::mat4 \hyperlink{class_y_p_r_camera_a6312430157dfe879afee0af5f7759a87}{look\+At} ()
+\begin{DoxyCompactList}\small\item\em Returns the lookat matrix for the current position, line of sight, and up vectors. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_ac301ce5ca1503a73cce5aa7a700c62e2}{add\+Pitch} (float num)
+\begin{DoxyCompactList}\small\item\em Adds to the current pitch of the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_abca416bb77e38db7526e54e139153554}{add\+Yaw} (float num)
+\begin{DoxyCompactList}\small\item\em Adds to the current yaw of the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a40cd825b06e9d3b361bd3cf7c05d7b2a}{add\+Roll} (float num)
+\begin{DoxyCompactList}\small\item\em Adds to the current roll of the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a3fa6a8dba8cea84cabb9155b030d849e}{move\+Forward} (float num)
+\begin{DoxyCompactList}\small\item\em Moves the camera forward. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a477ddad236b2b2d6cb2c8a7ae60cfa53}{move\+Right} (float num)
+\begin{DoxyCompactList}\small\item\em Moves the camera right. \end{DoxyCompactList}\item 
+void \hyperlink{class_y_p_r_camera_a37f3668e2f09ec2f7004d016844b468e}{move\+Up} (float num)
+\begin{DoxyCompactList}\small\item\em Moves the camera up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates a Yaw-\/\+Pitch-\/\+Roll camera. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_y_p_r_camera_a65230f172270f51a11dec6750ef295d3}\label{class_y_p_r_camera_a65230f172270f51a11dec6750ef295d3}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{Y\+P\+R\+Camera()}{YPRCamera()}}
+{\footnotesize\ttfamily Y\+P\+R\+Camera\+::\+Y\+P\+R\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Position is at the origin, the view vector is pointing down the negative z-\/axis, up is the positive y direction. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_y_p_r_camera_ac301ce5ca1503a73cce5aa7a700c62e2}\label{class_y_p_r_camera_ac301ce5ca1503a73cce5aa7a700c62e2}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!add\+Pitch@{add\+Pitch}}
+\index{add\+Pitch@{add\+Pitch}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{add\+Pitch()}{addPitch()}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::add\+Pitch (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Adds to the current pitch of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- The degree measurement of the amount to add to the pitch of the camera. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a40cd825b06e9d3b361bd3cf7c05d7b2a}\label{class_y_p_r_camera_a40cd825b06e9d3b361bd3cf7c05d7b2a}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!add\+Roll@{add\+Roll}}
+\index{add\+Roll@{add\+Roll}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{add\+Roll()}{addRoll()}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::add\+Roll (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Adds to the current roll of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- The degree measurement of the amount to add to the roll of the camera. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_abca416bb77e38db7526e54e139153554}\label{class_y_p_r_camera_abca416bb77e38db7526e54e139153554}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!add\+Yaw@{add\+Yaw}}
+\index{add\+Yaw@{add\+Yaw}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{add\+Yaw()}{addYaw()}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::add\+Yaw (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Adds to the current yaw of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- The degree measurement of the amount to add to the yaw of the camera. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a7a8964c4ec47fea7ffd7942449237788}\label{class_y_p_r_camera_a7a8964c4ec47fea7ffd7942449237788}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Y\+P\+R\+Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current position of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The current position of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_y_p_r_camera_a3441eafb88882eb670d7eeb8bdc433fc}\label{class_y_p_r_camera_a3441eafb88882eb670d7eeb8bdc433fc}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!get\+Up@{get\+Up}}
+\index{get\+Up@{get\+Up}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{get\+Up()}{getUp()}}
+{\footnotesize\ttfamily glm\+::vec3 Y\+P\+R\+Camera\+::get\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current up vector of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The current up vector of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_y_p_r_camera_ad30888384ec6b348403c85ad0aef83c9}\label{class_y_p_r_camera_ad30888384ec6b348403c85ad0aef83c9}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!get\+View@{get\+View}}
+\index{get\+View@{get\+View}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{get\+View()}{getView()}}
+{\footnotesize\ttfamily glm\+::vec3 Y\+P\+R\+Camera\+::get\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current viewing vector of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The current viewing vector of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_y_p_r_camera_a6312430157dfe879afee0af5f7759a87}\label{class_y_p_r_camera_a6312430157dfe879afee0af5f7759a87}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!look\+At@{look\+At}}
+\index{look\+At@{look\+At}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{look\+At()}{lookAt()}}
+{\footnotesize\ttfamily glm\+::mat4 Y\+P\+R\+Camera\+::look\+At (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the lookat matrix for the current position, line of sight, and up vectors. 
+
+\begin{DoxyReturn}{Returns}
+The lookat matrix for the current position, line of sight, and up vectors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_y_p_r_camera_a3fa6a8dba8cea84cabb9155b030d849e}\label{class_y_p_r_camera_a3fa6a8dba8cea84cabb9155b030d849e}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!move\+Forward@{move\+Forward}}
+\index{move\+Forward@{move\+Forward}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{move\+Forward()}{moveForward()}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::move\+Forward (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Moves the camera forward. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- Amount to move the camera forward. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a477ddad236b2b2d6cb2c8a7ae60cfa53}\label{class_y_p_r_camera_a477ddad236b2b2d6cb2c8a7ae60cfa53}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!move\+Right@{move\+Right}}
+\index{move\+Right@{move\+Right}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{move\+Right()}{moveRight()}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::move\+Right (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Moves the camera right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- Amount to move the camera to the right. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a37f3668e2f09ec2f7004d016844b468e}\label{class_y_p_r_camera_a37f3668e2f09ec2f7004d016844b468e}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!move\+Up@{move\+Up}}
+\index{move\+Up@{move\+Up}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{move\+Up()}{moveUp()}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::move\+Up (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Moves the camera up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- Amount to move the camera up. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a82b133d21e8ea170a7877553ad243621}\label{class_y_p_r_camera_a82b133d21e8ea170a7877553ad243621}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!Position\+Camera@{Position\+Camera}}
+\index{Position\+Camera@{Position\+Camera}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{Position\+Camera()}{PositionCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::\+Position\+Camera (\begin{DoxyParamCaption}\item[{float}]{X,  }\item[{float}]{Y,  }\item[{float}]{Z,  }\item[{float}]{vX,  }\item[{float}]{vY,  }\item[{float}]{vZ,  }\item[{float}]{upX,  }\item[{float}]{upY,  }\item[{float}]{upZ }\end{DoxyParamCaption})}
+
+
+
+Sets the position, view and up for the camera. 
+
+The method will also normalize the view and up vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & --- X coordinate to the camera position. \\
+\hline
+{\em Y} & --- Y coordinate to the camera position. \\
+\hline
+{\em Z} & --- Z coordinate to the camera position. \\
+\hline
+{\em vX} & --- X coordinate to the viewing vector. \\
+\hline
+{\em vY} & --- Y coordinate to the viewing vector. \\
+\hline
+{\em vZ} & --- Z coordinate to the viewing vector. \\
+\hline
+{\em upX} & --- X coordinate to the up vector. \\
+\hline
+{\em upY} & --- Y coordinate to the up vector. \\
+\hline
+{\em upZ} & --- Z coordinate to the up vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a3956419f485ded9249af83864a88745b}\label{class_y_p_r_camera_a3956419f485ded9249af83864a88745b}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!Position\+Camera@{Position\+Camera}}
+\index{Position\+Camera@{Position\+Camera}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{Position\+Camera()}{PositionCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::\+Position\+Camera (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{pos,  }\item[{glm\+::vec3}]{view,  }\item[{glm\+::vec3}]{up }\end{DoxyParamCaption})}
+
+
+
+Sets the position, view and up for the camera. 
+
+The method will also normalize the view and up vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & --- Position vector. \\
+\hline
+{\em view} & --- View vector. \\
+\hline
+{\em up} & --- Up vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a2f84f79488d64b59bbed60af935b37cb}\label{class_y_p_r_camera_a2f84f79488d64b59bbed60af935b37cb}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{X,  }\item[{float}]{Y,  }\item[{float}]{Z }\end{DoxyParamCaption})}
+
+
+
+Sets the position for the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & --- X coordinate to the camera position. \\
+\hline
+{\em Y} & --- Y coordinate to the camera position. \\
+\hline
+{\em Z} & --- Z coordinate to the camera position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a2527de172c8ea8bcc5166a8e725219e9}\label{class_y_p_r_camera_a2527de172c8ea8bcc5166a8e725219e9}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::set\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{pos }\end{DoxyParamCaption})}
+
+
+
+Sets the position for the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & --- Position vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_ae8ae30855f7d97e28f21c4d6b80104cc}\label{class_y_p_r_camera_ae8ae30855f7d97e28f21c4d6b80104cc}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!set\+Up@{set\+Up}}
+\index{set\+Up@{set\+Up}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{set\+Up()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::set\+Up (\begin{DoxyParamCaption}\item[{float}]{X,  }\item[{float}]{Y,  }\item[{float}]{Z }\end{DoxyParamCaption})}
+
+
+
+Sets the up vector for the camera. 
+
+The method will also normalize the up vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & --- X coordinate to the up vector. \\
+\hline
+{\em Y} & --- Y coordinate to the up vector. \\
+\hline
+{\em Z} & --- Z coordinate to the up vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_ad3c0c7d126b03f4c2974cdbea1040ba4}\label{class_y_p_r_camera_ad3c0c7d126b03f4c2974cdbea1040ba4}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!set\+Up@{set\+Up}}
+\index{set\+Up@{set\+Up}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{set\+Up()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::set\+Up (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{up }\end{DoxyParamCaption})}
+
+
+
+Sets the up vector for the camera. 
+
+The method will also normalize the up vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em up} & --- Up vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a1f704e1375b335a01d6b8bb9affecce1}\label{class_y_p_r_camera_a1f704e1375b335a01d6b8bb9affecce1}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!set\+Up\+ViaY@{set\+Up\+ViaY}}
+\index{set\+Up\+ViaY@{set\+Up\+ViaY}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{set\+Up\+Via\+Y()}{setUpViaY()}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::set\+Up\+ViaY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the up vector for the camera in the positive y direction. 
+
+This method will also normalize the up vector and keep it orthogonal to the viewing vector. \mbox{\Hypertarget{class_y_p_r_camera_a18213984138d7dd35a8434cf80b8acb0}\label{class_y_p_r_camera_a18213984138d7dd35a8434cf80b8acb0}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!set\+View@{set\+View}}
+\index{set\+View@{set\+View}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{set\+View()}{setView()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::set\+View (\begin{DoxyParamCaption}\item[{float}]{X,  }\item[{float}]{Y,  }\item[{float}]{Z }\end{DoxyParamCaption})}
+
+
+
+Sets the view vector for the camera. 
+
+The method will also normalize the view vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & --- X coordinate to the viewing vector. \\
+\hline
+{\em Y} & --- Y coordinate to the viewing vector. \\
+\hline
+{\em Z} & --- Z coordinate to the viewing vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_y_p_r_camera_a9ec16fa6a9421d69fb97f66ee9ba7d03}\label{class_y_p_r_camera_a9ec16fa6a9421d69fb97f66ee9ba7d03}} 
+\index{Y\+P\+R\+Camera@{Y\+P\+R\+Camera}!set\+View@{set\+View}}
+\index{set\+View@{set\+View}!Y\+P\+R\+Camera@{Y\+P\+R\+Camera}}
+\subsubsection{\texorpdfstring{set\+View()}{setView()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Y\+P\+R\+Camera\+::set\+View (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{view }\end{DoxyParamCaption})}
+
+
+
+Sets the view vector for the camera. 
+
+The method will also normalize the view vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & --- View vector. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_y_p_r_camera_8h}{Y\+P\+R\+Camera.\+h}\item 
+\hyperlink{_y_p_r_camera_8cpp}{Y\+P\+R\+Camera.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\hypertarget{class_shape}{}\section{Shape Class Reference}
+\label{class_shape}\index{Shape@{Shape}}
+
+
+The \hyperlink{class_shape}{Shape} class is the base class for the shapes we will be using in the scene. Shapes that will be used will be derived from this class, making graphing code a little cleaner.  
+
+
+
+
+{\ttfamily \#include $<$Shape.\+h$>$}
+
+
+
+Inheritance diagram for Shape\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shape_aaa8d87171e65e0d8ba3c5459978992a7}{Shape} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_a935afc9e576015f967d90de56977167d}\label{class_shape_a935afc9e576015f967d90de56977167d}} 
+\hyperlink{class_shape_a935afc9e576015f967d90de56977167d}{$\sim$\+Shape} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_a7f3122c854e63aa880cc7f2a7323a75d}\label{class_shape_a7f3122c854e63aa880cc7f2a7323a75d}} 
+virtual void {\bfseries Load\+Data\+To\+Graphics\+Card} ()=0
+\item 
+\mbox{\Hypertarget{class_shape_afacc5aad8e37308c3ce8fef768199b05}\label{class_shape_afacc5aad8e37308c3ce8fef768199b05}} 
+virtual void {\bfseries draw} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_shape}{Shape} class is the base class for the shapes we will be using in the scene. Shapes that will be used will be derived from this class, making graphing code a little cleaner. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_shape_aaa8d87171e65e0d8ba3c5459978992a7}\label{class_shape_aaa8d87171e65e0d8ba3c5459978992a7}} 
+\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{Shape()}{Shape()}}
+{\footnotesize\ttfamily Shape\+::\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Base constructor, since there are pure virtual methods in this class, \hyperlink{class_shape}{Shape} objects cannot be instantiated. The derived classes must override all pure virtual methods and object of those types are to be instantiated. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_shape_8h}{Shape.\+h}\item 
+\hyperlink{_shape_8cpp}{Shape.\+cpp}\end{DoxyCompactItemize}

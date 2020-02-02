@@ -1,0 +1,431 @@
+\hypertarget{class_graphics_engine}{}\section{Graphics\+Engine Class Reference}
+\label{class_graphics_engine}\index{Graphics\+Engine@{Graphics\+Engine}}
+
+
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program.  
+
+
+
+
+{\ttfamily \#include $<$Graphics\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Graphics\+Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Graphics\+Engine\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}{Graphics\+Engine} (std\+::string title=\char`\"{}Open\+GL Window\char`\"{}, G\+Lint Major\+Ver=3, G\+Lint Minor\+Ver=3, int width=600, int height=600)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}{$\sim$\+Graphics\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}{display} ()
+\begin{DoxyCompactList}\small\item\em The function responsible for drawing to the Open\+GL frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}\label{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}} 
+void \hyperlink{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}{change\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Changes the fill and line mode being used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}\label{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}} 
+void \hyperlink{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}{screenshot} ()
+\begin{DoxyCompactList}\small\item\em Saves a screenshot of the current display to a file, Screen\+Shot\#\#\#.png. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}{resize} ()
+\begin{DoxyCompactList}\small\item\em Handles the resizing events of the window. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}{set\+Size} (unsigned int, unsigned int)
+\begin{DoxyCompactList}\small\item\em Sets the size of the rendering window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a95a17b256079f26ca2b73ec3210317d2}\label{class_graphics_engine_a95a17b256079f26ca2b73ec3210317d2}} 
+G\+Lfloat $\ast$ {\bfseries get\+Screen\+Bounds} ()
+\item 
+void \hyperlink{class_graphics_engine_abc1591d1873ad66188c5b7613606e8ab}{set\+Draw\+Axes} (G\+Lboolean b)
+\begin{DoxyCompactList}\small\item\em Sets the boolean to draw the axes or not. \end{DoxyCompactList}\item 
+G\+Lboolean \hyperlink{class_graphics_engine_a45375adf56d4769b0f33206dc760a1f6}{is\+Spherical\+Camera\+On} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the spherical camera is currently in use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a82227c52191595cf7ca7aaea82396a01}\label{class_graphics_engine_a82227c52191595cf7ca7aaea82396a01}} 
+void \hyperlink{class_graphics_engine_a82227c52191595cf7ca7aaea82396a01}{set\+Spherical\+Camera\+On} ()
+\begin{DoxyCompactList}\small\item\em Turns the spherical camera on. \end{DoxyCompactList}\item 
+G\+Lboolean \hyperlink{class_graphics_engine_a8ed6b779b8696620241ba701afd6de67}{is\+Y\+P\+R\+Camera\+On} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the yaw-\/pitch-\/roll camera is currently in use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a322229c8ad08ee37b26c047761ca7b80}\label{class_graphics_engine_a322229c8ad08ee37b26c047761ca7b80}} 
+void \hyperlink{class_graphics_engine_a322229c8ad08ee37b26c047761ca7b80}{set\+Y\+P\+R\+Camera\+On} ()
+\begin{DoxyCompactList}\small\item\em Turns the Y\+PR camera on. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a687536e27a54ba4abc38db5630b5b2cb}{load\+Light} (\hyperlink{class_light}{Light} Lt)
+\begin{DoxyCompactList}\small\item\em Loads the light structure to the shader light structure. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a0c2bb113161925bee3fd440b8425f3c3}{load\+Material} (\hyperlink{class_material}{Material} Mat)
+\begin{DoxyCompactList}\small\item\em Loads the material structure to the shader material structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a8f7e4cd6c3ff99709e82afca13732737}\label{class_graphics_engine_a8f7e4cd6c3ff99709e82afca13732737}} 
+void \hyperlink{class_graphics_engine_a8f7e4cd6c3ff99709e82afca13732737}{turn\+Light\+On} ()
+\begin{DoxyCompactList}\small\item\em Turns the light on. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a050412ce3708afcbedb4eb3af999dacc}\label{class_graphics_engine_a050412ce3708afcbedb4eb3af999dacc}} 
+void \hyperlink{class_graphics_engine_a050412ce3708afcbedb4eb3af999dacc}{turn\+Light\+Off} ()
+\begin{DoxyCompactList}\small\item\em Turns the light off. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a72154214616a1799e1670451586c3983}{turn\+Light\+On} (std\+::string name, int i)
+\begin{DoxyCompactList}\small\item\em Turns the light at index i on. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_adb11cc7d06a8fa721d2037791297f102}{turn\+Light\+Off} (std\+::string name, int i)
+\begin{DoxyCompactList}\small\item\em Turns the light at index i off. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_aa518c204407c9d1b380d200ef79952f1}{turn\+Lights\+On} (std\+::string name, int num)
+\begin{DoxyCompactList}\small\item\em Turns the first num lights on. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_adc787f919c16eda96ec6709f669ee718}{turn\+Lights\+Off} (std\+::string name, int num)
+\begin{DoxyCompactList}\small\item\em Turns the first num lights off. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a13a43684e7a53ff0c39b7ef014a8d121}{turn\+Textures\+Off} (std\+::string name, int num)
+\begin{DoxyCompactList}\small\item\em Turns the first num textures off. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a93d13fafc47d86e42a2d62b874af152d}{turn\+Textures\+On} (std\+::string name, int num)
+\begin{DoxyCompactList}\small\item\em Turns the first num textures on. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a26a9223f0a99980ca872a3dc0ab940e4}{turn\+Texture\+Off} (std\+::string name, int i)
+\begin{DoxyCompactList}\small\item\em Turns the ith texture off. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a87f26e8a7fb01b6e317ced365cda1e80}{turn\+Texture\+On} (std\+::string name, int i)
+\begin{DoxyCompactList}\small\item\em Turns the ith texture on. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a5e58164b2274911a7f7d0f963195a558}\label{class_graphics_engine_a5e58164b2274911a7f7d0f963195a558}} 
+void \hyperlink{class_graphics_engine_a5e58164b2274911a7f7d0f963195a558}{toggle\+Draw\+Axes} ()
+\begin{DoxyCompactList}\small\item\em Toggles the boolean to draw the axes or not. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a269f114b7d1b964401074213e5145f47}{Load\+Lights} (\hyperlink{class_light}{Light} Lt\mbox{[}$\,$\mbox{]}, std\+::string name, int num)
+\begin{DoxyCompactList}\small\item\em Loads the first num entries of a light array to the a light array in the shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_ab58f167e0bd7aa6cfd59ad31b01ac4fd}{Load\+Light} (\hyperlink{class_light}{Light} Lt, std\+::string name, int i)
+\begin{DoxyCompactList}\small\item\em Loads a single light into a light array in the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_ad7ed9774587ef174dde420779153d7a0}\label{class_graphics_engine_ad7ed9774587ef174dde420779153d7a0}} 
+\hyperlink{class_spherical_camera}{Spherical\+Camera} $\ast$ {\bfseries get\+Lt\+Pos} ()
+\item 
+\mbox{\Hypertarget{class_graphics_engine_a08fa5ea5485b0bab2d902dd71ac995d9}\label{class_graphics_engine_a08fa5ea5485b0bab2d902dd71ac995d9}} 
+\hyperlink{class_spherical_camera}{Spherical\+Camera} $\ast$ \hyperlink{class_graphics_engine_a08fa5ea5485b0bab2d902dd71ac995d9}{get\+Spherical\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the spherical camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a99c1b6f36ce3c8e02cba2a97b08eab05}\label{class_graphics_engine_a99c1b6f36ce3c8e02cba2a97b08eab05}} 
+\hyperlink{class_y_p_r_camera}{Y\+P\+R\+Camera} $\ast$ \hyperlink{class_graphics_engine_a99c1b6f36ce3c8e02cba2a97b08eab05}{get\+Y\+P\+R\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the yaw-\/pitch-\/roll camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_ac8cb20a22155745d4478c39b2111bc48}\label{class_graphics_engine_ac8cb20a22155745d4478c39b2111bc48}} 
+void \hyperlink{class_graphics_engine_ac8cb20a22155745d4478c39b2111bc48}{texture\+Off} ()
+\begin{DoxyCompactList}\small\item\em Turns the texture on if it\textquotesingle{}s off and off if it\textquotesingle{}s on. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a64dff44b20167f494efe05fdfe8351d0}\label{class_graphics_engine_a64dff44b20167f494efe05fdfe8351d0}} 
+void \hyperlink{class_graphics_engine_a64dff44b20167f494efe05fdfe8351d0}{light\+Off} ()
+\begin{DoxyCompactList}\small\item\em Turns the lighting on if it\textquotesingle{}s off and off if it\textquotesingle{}s on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}\label{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{Graphics\+Engine()}{GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::\+Graphics\+Engine (\begin{DoxyParamCaption}\item[{std\+::string}]{title = {\ttfamily \char`\"{}OpenGL~Window\char`\"{}},  }\item[{G\+Lint}]{Major\+Ver = {\ttfamily 3},  }\item[{G\+Lint}]{Minor\+Ver = {\ttfamily 3},  }\item[{int}]{width = {\ttfamily 600},  }\item[{int}]{height = {\ttfamily 600} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & --- Title to be placed in the titlebar of the graphics window. \\
+\hline
+{\em Major\+Ver} & --- The Open\+GL major version that is requested. \\
+\hline
+{\em Minor\+Ver} & --- The Open\+GL minor version that is requested. \\
+\hline
+{\em width} & --- The width (in pixels) of the graphics window. \\
+\hline
+{\em height} & --- The height (in pixels) of the graphics window.\\
+\hline
+\end{DoxyParams}
+Creates rendering window, loads the shaders, and sets some initial data settings. \mbox{\Hypertarget{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}\label{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}}
+\index{````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Graphics\+Engine()}{~GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::$\sim$\+Graphics\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Currently empty, no allocated memory to clear. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}\label{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!display@{display}}
+\index{display@{display}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function responsible for drawing to the Open\+GL frame buffer. 
+
+This function clears the screen and calls the draw functions of the box and circle. \mbox{\Hypertarget{class_graphics_engine_a45375adf56d4769b0f33206dc760a1f6}\label{class_graphics_engine_a45375adf56d4769b0f33206dc760a1f6}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!is\+Spherical\+Camera\+On@{is\+Spherical\+Camera\+On}}
+\index{is\+Spherical\+Camera\+On@{is\+Spherical\+Camera\+On}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{is\+Spherical\+Camera\+On()}{isSphericalCameraOn()}}
+{\footnotesize\ttfamily G\+Lboolean Graphics\+Engine\+::is\+Spherical\+Camera\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the spherical camera is currently in use. 
+
+\begin{DoxyReturn}{Returns}
+True if the spherical camera is currently in use and false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graphics_engine_a8ed6b779b8696620241ba701afd6de67}\label{class_graphics_engine_a8ed6b779b8696620241ba701afd6de67}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!is\+Y\+P\+R\+Camera\+On@{is\+Y\+P\+R\+Camera\+On}}
+\index{is\+Y\+P\+R\+Camera\+On@{is\+Y\+P\+R\+Camera\+On}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{is\+Y\+P\+R\+Camera\+On()}{isYPRCameraOn()}}
+{\footnotesize\ttfamily G\+Lboolean Graphics\+Engine\+::is\+Y\+P\+R\+Camera\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the yaw-\/pitch-\/roll camera is currently in use. 
+
+\begin{DoxyReturn}{Returns}
+True if the yaw-\/pitch-\/roll camera is currently in use and false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graphics_engine_a687536e27a54ba4abc38db5630b5b2cb}\label{class_graphics_engine_a687536e27a54ba4abc38db5630b5b2cb}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!load\+Light@{load\+Light}}
+\index{load\+Light@{load\+Light}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{load\+Light()}{loadLight()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::load\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{class_light}{Light}}]{Lt }\end{DoxyParamCaption})}
+
+
+
+Loads the light structure to the shader light structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Lt} & --- \hyperlink{class_light}{Light} structure to load. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_ab58f167e0bd7aa6cfd59ad31b01ac4fd}\label{class_graphics_engine_ab58f167e0bd7aa6cfd59ad31b01ac4fd}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!Load\+Light@{Load\+Light}}
+\index{Load\+Light@{Load\+Light}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{Load\+Light()}{LoadLight()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::\+Load\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{class_light}{Light}}]{Lt,  }\item[{std\+::string}]{name,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Loads a single light into a light array in the shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Lt} & --- \hyperlink{class_light}{Light} to load.\\
+\hline
+{\em name} & --- The name of the array in the shader.\\
+\hline
+{\em i} & --- The index of the light to load. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a269f114b7d1b964401074213e5145f47}\label{class_graphics_engine_a269f114b7d1b964401074213e5145f47}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!Load\+Lights@{Load\+Lights}}
+\index{Load\+Lights@{Load\+Lights}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{Load\+Lights()}{LoadLights()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::\+Load\+Lights (\begin{DoxyParamCaption}\item[{\hyperlink{class_light}{Light}}]{Lt\mbox{[}$\,$\mbox{]},  }\item[{std\+::string}]{name,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Loads the first num entries of a light array to the a light array in the shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Lt} & --- \hyperlink{class_light}{Light} array to load.\\
+\hline
+{\em name} & --- The name of the array in the shader.\\
+\hline
+{\em i} & --- The number of lights to load. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a0c2bb113161925bee3fd440b8425f3c3}\label{class_graphics_engine_a0c2bb113161925bee3fd440b8425f3c3}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!load\+Material@{load\+Material}}
+\index{load\+Material@{load\+Material}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{load\+Material()}{loadMaterial()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::load\+Material (\begin{DoxyParamCaption}\item[{\hyperlink{class_material}{Material}}]{Mat }\end{DoxyParamCaption})}
+
+
+
+Loads the material structure to the shader material structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Mat} & --- \hyperlink{class_material}{Material} structure to load. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}\label{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!resize@{resize}}
+\index{resize@{resize}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::resize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the resizing events of the window. 
+
+Sets the viewport to the entire screen and recalculates the projection matrix. \mbox{\Hypertarget{class_graphics_engine_abc1591d1873ad66188c5b7613606e8ab}\label{class_graphics_engine_abc1591d1873ad66188c5b7613606e8ab}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Draw\+Axes@{set\+Draw\+Axes}}
+\index{set\+Draw\+Axes@{set\+Draw\+Axes}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Draw\+Axes()}{setDrawAxes()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Draw\+Axes (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the boolean to draw the axes or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & --- Draws the axes if true and not if false. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}\label{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Size()}{setSize()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Size (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets the size of the rendering window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & --- the width in pixels of the new size.\\
+\hline
+{\em height} & --- the height in pixels of the new size. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_adb11cc7d06a8fa721d2037791297f102}\label{class_graphics_engine_adb11cc7d06a8fa721d2037791297f102}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!turn\+Light\+Off@{turn\+Light\+Off}}
+\index{turn\+Light\+Off@{turn\+Light\+Off}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{turn\+Light\+Off()}{turnLightOff()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::turn\+Light\+Off (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Turns the light at index i off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & --- The name of the array in the shader.\\
+\hline
+{\em i} & --- The index of the light to turn off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a72154214616a1799e1670451586c3983}\label{class_graphics_engine_a72154214616a1799e1670451586c3983}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!turn\+Light\+On@{turn\+Light\+On}}
+\index{turn\+Light\+On@{turn\+Light\+On}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{turn\+Light\+On()}{turnLightOn()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::turn\+Light\+On (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Turns the light at index i on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & --- The name of the array in the shader.\\
+\hline
+{\em i} & --- The index of the light to turn on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_adc787f919c16eda96ec6709f669ee718}\label{class_graphics_engine_adc787f919c16eda96ec6709f669ee718}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!turn\+Lights\+Off@{turn\+Lights\+Off}}
+\index{turn\+Lights\+Off@{turn\+Lights\+Off}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{turn\+Lights\+Off()}{turnLightsOff()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::turn\+Lights\+Off (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Turns the first num lights off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & --- The name of the array in the shader.\\
+\hline
+{\em num} & --- Number of lights to turn off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_aa518c204407c9d1b380d200ef79952f1}\label{class_graphics_engine_aa518c204407c9d1b380d200ef79952f1}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!turn\+Lights\+On@{turn\+Lights\+On}}
+\index{turn\+Lights\+On@{turn\+Lights\+On}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{turn\+Lights\+On()}{turnLightsOn()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::turn\+Lights\+On (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Turns the first num lights on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & --- The name of the array in the shader.\\
+\hline
+{\em num} & --- Number of lights to turn on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a26a9223f0a99980ca872a3dc0ab940e4}\label{class_graphics_engine_a26a9223f0a99980ca872a3dc0ab940e4}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!turn\+Texture\+Off@{turn\+Texture\+Off}}
+\index{turn\+Texture\+Off@{turn\+Texture\+Off}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{turn\+Texture\+Off()}{turnTextureOff()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::turn\+Texture\+Off (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Turns the ith texture off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & --- The name of the boolean texture array in the shader.\\
+\hline
+{\em i} & --- Number of the texture to turn off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a87f26e8a7fb01b6e317ced365cda1e80}\label{class_graphics_engine_a87f26e8a7fb01b6e317ced365cda1e80}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!turn\+Texture\+On@{turn\+Texture\+On}}
+\index{turn\+Texture\+On@{turn\+Texture\+On}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{turn\+Texture\+On()}{turnTextureOn()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::turn\+Texture\+On (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Turns the ith texture on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & --- The name of the boolean texture array in the shader.\\
+\hline
+{\em i} & --- Number of the texture to turn on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a13a43684e7a53ff0c39b7ef014a8d121}\label{class_graphics_engine_a13a43684e7a53ff0c39b7ef014a8d121}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!turn\+Textures\+Off@{turn\+Textures\+Off}}
+\index{turn\+Textures\+Off@{turn\+Textures\+Off}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{turn\+Textures\+Off()}{turnTexturesOff()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::turn\+Textures\+Off (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Turns the first num textures off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & --- The name of the boolean texture array in the shader.\\
+\hline
+{\em num} & --- Number of textures to turn off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a93d13fafc47d86e42a2d62b874af152d}\label{class_graphics_engine_a93d13fafc47d86e42a2d62b874af152d}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!turn\+Textures\+On@{turn\+Textures\+On}}
+\index{turn\+Textures\+On@{turn\+Textures\+On}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{turn\+Textures\+On()}{turnTexturesOn()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::turn\+Textures\+On (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Turns the first num textures on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & --- The name of the boolean texture array in the shader.\\
+\hline
+{\em num} & --- Number of textures to turn on. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_graphics_engine_8h}{Graphics\+Engine.\+h}\item 
+\hyperlink{_graphics_engine_8cpp}{Graphics\+Engine.\+cpp}\end{DoxyCompactItemize}

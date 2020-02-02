@@ -1,0 +1,195 @@
+\hypertarget{class_graphics_engine}{}\section{Graphics\+Engine Class Reference}
+\label{class_graphics_engine}\index{Graphics\+Engine@{Graphics\+Engine}}
+
+
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program.  
+
+
+
+
+{\ttfamily \#include $<$Graphics\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Graphics\+Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Graphics\+Engine\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}{Graphics\+Engine} (std\+::string title=\char`\"{}Open\+GL Window\char`\"{}, G\+Lint Major\+Ver=3, G\+Lint Minor\+Ver=3, int width=600, int height=600)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}{$\sim$\+Graphics\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a788be2ee3b219fe44ca484a9a4e3d21f}\label{class_graphics_engine_a788be2ee3b219fe44ca484a9a4e3d21f}} 
+void {\bfseries init} ()
+\item 
+void \hyperlink{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}{display} ()
+\begin{DoxyCompactList}\small\item\em The function responsible for drawing to the Open\+GL frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}\label{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}} 
+void \hyperlink{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}{change\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Changes the fill, line, and point mode being used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}\label{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}} 
+void \hyperlink{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}{screenshot} ()
+\begin{DoxyCompactList}\small\item\em Saves a screenshot of the current display to a file, Screen\+Shot\#\#\#.png. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}\label{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}} 
+void \hyperlink{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}{resize} ()
+\begin{DoxyCompactList}\small\item\em Handles the resizing events of the window. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}{set\+Size} (unsigned int, unsigned int)
+\begin{DoxyCompactList}\small\item\em Sets the size of the rendering window. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_ac5de239348a9c4acb443bb83eb15bab0}{generate\+Star} (int starno, int shooting)
+\begin{DoxyCompactList}\small\item\em This function generates one star with the random attributes discussed earlier (stored in the parallel data vector). Adds generated star into the graphics engine vector of stars to be drawn to the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_afb6a448f4f0ea2b5ea0a8c267e9068db}\label{class_graphics_engine_afb6a448f4f0ea2b5ea0a8c267e9068db}} 
+void {\bfseries generate\+Circle} ()
+\item 
+\mbox{\Hypertarget{class_graphics_engine_a02286410101311de4b82597dadf7ee8c}\label{class_graphics_engine_a02286410101311de4b82597dadf7ee8c}} 
+void {\bfseries flip\+Rotation} ()
+\item 
+\mbox{\Hypertarget{class_graphics_engine_a848a13a398511272c1ae33de7f072cad}\label{class_graphics_engine_a848a13a398511272c1ae33de7f072cad}} 
+void {\bfseries flip\+Direction} ()
+\item 
+\mbox{\Hypertarget{class_graphics_engine_ad08e9c3cefa14b160d478520b3f9b376}\label{class_graphics_engine_ad08e9c3cefa14b160d478520b3f9b376}} 
+void \hyperlink{class_graphics_engine_ad08e9c3cefa14b160d478520b3f9b376}{set\+Projection\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Takes care of the aspect ratio projection matrix, using screen bounds. This is mainly Dr. Spickler\textquotesingle{}s work. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a06253e3976fa7b6436f58ec3f472de15}\label{class_graphics_engine_a06253e3976fa7b6436f58ec3f472de15}} 
+void \hyperlink{class_graphics_engine_a06253e3976fa7b6436f58ec3f472de15}{print\+\_\+\+G\+L\+M\+\_\+\+Matrix} (glm\+::mat4 m)
+\begin{DoxyCompactList}\small\item\em Prints the matrix passed to it. For now, program only prints out the projection matrix for the asp ratio. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a13a43684e7a53ff0c39b7ef014a8d121}\label{class_graphics_engine_a13a43684e7a53ff0c39b7ef014a8d121}} 
+void {\bfseries turn\+Textures\+Off} (std\+::string name, int num)
+\item 
+\mbox{\Hypertarget{class_graphics_engine_a93d13fafc47d86e42a2d62b874af152d}\label{class_graphics_engine_a93d13fafc47d86e42a2d62b874af152d}} 
+void {\bfseries turn\+Textures\+On} (std\+::string name, int num)
+\item 
+\mbox{\Hypertarget{class_graphics_engine_a26a9223f0a99980ca872a3dc0ab940e4}\label{class_graphics_engine_a26a9223f0a99980ca872a3dc0ab940e4}} 
+void {\bfseries turn\+Texture\+Off} (std\+::string name, int i)
+\item 
+\mbox{\Hypertarget{class_graphics_engine_a87f26e8a7fb01b6e317ced365cda1e80}\label{class_graphics_engine_a87f26e8a7fb01b6e317ced365cda1e80}} 
+void {\bfseries turn\+Texture\+On} (std\+::string name, int i)
+\item 
+\mbox{\Hypertarget{class_graphics_engine_a4cc56f747711a78908a66eed17ac186b}\label{class_graphics_engine_a4cc56f747711a78908a66eed17ac186b}} 
+void {\bfseries stop\+Rotation} ()
+\item 
+\mbox{\Hypertarget{class_graphics_engine_acbb4b9f37d9104699c1e6178945b5150}\label{class_graphics_engine_acbb4b9f37d9104699c1e6178945b5150}} 
+void \hyperlink{class_graphics_engine_acbb4b9f37d9104699c1e6178945b5150}{cycle\+Textures} ()
+\begin{DoxyCompactList}\small\item\em This function cycles through different textures on the planets. turn\+Texture\+On is called with these variables. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a5eb7749f275f0351cef181eafd217d6f}\label{class_graphics_engine_a5eb7749f275f0351cef181eafd217d6f}} 
+void \hyperlink{class_graphics_engine_a5eb7749f275f0351cef181eafd217d6f}{freeze\+Planets} ()
+\begin{DoxyCompactList}\small\item\em This function simply freeze the planets in their current position, the textures on the planets keep spinning. So the planets stop rotating around the sun, but keep rotating on their own axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a4ef85106db546a32e10e246c8e047d49}\label{class_graphics_engine_a4ef85106db546a32e10e246c8e047d49}} 
+void \hyperlink{class_graphics_engine_a4ef85106db546a32e10e246c8e047d49}{update\+Shooting\+Star} ()
+\begin{DoxyCompactList}\small\item\em This function is responsible for drawing the shooting stars and determining where they are, and playing the sound effect. The shooting star is really two stars with different numbers of points overlayed on top of each other. One star has 7 points and one has 15. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_aa246f8e379edd8bdc76b4b059ba88037}\label{class_graphics_engine_aa246f8e379edd8bdc76b4b059ba88037}} 
+void \hyperlink{class_graphics_engine_aa246f8e379edd8bdc76b4b059ba88037}{draw\+Planets} ()
+\begin{DoxyCompactList}\small\item\em This function draws all of the planets and their textures including the sun. All transformations and texturing take place here. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_aa55064f8007d7b16979712fa4c3973fa}\label{class_graphics_engine_aa55064f8007d7b16979712fa4c3973fa}} 
+void \hyperlink{class_graphics_engine_aa55064f8007d7b16979712fa4c3973fa}{draw\+Free\+Type} ()
+\begin{DoxyCompactList}\small\item\em There is some freetype in the program, this function draws it to the screen. Some text is always drawn, some text is only drawn when a shooting star appears. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}\label{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{Graphics\+Engine()}{GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::\+Graphics\+Engine (\begin{DoxyParamCaption}\item[{std\+::string}]{title = {\ttfamily \char`\"{}OpenGL~Window\char`\"{}},  }\item[{G\+Lint}]{Major\+Ver = {\ttfamily 3},  }\item[{G\+Lint}]{Minor\+Ver = {\ttfamily 3},  }\item[{int}]{width = {\ttfamily 600},  }\item[{int}]{height = {\ttfamily 600} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & --- Title to be placed in the titlebar of the graphics window. \\
+\hline
+{\em Major\+Ver} & --- The Open\+GL major version that is requested. \\
+\hline
+{\em Minor\+Ver} & --- The Open\+GL minor version that is requested. \\
+\hline
+{\em width} & --- The width (in pixels) of the graphics window. \\
+\hline
+{\em height} & --- The height (in pixels) of the graphics window.\\
+\hline
+\end{DoxyParams}
+Creates rendering window, enables G\+L\+EW, loads the shaders, and sets some initial data settings. Also sets texturing things up, sets up the sound effect, loads in a freetype font. \mbox{\Hypertarget{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}\label{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}}
+\index{````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Graphics\+Engine()}{~GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::$\sim$\+Graphics\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Currently empty, no allocated memory to clear. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}\label{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!display@{display}}
+\index{display@{display}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function responsible for drawing to the Open\+GL frame buffer. 
+
+Draws the shooting stars, planets, and background. Also prints the freetype. \begin{quote}
+Wireframe would not work regularly as in all other programs, so added this line to fix it. \end{quote}
+
+
+\begin{quote}
+Update position of shooting star if there is one currently and draw it, play sound \end{quote}
+
+
+\begin{quote}
+Draw all planets and their transformations and textures at the current time \end{quote}
+
+
+$>$Draw the background
+
+\begin{quote}
+draw all of the freetype, for shooting stars and texture cycling \end{quote}
+\mbox{\Hypertarget{class_graphics_engine_ac5de239348a9c4acb443bb83eb15bab0}\label{class_graphics_engine_ac5de239348a9c4acb443bb83eb15bab0}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!generate\+Star@{generate\+Star}}
+\index{generate\+Star@{generate\+Star}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{generate\+Star()}{generateStar()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::generate\+Star (\begin{DoxyParamCaption}\item[{int}]{starno,  }\item[{int}]{shooting }\end{DoxyParamCaption})}
+
+
+
+This function generates one star with the random attributes discussed earlier (stored in the parallel data vector). Adds generated star into the graphics engine vector of stars to be drawn to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & --- Current time from the anim\+Clock. Since each star has a different start time. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}\label{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Size()}{setSize()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Size (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets the size of the rendering window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & --- the width in pixels of the new size.\\
+\hline
+{\em height} & --- the height in pixels of the new size. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_graphics_engine_8h}{Graphics\+Engine.\+h}\item 
+\hyperlink{_graphics_engine_8cpp}{Graphics\+Engine.\+cpp}\end{DoxyCompactItemize}

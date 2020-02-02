@@ -1,0 +1,95 @@
+# depslib dependency file v1.0
+1516011872 source:/home/rclocker1/Graphics/HW6/BoxAnimations/Axes.cpp
+	"Axes.h"
+
+1515990034 /home/rclocker1/Graphics/HW6/BoxAnimations/Axes.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1553273398 /home/rclocker1/Graphics/HW6/BoxAnimations/ProgramDefines.h
+
+1515992974 source:/home/rclocker1/Graphics/HW6/BoxAnimations/Cube.cpp
+	"Cube.h"
+
+1515990098 /home/rclocker1/Graphics/HW6/BoxAnimations/Cube.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1553811696 source:/home/rclocker1/Graphics/HW6/BoxAnimations/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+
+1553741173 /home/rclocker1/Graphics/HW6/BoxAnimations/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	"LoadShaders.h"
+	"Cube.h"
+	"ProgramDefines.h"
+	"SphericalCamera.h"
+	"YPRCamera.h"
+	"Axes.h"
+
+1514175394 /home/rclocker1/Graphics/HW6/BoxAnimations/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1516237996 /home/rclocker1/Graphics/HW6/BoxAnimations/SphericalCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<math.h>
+	"ProgramDefines.h"
+
+1516466034 /home/rclocker1/Graphics/HW6/BoxAnimations/YPRCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1514174390 source:/home/rclocker1/Graphics/HW6/BoxAnimations/LoadShaders.cpp
+	"LoadShaders.h"
+
+1553739894 source:/home/rclocker1/Graphics/HW6/BoxAnimations/main.cpp
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1555348041 /home/rclocker1/Graphics/HW6/BoxAnimations/UI.h
+	"GraphicsEngine.h"
+
+1516238648 source:/home/rclocker1/Graphics/HW6/BoxAnimations/SphericalCamera.cpp
+	"SphericalCamera.h"
+
+1553741292 source:/home/rclocker1/Graphics/HW6/BoxAnimations/UI.cpp
+	"UI.h"
+
+1516466086 source:/home/rclocker1/Graphics/HW6/BoxAnimations/YPRCamera.cpp
+	"YPRCamera.h"
+

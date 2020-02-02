@@ -1,0 +1,150 @@
+\hypertarget{class_circle}{}\section{Circle Class Reference}
+\label{class_circle}\index{Circle@{Circle}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_circle_ad1ecfcfc7bf34529c6a6d6c448bf70fe}{Circle} ()
+\begin{DoxyCompactList}\small\item\em $<$ Doxygen for these can be found in their cpp file\textquotesingle{}s doxygen. \end{DoxyCompactList}\item 
+\hyperlink{class_circle_ae3f30436e645d73e368e8ee55f8d1650}{$\sim$\+Circle} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_circle_aff9da6b79474e41dd5fd20371f50569a}{set\+Radius} (G\+Lfloat r)
+\begin{DoxyCompactList}\small\item\em Set box width. \end{DoxyCompactList}\item 
+void \hyperlink{class_circle_a0551366b41fb5426823aa9386f3125f8}{set\+Center} (G\+Lfloat cx, G\+Lfloat cy)
+\begin{DoxyCompactList}\small\item\em Resets the center of the bubble. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_circle_a007cf8fdd4c837ff9d5a92033857c3d7}\label{class_circle_a007cf8fdd4c837ff9d5a92033857c3d7}} 
+G\+Lfloat \hyperlink{class_circle_a007cf8fdd4c837ff9d5a92033857c3d7}{get\+Radius} ()
+\begin{DoxyCompactList}\small\item\em Returns the radius of the circle. \end{DoxyCompactList}\item 
+void \hyperlink{class_circle_a7c01c9166df7a3db41d4e394f18410bd}{get\+Center} (G\+Lfloat $\ast$c)
+\begin{DoxyCompactList}\small\item\em Populates the array c with the (x, y) coordinates of the center. \end{DoxyCompactList}\item 
+void \hyperlink{class_circle_aebc11befca4806e04f9725c57a76a0cf}{get\+Position} (G\+Lfloat $\ast$c)
+\begin{DoxyCompactList}\small\item\em Populates the array c with the (x, y) coordinates of the last position of circle. \end{DoxyCompactList}\item 
+G\+Lint \hyperlink{class_circle_a7f9f6e7dee819efdd05080d1328b15e5}{update\+Position} (float time, G\+Lfloat bounds\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Updating circle position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_circle_a3372f116baa8ab09197214594dab0aea}\label{class_circle_a3372f116baa8ab09197214594dab0aea}} 
+void {\bfseries check\+Bounce} ()
+\item 
+\mbox{\Hypertarget{class_circle_a3a3f7166e7f629e44f9044b0e537eb22}\label{class_circle_a3a3f7166e7f629e44f9044b0e537eb22}} 
+void \hyperlink{class_circle_a3a3f7166e7f629e44f9044b0e537eb22}{draw} ()
+\begin{DoxyCompactList}\small\item\em Draws the rectangle to the Open\+GL window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_circle_a12598f697241259de764ddb342b9932a}\label{class_circle_a12598f697241259de764ddb342b9932a}} 
+G\+Lfloat \hyperlink{class_circle_a12598f697241259de764ddb342b9932a}{get\+ScaleF} ()
+\begin{DoxyCompactList}\small\item\em Returns scale factor of a circle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circle_a06bdeac23b4fb3a92cb63fcf91866aef}\label{class_circle_a06bdeac23b4fb3a92cb63fcf91866aef}} 
+G\+Lfloat {\bfseries previous\+TransX} = 0
+\item 
+\mbox{\Hypertarget{class_circle_a3672aa432dddeffcc39335ad71887692}\label{class_circle_a3672aa432dddeffcc39335ad71887692}} 
+G\+Lfloat {\bfseries previous\+TransY} = 0
+\item 
+\mbox{\Hypertarget{class_circle_a3d858c2ca9d07e845534918cf2a6d09b}\label{class_circle_a3d858c2ca9d07e845534918cf2a6d09b}} 
+glm\+::vec4 {\bfseries color\+Vec}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_circle_ad1ecfcfc7bf34529c6a6d6c448bf70fe}\label{class_circle_ad1ecfcfc7bf34529c6a6d6c448bf70fe}} 
+\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{Circle()}{Circle()}}
+{\footnotesize\ttfamily Circle\+::\+Circle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$ Doxygen for these can be found in their cpp file\textquotesingle{}s doxygen. 
+
+Constructor Sets up a circle with a random scaling factor, color\+Vec to send to fragment shader when it bounces, speed vector, etc.
+
+Also loads data to graphics card. \mbox{\Hypertarget{class_circle_ae3f30436e645d73e368e8ee55f8d1650}\label{class_circle_ae3f30436e645d73e368e8ee55f8d1650}} 
+\index{Circle@{Circle}!````~Circle@{$\sim$\+Circle}}
+\index{````~Circle@{$\sim$\+Circle}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{$\sim$\+Circle()}{~Circle()}}
+{\footnotesize\ttfamily Circle\+::$\sim$\+Circle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Clears the graphics memory used for the rectangle. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_circle_a7c01c9166df7a3db41d4e394f18410bd}\label{class_circle_a7c01c9166df7a3db41d4e394f18410bd}} 
+\index{Circle@{Circle}!get\+Center@{get\+Center}}
+\index{get\+Center@{get\+Center}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{get\+Center()}{getCenter()}}
+{\footnotesize\ttfamily void Circle\+::get\+Center (\begin{DoxyParamCaption}\item[{G\+Lfloat $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Populates the array c with the (x, y) coordinates of the center. 
+
+The array c must have length at least two. \mbox{\Hypertarget{class_circle_aebc11befca4806e04f9725c57a76a0cf}\label{class_circle_aebc11befca4806e04f9725c57a76a0cf}} 
+\index{Circle@{Circle}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily void Circle\+::get\+Position (\begin{DoxyParamCaption}\item[{G\+Lfloat $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Populates the array c with the (x, y) coordinates of the last position of circle. 
+
+The array c must have length at least two. \mbox{\Hypertarget{class_circle_a0551366b41fb5426823aa9386f3125f8}\label{class_circle_a0551366b41fb5426823aa9386f3125f8}} 
+\index{Circle@{Circle}!set\+Center@{set\+Center}}
+\index{set\+Center@{set\+Center}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{set\+Center()}{setCenter()}}
+{\footnotesize\ttfamily void Circle\+::set\+Center (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})}
+
+
+
+Resets the center of the bubble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cx} & --- X position of the center.\\
+\hline
+{\em cx} & --- Y position of the center.\\
+\hline
+\end{DoxyParams}
+Resets the center of the box and then calls the data loading method. \mbox{\Hypertarget{class_circle_aff9da6b79474e41dd5fd20371f50569a}\label{class_circle_aff9da6b79474e41dd5fd20371f50569a}} 
+\index{Circle@{Circle}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{set\+Radius()}{setRadius()}}
+{\footnotesize\ttfamily void Circle\+::set\+Radius (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r }\end{DoxyParamCaption})}
+
+
+
+Set box width. 
+
+Resets the width of the circle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & --- The width of the circle.\\
+\hline
+\end{DoxyParams}
+Resets the width of the box and then calls the data loading method. \mbox{\Hypertarget{class_circle_a7f9f6e7dee819efdd05080d1328b15e5}\label{class_circle_a7f9f6e7dee819efdd05080d1328b15e5}} 
+\index{Circle@{Circle}!update\+Position@{update\+Position}}
+\index{update\+Position@{update\+Position}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{update\+Position()}{updatePosition()}}
+{\footnotesize\ttfamily G\+Lint Circle\+::update\+Position (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{G\+Lfloat}]{bounds\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Updating circle position. 
+
+This function does a ton of work for this program. It takes care of the bounce, keeps track and modifies the position of the box, takes care of initializing random color vec4 for a bounce.
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & time --- Used for determining elapsed time. comes from animclock. \\
+\hline
+{\em G\+Lfloat} & bounds\mbox{[}\mbox{]} --- pass in the screen bounds for the program so it can check for a bounce. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Circle.\+h\item 
+\hyperlink{_circle_8cpp}{Circle.\+cpp}\end{DoxyCompactItemize}

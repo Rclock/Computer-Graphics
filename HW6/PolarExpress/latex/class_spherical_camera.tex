@@ -1,0 +1,239 @@
+\hypertarget{class_spherical_camera}{}\section{Spherical\+Camera Class Reference}
+\label{class_spherical_camera}\index{Spherical\+Camera@{Spherical\+Camera}}
+
+
+Creates a spherical camera, that is, one that sits on a sphere of radius r and always points to the origin.  
+
+
+
+
+{\ttfamily \#include $<$Spherical\+Camera.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_spherical_camera_a65579bdc58bd5af9828d2174ac502f3f}{Spherical\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_spherical_camera_ab9a3159731b05c8c4c4df0cef7cfee1a}{set\+Position} (float R, float Theta, float Psi)
+\begin{DoxyCompactList}\small\item\em Sets the position of the camera. \end{DoxyCompactList}\item 
+glm\+::vec3 \hyperlink{class_spherical_camera_a1f827fbe32547f24341976e7b0449b30}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Returns the current position of the camera. \end{DoxyCompactList}\item 
+glm\+::mat4 \hyperlink{class_spherical_camera_a85c47420e596eb9675496f921f271c41}{look\+At} ()
+\begin{DoxyCompactList}\small\item\em Returns the lookat matrix for the current position and line of sight to the origin. \end{DoxyCompactList}\item 
+void \hyperlink{class_spherical_camera_a7153206babba00890a7706ed21987463}{addR} (float num)
+\begin{DoxyCompactList}\small\item\em Adds to the camera radius. \end{DoxyCompactList}\item 
+void \hyperlink{class_spherical_camera_a2245b8a04f20971f46b6ac81d38c9df5}{add\+Theta} (float num)
+\begin{DoxyCompactList}\small\item\em Adds to the theta angle of the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_spherical_camera_aa730ca48a2b4ce7ef2bef71d7fe01cdb}{add\+Psi} (float num)
+\begin{DoxyCompactList}\small\item\em Adds to the psi angle of the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_spherical_camera_a0f2d107b948ac04408131df982454d0f}{setR} (float num)
+\begin{DoxyCompactList}\small\item\em Sets the radius of the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_spherical_camera_a5ba561ae714920e6d67da11397f21a3a}{set\+Theta} (float num)
+\begin{DoxyCompactList}\small\item\em Sets the theta angle of the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_spherical_camera_a7fd5a496453b9a7deb6acca7a785519f}{set\+Psi} (float num)
+\begin{DoxyCompactList}\small\item\em Sets the psi angle of the camera. \end{DoxyCompactList}\item 
+float \hyperlink{class_spherical_camera_adb5813e85f77377107927ddd4252e587}{getR} ()
+\begin{DoxyCompactList}\small\item\em Returns the current value of the camera radius. \end{DoxyCompactList}\item 
+float \hyperlink{class_spherical_camera_a1b6ec70441554aceae0bb10f10684a67}{get\+Theta} ()
+\begin{DoxyCompactList}\small\item\em Returns the current value of the theta angle of the camera. \end{DoxyCompactList}\item 
+float \hyperlink{class_spherical_camera_a8ca237a1f3e1bdff465d7758cdc9344c}{get\+Psi} ()
+\begin{DoxyCompactList}\small\item\em Returns the current value of the psi angle of the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates a spherical camera, that is, one that sits on a sphere of radius r and always points to the origin. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_spherical_camera_a65579bdc58bd5af9828d2174ac502f3f}\label{class_spherical_camera_a65579bdc58bd5af9828d2174ac502f3f}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!Spherical\+Camera@{Spherical\+Camera}}
+\index{Spherical\+Camera@{Spherical\+Camera}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{Spherical\+Camera()}{SphericalCamera()}}
+{\footnotesize\ttfamily Spherical\+Camera\+::\+Spherical\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Position is at (1, 0, 0) pointing toward the origin. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_spherical_camera_aa730ca48a2b4ce7ef2bef71d7fe01cdb}\label{class_spherical_camera_aa730ca48a2b4ce7ef2bef71d7fe01cdb}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!add\+Psi@{add\+Psi}}
+\index{add\+Psi@{add\+Psi}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{add\+Psi()}{addPsi()}}
+{\footnotesize\ttfamily void Spherical\+Camera\+::add\+Psi (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Adds to the psi angle of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- amount to add to the psi angle of the camera. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spherical_camera_a7153206babba00890a7706ed21987463}\label{class_spherical_camera_a7153206babba00890a7706ed21987463}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!addR@{addR}}
+\index{addR@{addR}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{add\+R()}{addR()}}
+{\footnotesize\ttfamily void Spherical\+Camera\+::addR (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Adds to the camera radius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- amount to add to the radius of the camera. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spherical_camera_a2245b8a04f20971f46b6ac81d38c9df5}\label{class_spherical_camera_a2245b8a04f20971f46b6ac81d38c9df5}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!add\+Theta@{add\+Theta}}
+\index{add\+Theta@{add\+Theta}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{add\+Theta()}{addTheta()}}
+{\footnotesize\ttfamily void Spherical\+Camera\+::add\+Theta (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Adds to the theta angle of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- amount to add to the theta angle of the camera. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spherical_camera_a1f827fbe32547f24341976e7b0449b30}\label{class_spherical_camera_a1f827fbe32547f24341976e7b0449b30}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Spherical\+Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current position of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The position vector of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spherical_camera_a8ca237a1f3e1bdff465d7758cdc9344c}\label{class_spherical_camera_a8ca237a1f3e1bdff465d7758cdc9344c}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!get\+Psi@{get\+Psi}}
+\index{get\+Psi@{get\+Psi}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{get\+Psi()}{getPsi()}}
+{\footnotesize\ttfamily float Spherical\+Camera\+::get\+Psi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current value of the psi angle of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The current value of the psi angle of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spherical_camera_adb5813e85f77377107927ddd4252e587}\label{class_spherical_camera_adb5813e85f77377107927ddd4252e587}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!getR@{getR}}
+\index{getR@{getR}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{get\+R()}{getR()}}
+{\footnotesize\ttfamily float Spherical\+Camera\+::getR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current value of the camera radius. 
+
+\begin{DoxyReturn}{Returns}
+The current value of the camera radius. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spherical_camera_a1b6ec70441554aceae0bb10f10684a67}\label{class_spherical_camera_a1b6ec70441554aceae0bb10f10684a67}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!get\+Theta@{get\+Theta}}
+\index{get\+Theta@{get\+Theta}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{get\+Theta()}{getTheta()}}
+{\footnotesize\ttfamily float Spherical\+Camera\+::get\+Theta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current value of the theta angle of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The current value of the theta angle of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spherical_camera_a85c47420e596eb9675496f921f271c41}\label{class_spherical_camera_a85c47420e596eb9675496f921f271c41}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!look\+At@{look\+At}}
+\index{look\+At@{look\+At}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{look\+At()}{lookAt()}}
+{\footnotesize\ttfamily glm\+::mat4 Spherical\+Camera\+::look\+At (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the lookat matrix for the current position and line of sight to the origin. 
+
+\begin{DoxyReturn}{Returns}
+The lookat matrix for the current position and line of sight to the origin. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spherical_camera_ab9a3159731b05c8c4c4df0cef7cfee1a}\label{class_spherical_camera_ab9a3159731b05c8c4c4df0cef7cfee1a}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void Spherical\+Camera\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{R,  }\item[{float}]{Theta,  }\item[{float}]{Psi }\end{DoxyParamCaption})}
+
+
+
+Sets the position of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & --- Radius of camera to origin. \\
+\hline
+{\em Theta} & --- Theta rotation on the xz plane counter clockwise from positive x axis. \\
+\hline
+{\em Psi} & --- Psi rotation from the xz plane to radial. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spherical_camera_a7fd5a496453b9a7deb6acca7a785519f}\label{class_spherical_camera_a7fd5a496453b9a7deb6acca7a785519f}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!set\+Psi@{set\+Psi}}
+\index{set\+Psi@{set\+Psi}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{set\+Psi()}{setPsi()}}
+{\footnotesize\ttfamily void Spherical\+Camera\+::set\+Psi (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Sets the psi angle of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- New value of the psi angle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spherical_camera_a0f2d107b948ac04408131df982454d0f}\label{class_spherical_camera_a0f2d107b948ac04408131df982454d0f}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!setR@{setR}}
+\index{setR@{setR}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{set\+R()}{setR()}}
+{\footnotesize\ttfamily void Spherical\+Camera\+::setR (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Sets the radius of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- new value of the radius. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spherical_camera_a5ba561ae714920e6d67da11397f21a3a}\label{class_spherical_camera_a5ba561ae714920e6d67da11397f21a3a}} 
+\index{Spherical\+Camera@{Spherical\+Camera}!set\+Theta@{set\+Theta}}
+\index{set\+Theta@{set\+Theta}!Spherical\+Camera@{Spherical\+Camera}}
+\subsubsection{\texorpdfstring{set\+Theta()}{setTheta()}}
+{\footnotesize\ttfamily void Spherical\+Camera\+::set\+Theta (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})}
+
+
+
+Sets the theta angle of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & --- New value of the theta angle. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_spherical_camera_8h}{Spherical\+Camera.\+h}\item 
+\hyperlink{_spherical_camera_8cpp}{Spherical\+Camera.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1551829573 source:/home/rclocker1/Graphics/HW4/Stars/Circle.cpp
+	"Circle.h"
+	<cmath>
+
+1551803670 /home/rclocker1/Graphics/HW4/Stars/Circle.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1552010584 /home/rclocker1/Graphics/HW4/Stars/ProgramDefines.h
+
+1514174390 source:/home/rclocker1/Graphics/HW4/Stars/LoadShaders.cpp
+	"LoadShaders.h"
+
+1514175394 /home/rclocker1/Graphics/HW4/Stars/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1552010569 source:/home/rclocker1/Graphics/HW4/Stars/main.cpp
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1552010574 /home/rclocker1/Graphics/HW4/Stars/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<vector>
+	"Star.h"
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1552010590 /home/rclocker1/Graphics/HW4/Stars/UI.h
+	"GraphicsEngine.h"
+
+1552010587 source:/home/rclocker1/Graphics/HW4/Stars/UI.cpp
+	"UI.h"
+
+1552179385 source:/home/rclocker1/Graphics/HW4/Stars/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+	<math.h>
+	<cmath>
+	<vector>
+
+1552010581 /home/rclocker1/Graphics/HW4/Stars/Star.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1552010578 source:/home/rclocker1/Graphics/HW4/Stars/Star.cpp
+	"Star.h"
+	<cmath>
+

@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1514222710 source:/home/rclocker1/Graphics/HW3/Problem2/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+
+1550595332 /home/rclocker1/Graphics/HW3/Problem2/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	"LoadShaders.h"
+	"Box.h"
+	"ProgramDefines.h"
+
+1514175394 /home/rclocker1/Graphics/HW3/Problem2/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1551214646 /home/rclocker1/Graphics/HW3/Problem2/Box.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+
+1453216104 /home/rclocker1/Graphics/HW3/Problem2/ProgramDefines.h
+
+1514174390 source:/home/rclocker1/Graphics/HW3/Problem2/LoadShaders.cpp
+	"LoadShaders.h"
+
+1550624624 source:/home/rclocker1/Graphics/HW3/Problem2/main.cpp
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1550692413 /home/rclocker1/Graphics/HW3/Problem2/UI.h
+	"GraphicsEngine.h"
+
+1551215015 source:/home/rclocker1/Graphics/HW3/Problem2/UI.cpp
+	"UI.h"
+	<iostream>
+	<stdlib.h>
+
+1551215140 source:/home/rclocker1/Graphics/HW3/Problem2/Box.cpp
+	"Box.h"
+	<cmath>
+

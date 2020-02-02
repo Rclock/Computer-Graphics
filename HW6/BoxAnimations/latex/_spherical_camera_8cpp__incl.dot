@@ -1,0 +1,18 @@
+digraph "/home/rclocker1/Graphics/HW6/BoxAnimations/SphericalCamera.cpp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="/home/rclocker1/Graphics\l/HW6/BoxAnimations/SphericalCamera.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="SphericalCamera.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_spherical_camera_8h.html",tooltip="Header file for SphericalCamera.cpp. "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="glm/glm.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="glm/gtc/matrix_transform.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="glm/gtc/type_ptr.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="math.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="ProgramDefines.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_program_defines_8h.html",tooltip="Header file that loads in the defines needed for the entire program. "];
+}

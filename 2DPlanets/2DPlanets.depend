@@ -1,0 +1,124 @@
+# depslib dependency file v1.0
+1557249613 source:/home/rclocker1/Graphics/2DPlanets/Circle.cpp
+	"Circle.h"
+	<cmath>
+
+1557243216 /home/rclocker1/Graphics/2DPlanets/Circle.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1552010584 /home/rclocker1/Graphics/2DPlanets/ProgramDefines.h
+
+1514174390 source:/home/rclocker1/Graphics/2DPlanets/LoadShaders.cpp
+	"LoadShaders.h"
+
+1514175394 /home/rclocker1/Graphics/2DPlanets/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1557852920 source:/home/rclocker1/Graphics/2DPlanets/main.cpp
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1557886383 /home/rclocker1/Graphics/2DPlanets/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<vector>
+	"Star.h"
+	"Circle.h"
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"Plane.h"
+	"Models.h"
+	"TextRendererTTF.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1554414938 /home/rclocker1/Graphics/2DPlanets/Star.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1554415845 /home/rclocker1/Graphics/2DPlanets/Plane.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1554416079 /home/rclocker1/Graphics/2DPlanets/Shape.h
+
+1516248570 /home/rclocker1/Graphics/2DPlanets/Models.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1515903122 /home/rclocker1/Graphics/2DPlanets/TextRendererTTF.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<ft2build.h>
+	"LoadShaders.h"
+
+1552010590 /home/rclocker1/Graphics/2DPlanets/UI.h
+	"GraphicsEngine.h"
+
+1557241177 source:/home/rclocker1/Graphics/2DPlanets/Plane.cpp
+	"Plane.h"
+
+1554416107 source:/home/rclocker1/Graphics/2DPlanets/Shape.cpp
+	"Shape.h"
+
+1557852489 source:/home/rclocker1/Graphics/2DPlanets/Star.cpp
+	"Star.h"
+	<cmath>
+
+1515903134 source:/home/rclocker1/Graphics/2DPlanets/TextRendererTTF.cpp
+	"TextRendererTTF.h"
+
+1557852699 source:/home/rclocker1/Graphics/2DPlanets/UI.cpp
+	"UI.h"
+

@@ -1,0 +1,492 @@
+\hypertarget{class_light}{}\section{Light Class Reference}
+\label{class_light}\index{Light@{Light}}
+
+
+The \hyperlink{class_light}{Light} class is simply a class for holding Phong model light properties.  
+
+
+
+
+{\ttfamily \#include $<$Light.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_light_aeb5df09a25a32f19fdffa761268ba24f}\label{class_light_aeb5df09a25a32f19fdffa761268ba24f}} 
+\hyperlink{class_light_aeb5df09a25a32f19fdffa761268ba24f}{Light} ()
+\begin{DoxyCompactList}\small\item\em Constructor, default. \end{DoxyCompactList}\item 
+\hyperlink{class_light_aaaecc3a7601831f40c958da75e6f34ae}{Light} (bool onoff, glm\+::vec4 pos, glm\+::vec3 spot\+Dir, glm\+::vec4 a, glm\+::vec4 d, glm\+::vec4 s, float spot\+Cut, float spot\+Exp, glm\+::vec3 atten)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_light_ab31c2792d2d0c9ff04ff05c80ca60c8e}{Light} (bool onoff, float posx, float posy, float posz, float posw, float spot\+Dirx, float spot\+Diry, float spot\+Dirz, float ar, float ag, float ab, float aa, float dr, float dg, float db, float da, float sr, float sg, float sb, float sa, float spot\+Cut, float spot\+Exp, float attenc, float attenl, float attenq)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}{$\sim$\+Light} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_a853a20a23503b56aeb0176c42a45e30b}\label{class_light_a853a20a23503b56aeb0176c42a45e30b}} 
+bool \hyperlink{class_light_a853a20a23503b56aeb0176c42a45e30b}{get\+On} ()
+\begin{DoxyCompactList}\small\item\em Returns the on or off status of the light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_a1adb137688bc9a8f6a0ef25ad326ae53}\label{class_light_a1adb137688bc9a8f6a0ef25ad326ae53}} 
+glm\+::vec4 \hyperlink{class_light_a1adb137688bc9a8f6a0ef25ad326ae53}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Returns the position of the light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_a1cb2081206fa1e8f88e0640925d26c39}\label{class_light_a1cb2081206fa1e8f88e0640925d26c39}} 
+glm\+::vec3 \hyperlink{class_light_a1cb2081206fa1e8f88e0640925d26c39}{get\+Spot\+Direction} ()
+\begin{DoxyCompactList}\small\item\em Returns the spot direction of the light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_af8301704fd80d5948ffb0f50a9919810}\label{class_light_af8301704fd80d5948ffb0f50a9919810}} 
+glm\+::vec4 \hyperlink{class_light_af8301704fd80d5948ffb0f50a9919810}{get\+Ambient} ()
+\begin{DoxyCompactList}\small\item\em Returns the ambient color of the light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_a77698b0dab118c9d8a07be583f5fb890}\label{class_light_a77698b0dab118c9d8a07be583f5fb890}} 
+glm\+::vec4 \hyperlink{class_light_a77698b0dab118c9d8a07be583f5fb890}{get\+Diffuse} ()
+\begin{DoxyCompactList}\small\item\em Returns the diffuse color of the light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_a8300421f327aed73849e0cf944c875b9}\label{class_light_a8300421f327aed73849e0cf944c875b9}} 
+glm\+::vec4 \hyperlink{class_light_a8300421f327aed73849e0cf944c875b9}{get\+Specular} ()
+\begin{DoxyCompactList}\small\item\em Returns the specular color of the light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_aaf21d1ab9879b9d07d6ec39e29fd9cea}\label{class_light_aaf21d1ab9879b9d07d6ec39e29fd9cea}} 
+float \hyperlink{class_light_aaf21d1ab9879b9d07d6ec39e29fd9cea}{get\+Spot\+Cutoff} ()
+\begin{DoxyCompactList}\small\item\em Returns the spot cutoff of the light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_a16bff83dc9d7b77352ea8ec6afb19304}\label{class_light_a16bff83dc9d7b77352ea8ec6afb19304}} 
+float \hyperlink{class_light_a16bff83dc9d7b77352ea8ec6afb19304}{get\+Spot\+Exponent} ()
+\begin{DoxyCompactList}\small\item\em Returns the spot exponent of the light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_a6271a08ed63869a823fbb289d02c5a2d}\label{class_light_a6271a08ed63869a823fbb289d02c5a2d}} 
+glm\+::vec3 \hyperlink{class_light_a6271a08ed63869a823fbb289d02c5a2d}{get\+Attenuation} ()
+\begin{DoxyCompactList}\small\item\em Returns the attenuation vector of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a8c1d5056b78362db8c8cb731642613c0}{set\+On} (bool b)
+\begin{DoxyCompactList}\small\item\em Sets the on for the light to the value of b. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a6c5b1c6201d6635e34ce6c452d28a82b}{set\+Position} (glm\+::vec4 p)
+\begin{DoxyCompactList}\small\item\em Sets the position of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a87d7f0236ff86b69ffda8852c500da2c}{set\+Spot\+Direction} (glm\+::vec3 sd)
+\begin{DoxyCompactList}\small\item\em Sets the spot direction of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a02ccb843abf2bb2047a4f9881f4aba52}{set\+Ambient} (glm\+::vec4 a)
+\begin{DoxyCompactList}\small\item\em Sets the ambient color of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_abd1e2dff69da1bc133bd4fbf0a1cbb04}{set\+Diffuse} (glm\+::vec4 d)
+\begin{DoxyCompactList}\small\item\em Sets the diffuse color of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a9a09ab0a0712d7e59cb755548cd6c400}{set\+Specular} (glm\+::vec4 s)
+\begin{DoxyCompactList}\small\item\em Sets the specular color of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a39023d78dba961d1317ed2c84a346a4b}{set\+Spot\+Cutoff} (float sc)
+\begin{DoxyCompactList}\small\item\em Sets the spot cutoff of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a3ebb6e243eab83af4f546885f3006288}{set\+Spot\+Exponent} (float se)
+\begin{DoxyCompactList}\small\item\em Sets the spot exponent of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_aad59b7cf7f059a85d94c01b7ac02c2dc}{set\+Attenuation} (glm\+::vec3 atten)
+\begin{DoxyCompactList}\small\item\em Sets the spot attenuation vector of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a515472dce787876c8ad87509b1bab0e9}{set\+Position} (float px, float py, float pz, float pw)
+\begin{DoxyCompactList}\small\item\em Sets the position of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_adadb13791f70ee5acb8767a3169c2ef1}{set\+Spot\+Direction} (float sdx, float sdy, float sdz)
+\begin{DoxyCompactList}\small\item\em Sets the spot direction of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_af6961dcdd213b3808c3299ec7749eb01}{set\+Ambient} (float ar, float ag, float ab, float aa)
+\begin{DoxyCompactList}\small\item\em Sets the ambient color of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_afd3cabefb467007ccacdbd558821b9b6}{set\+Diffuse} (float dr, float dg, float db, float da)
+\begin{DoxyCompactList}\small\item\em Sets the diffuse color of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_aeaa2dafb4e81f62b3a72fa984f6abc1e}{set\+Specular} (float sr, float sg, float sb, float sa)
+\begin{DoxyCompactList}\small\item\em Sets the specular color of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a5d5dcc7c105441b11db37c97b39f5e1b}{set\+Attenuation} (float attenc, float attenl, float attenq)
+\begin{DoxyCompactList}\small\item\em Sets the attenuation vector of the light. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_ab2484e1e35f162b962d795e0bea2e337}{set\+Light} (bool onoff, glm\+::vec4 pos, glm\+::vec3 spot\+Dir, glm\+::vec4 a, glm\+::vec4 d, glm\+::vec4 s, float spot\+Cut, float spot\+Exp, glm\+::vec3 atten)
+\begin{DoxyCompactList}\small\item\em Sets all of the light attributes. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_ab141c608b72924a24f5612eb7ddd3f1d}{set\+Light} (bool onoff, float posx, float posy, float posz, float posw, float spot\+Dirx, float spot\+Diry, float spot\+Dirz, float ar, float ag, float ab, float aa, float dr, float dg, float db, float da, float sr, float sg, float sb, float sa, float spot\+Cut, float spot\+Exp, float attenc, float attenl, float attenq)
+\begin{DoxyCompactList}\small\item\em Sets all of the light attributes using float and boolean input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_light}{Light} class is simply a class for holding Phong model light properties. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_light_aaaecc3a7601831f40c958da75e6f34ae}\label{class_light_aaaecc3a7601831f40c958da75e6f34ae}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{bool}]{onoff,  }\item[{glm\+::vec4}]{pos,  }\item[{glm\+::vec3}]{spot\+Dir,  }\item[{glm\+::vec4}]{a,  }\item[{glm\+::vec4}]{d,  }\item[{glm\+::vec4}]{s,  }\item[{float}]{spot\+Cut,  }\item[{float}]{spot\+Exp,  }\item[{glm\+::vec3}]{atten }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em onoff} & --- \hyperlink{class_light}{Light} on or off. \\
+\hline
+{\em pos} & --- Position of the light. \\
+\hline
+{\em spot\+Dir} & --- Direction of the spot light. \\
+\hline
+{\em a} & --- Ambient color of the light. \\
+\hline
+{\em d} & --- Diffuse color of the light. \\
+\hline
+{\em s} & --- Specular color of the light. \\
+\hline
+{\em spot\+Cut} & --- Spot cutoff angle. \\
+\hline
+{\em spot\+Exp} & --- Spot falloff exponent. \\
+\hline
+{\em atten} & --- Attenuation vector, x = constant, y = linear, z = quadratic.\\
+\hline
+\end{DoxyParams}
+Sets all of the light attributes. \mbox{\Hypertarget{class_light_ab31c2792d2d0c9ff04ff05c80ca60c8e}\label{class_light_ab31c2792d2d0c9ff04ff05c80ca60c8e}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{bool}]{onoff,  }\item[{float}]{posx,  }\item[{float}]{posy,  }\item[{float}]{posz,  }\item[{float}]{posw,  }\item[{float}]{spot\+Dirx,  }\item[{float}]{spot\+Diry,  }\item[{float}]{spot\+Dirz,  }\item[{float}]{ar,  }\item[{float}]{ag,  }\item[{float}]{ab,  }\item[{float}]{aa,  }\item[{float}]{dr,  }\item[{float}]{dg,  }\item[{float}]{db,  }\item[{float}]{da,  }\item[{float}]{sr,  }\item[{float}]{sg,  }\item[{float}]{sb,  }\item[{float}]{sa,  }\item[{float}]{spot\+Cut,  }\item[{float}]{spot\+Exp,  }\item[{float}]{attenc,  }\item[{float}]{attenl,  }\item[{float}]{attenq }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em onoff} & --- \hyperlink{class_light}{Light} on or off. \\
+\hline
+{\em posx,posy,posz,posw} & --- Position of the light. \\
+\hline
+{\em spot\+Dirx,spot\+Diry,spot\+Dirz} & --- Direction of the spot light. \\
+\hline
+{\em ar,ag,ab,aa} & --- Ambient color of the light. \\
+\hline
+{\em dr,dg,db,da} & --- Diffuse color of the light. \\
+\hline
+{\em sr,sg,sb,sa} & --- Specular color of the light. \\
+\hline
+{\em spot\+Cut} & --- Spot cutoff angle. \\
+\hline
+{\em spot\+Exp} & --- Spot falloff exponent. \\
+\hline
+{\em attenc,attenl,attenq} & --- Attenuation vector, attenc = constant, attenl = linear, attenq = quadratic.\\
+\hline
+\end{DoxyParams}
+Sets all of the light attributes using float and boolean input. \mbox{\Hypertarget{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}\label{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}} 
+\index{Light@{Light}!````~Light@{$\sim$\+Light}}
+\index{````~Light@{$\sim$\+Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{$\sim$\+Light()}{~Light()}}
+{\footnotesize\ttfamily Light\+::$\sim$\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+No implementation needed at this point. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_light_a02ccb843abf2bb2047a4f9881f4aba52}\label{class_light_a02ccb843abf2bb2047a4f9881f4aba52}} 
+\index{Light@{Light}!set\+Ambient@{set\+Ambient}}
+\index{set\+Ambient@{set\+Ambient}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Ambient()}{setAmbient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Ambient (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{a }\end{DoxyParamCaption})}
+
+
+
+Sets the ambient color of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & --- New ambient color of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_af6961dcdd213b3808c3299ec7749eb01}\label{class_light_af6961dcdd213b3808c3299ec7749eb01}} 
+\index{Light@{Light}!set\+Ambient@{set\+Ambient}}
+\index{set\+Ambient@{set\+Ambient}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Ambient()}{setAmbient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Ambient (\begin{DoxyParamCaption}\item[{float}]{ar,  }\item[{float}]{ag,  }\item[{float}]{ab,  }\item[{float}]{aa }\end{DoxyParamCaption})}
+
+
+
+Sets the ambient color of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar} & --- New ambient color of the light, red component.\\
+\hline
+{\em ag} & --- New ambient color of the light, green component.\\
+\hline
+{\em ab} & --- New ambient color of the light, blue component.\\
+\hline
+{\em aa} & --- New ambient color of the light, alpha component. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_aad59b7cf7f059a85d94c01b7ac02c2dc}\label{class_light_aad59b7cf7f059a85d94c01b7ac02c2dc}} 
+\index{Light@{Light}!set\+Attenuation@{set\+Attenuation}}
+\index{set\+Attenuation@{set\+Attenuation}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Attenuation()}{setAttenuation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Attenuation (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{atten }\end{DoxyParamCaption})}
+
+
+
+Sets the spot attenuation vector of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em se} & --- New spot attenuation vector of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_a5d5dcc7c105441b11db37c97b39f5e1b}\label{class_light_a5d5dcc7c105441b11db37c97b39f5e1b}} 
+\index{Light@{Light}!set\+Attenuation@{set\+Attenuation}}
+\index{set\+Attenuation@{set\+Attenuation}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Attenuation()}{setAttenuation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Attenuation (\begin{DoxyParamCaption}\item[{float}]{attenc,  }\item[{float}]{attenl,  }\item[{float}]{attenq }\end{DoxyParamCaption})}
+
+
+
+Sets the attenuation vector of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attenc} & --- New attenuation vector of the light, constant component.\\
+\hline
+{\em attenl} & --- New attenuation vector of the light, linear component.\\
+\hline
+{\em attenq} & --- New attenuation vector of the light, quadratic component. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_abd1e2dff69da1bc133bd4fbf0a1cbb04}\label{class_light_abd1e2dff69da1bc133bd4fbf0a1cbb04}} 
+\index{Light@{Light}!set\+Diffuse@{set\+Diffuse}}
+\index{set\+Diffuse@{set\+Diffuse}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Diffuse()}{setDiffuse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Diffuse (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{d }\end{DoxyParamCaption})}
+
+
+
+Sets the diffuse color of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & --- New diffuse color of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_afd3cabefb467007ccacdbd558821b9b6}\label{class_light_afd3cabefb467007ccacdbd558821b9b6}} 
+\index{Light@{Light}!set\+Diffuse@{set\+Diffuse}}
+\index{set\+Diffuse@{set\+Diffuse}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Diffuse()}{setDiffuse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Diffuse (\begin{DoxyParamCaption}\item[{float}]{dr,  }\item[{float}]{dg,  }\item[{float}]{db,  }\item[{float}]{da }\end{DoxyParamCaption})}
+
+
+
+Sets the diffuse color of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dr} & --- New diffuse color of the light, red component.\\
+\hline
+{\em dg} & --- New diffuse color of the light, green component.\\
+\hline
+{\em db} & --- New diffuse color of the light, blue component.\\
+\hline
+{\em da} & --- New diffuse color of the light, alpha component. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_ab2484e1e35f162b962d795e0bea2e337}\label{class_light_ab2484e1e35f162b962d795e0bea2e337}} 
+\index{Light@{Light}!set\+Light@{set\+Light}}
+\index{set\+Light@{set\+Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Light()}{setLight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Light (\begin{DoxyParamCaption}\item[{bool}]{onoff,  }\item[{glm\+::vec4}]{pos,  }\item[{glm\+::vec3}]{spot\+Dir,  }\item[{glm\+::vec4}]{a,  }\item[{glm\+::vec4}]{d,  }\item[{glm\+::vec4}]{s,  }\item[{float}]{spot\+Cut,  }\item[{float}]{spot\+Exp,  }\item[{glm\+::vec3}]{atten }\end{DoxyParamCaption})}
+
+
+
+Sets all of the light attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em onoff} & --- \hyperlink{class_light}{Light} on or off. \\
+\hline
+{\em pos} & --- Position of the light. \\
+\hline
+{\em spot\+Dir} & --- Direction of the spot light. \\
+\hline
+{\em a} & --- Ambient color of the light. \\
+\hline
+{\em d} & --- Diffuse color of the light. \\
+\hline
+{\em s} & --- Specular color of the light. \\
+\hline
+{\em spot\+Cut} & --- Spot cutoff angle. \\
+\hline
+{\em spot\+Exp} & --- Spot falloff exponent. \\
+\hline
+{\em atten} & --- Attenuation vector, x = constant, y = linear, z = quadratic. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_ab141c608b72924a24f5612eb7ddd3f1d}\label{class_light_ab141c608b72924a24f5612eb7ddd3f1d}} 
+\index{Light@{Light}!set\+Light@{set\+Light}}
+\index{set\+Light@{set\+Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Light()}{setLight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Light (\begin{DoxyParamCaption}\item[{bool}]{onoff,  }\item[{float}]{posx,  }\item[{float}]{posy,  }\item[{float}]{posz,  }\item[{float}]{posw,  }\item[{float}]{spot\+Dirx,  }\item[{float}]{spot\+Diry,  }\item[{float}]{spot\+Dirz,  }\item[{float}]{ar,  }\item[{float}]{ag,  }\item[{float}]{ab,  }\item[{float}]{aa,  }\item[{float}]{dr,  }\item[{float}]{dg,  }\item[{float}]{db,  }\item[{float}]{da,  }\item[{float}]{sr,  }\item[{float}]{sg,  }\item[{float}]{sb,  }\item[{float}]{sa,  }\item[{float}]{spot\+Cut,  }\item[{float}]{spot\+Exp,  }\item[{float}]{attenc,  }\item[{float}]{attenl,  }\item[{float}]{attenq }\end{DoxyParamCaption})}
+
+
+
+Sets all of the light attributes using float and boolean input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em onoff} & --- \hyperlink{class_light}{Light} on or off. \\
+\hline
+{\em posx,posy,posz,posw} & --- Position of the light. \\
+\hline
+{\em spot\+Dirx,spot\+Diry,spot\+Dirz} & --- Direction of the spot light. \\
+\hline
+{\em ar,ag,ab,aa} & --- Ambient color of the light. \\
+\hline
+{\em dr,dg,db,da} & --- Diffuse color of the light. \\
+\hline
+{\em sr,sg,sb,sa} & --- Specular color of the light. \\
+\hline
+{\em spot\+Cut} & --- Spot cutoff angle. \\
+\hline
+{\em spot\+Exp} & --- Spot falloff exponent. \\
+\hline
+{\em attenc,attenl,attenq} & --- Attenuation vector, attenc = constant, attenl = linear, attenq = quadratic. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_a8c1d5056b78362db8c8cb731642613c0}\label{class_light_a8c1d5056b78362db8c8cb731642613c0}} 
+\index{Light@{Light}!set\+On@{set\+On}}
+\index{set\+On@{set\+On}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+On()}{setOn()}}
+{\footnotesize\ttfamily void Light\+::set\+On (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the on for the light to the value of b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & --- true for on and false for off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_a6c5b1c6201d6635e34ce6c452d28a82b}\label{class_light_a6c5b1c6201d6635e34ce6c452d28a82b}} 
+\index{Light@{Light}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{p }\end{DoxyParamCaption})}
+
+
+
+Sets the position of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & --- New position of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_a515472dce787876c8ad87509b1bab0e9}\label{class_light_a515472dce787876c8ad87509b1bab0e9}} 
+\index{Light@{Light}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{px,  }\item[{float}]{py,  }\item[{float}]{pz,  }\item[{float}]{pw }\end{DoxyParamCaption})}
+
+
+
+Sets the position of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em px} & --- New position of the light, x coordinate.\\
+\hline
+{\em py} & --- New position of the light, y coordinate.\\
+\hline
+{\em pz} & --- New position of the light, z coordinate.\\
+\hline
+{\em pw} & --- New position of the light, w coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_a9a09ab0a0712d7e59cb755548cd6c400}\label{class_light_a9a09ab0a0712d7e59cb755548cd6c400}} 
+\index{Light@{Light}!set\+Specular@{set\+Specular}}
+\index{set\+Specular@{set\+Specular}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Specular()}{setSpecular()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Specular (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{s }\end{DoxyParamCaption})}
+
+
+
+Sets the specular color of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & --- New specular color of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_aeaa2dafb4e81f62b3a72fa984f6abc1e}\label{class_light_aeaa2dafb4e81f62b3a72fa984f6abc1e}} 
+\index{Light@{Light}!set\+Specular@{set\+Specular}}
+\index{set\+Specular@{set\+Specular}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Specular()}{setSpecular()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Specular (\begin{DoxyParamCaption}\item[{float}]{sr,  }\item[{float}]{sg,  }\item[{float}]{sb,  }\item[{float}]{sa }\end{DoxyParamCaption})}
+
+
+
+Sets the specular color of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sr} & --- New specular color of the light, red component.\\
+\hline
+{\em sg} & --- New specular color of the light, green component.\\
+\hline
+{\em sb} & --- New specular color of the light, blue component.\\
+\hline
+{\em sa} & --- New specular color of the light, alpha component. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_a39023d78dba961d1317ed2c84a346a4b}\label{class_light_a39023d78dba961d1317ed2c84a346a4b}} 
+\index{Light@{Light}!set\+Spot\+Cutoff@{set\+Spot\+Cutoff}}
+\index{set\+Spot\+Cutoff@{set\+Spot\+Cutoff}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Spot\+Cutoff()}{setSpotCutoff()}}
+{\footnotesize\ttfamily void Light\+::set\+Spot\+Cutoff (\begin{DoxyParamCaption}\item[{float}]{sc }\end{DoxyParamCaption})}
+
+
+
+Sets the spot cutoff of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sc} & --- New spot cutoff of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_a87d7f0236ff86b69ffda8852c500da2c}\label{class_light_a87d7f0236ff86b69ffda8852c500da2c}} 
+\index{Light@{Light}!set\+Spot\+Direction@{set\+Spot\+Direction}}
+\index{set\+Spot\+Direction@{set\+Spot\+Direction}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Spot\+Direction()}{setSpotDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Spot\+Direction (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{sd }\end{DoxyParamCaption})}
+
+
+
+Sets the spot direction of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sd} & --- New spot direction of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_adadb13791f70ee5acb8767a3169c2ef1}\label{class_light_adadb13791f70ee5acb8767a3169c2ef1}} 
+\index{Light@{Light}!set\+Spot\+Direction@{set\+Spot\+Direction}}
+\index{set\+Spot\+Direction@{set\+Spot\+Direction}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Spot\+Direction()}{setSpotDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Light\+::set\+Spot\+Direction (\begin{DoxyParamCaption}\item[{float}]{sdx,  }\item[{float}]{sdy,  }\item[{float}]{sdz }\end{DoxyParamCaption})}
+
+
+
+Sets the spot direction of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sdx} & --- New spot direction of the light, x coordinate.\\
+\hline
+{\em sdy} & --- New spot direction of the light, y coordinate.\\
+\hline
+{\em sdz} & --- New spot direction of the light, z coordinate.\\
+\hline
+{\em sdw} & --- New spot direction of the light, w coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_a3ebb6e243eab83af4f546885f3006288}\label{class_light_a3ebb6e243eab83af4f546885f3006288}} 
+\index{Light@{Light}!set\+Spot\+Exponent@{set\+Spot\+Exponent}}
+\index{set\+Spot\+Exponent@{set\+Spot\+Exponent}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Spot\+Exponent()}{setSpotExponent()}}
+{\footnotesize\ttfamily void Light\+::set\+Spot\+Exponent (\begin{DoxyParamCaption}\item[{float}]{se }\end{DoxyParamCaption})}
+
+
+
+Sets the spot exponent of the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em se} & --- New spot exponent of the light. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_light_8h}{Light.\+h}\item 
+\hyperlink{_light_8cpp}{Light.\+cpp}\end{DoxyCompactItemize}

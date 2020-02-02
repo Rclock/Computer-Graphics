@@ -1,0 +1,66 @@
+# depslib dependency file v1.0
+1552253401 source:/home/rclocker1/Graphics/HW5/Box.cpp
+	"Box.h"
+
+1552253368 /home/rclocker1/Graphics/HW5/Box.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1452756820 /home/rclocker1/Graphics/HW5/ProgramDefines.h
+
+1515306440 /home/rclocker1/Graphics/HW5/Shape.h
+
+1552310607 source:/home/rclocker1/Graphics/HW5/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+
+1552686222 /home/rclocker1/Graphics/HW5/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	"LoadShaders.h"
+	"Box.h"
+	"ProgramDefines.h"
+
+1514175394 /home/rclocker1/Graphics/HW5/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1515739614 source:/home/rclocker1/Graphics/HW5/LoadShaders.cpp
+	"LoadShaders.h"
+
+1552686201 source:/home/rclocker1/Graphics/HW5/main.cpp
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1552686362 /home/rclocker1/Graphics/HW5/UI.h
+	"GraphicsEngine.h"
+
+1515306700 source:/home/rclocker1/Graphics/HW5/Shape.cpp
+	"Shape.h"
+
+1552686377 source:/home/rclocker1/Graphics/HW5/UI.cpp
+	"UI.h"
+

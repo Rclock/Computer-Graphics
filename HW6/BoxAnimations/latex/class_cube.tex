@@ -1,0 +1,153 @@
+\hypertarget{class_cube}{}\section{Cube Class Reference}
+\label{class_cube}\index{Cube@{Cube}}
+
+
+The cube class draws a cube of side lengths 1 centered at the origin.  
+
+
+
+
+{\ttfamily \#include $<$Cube.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cube_a06f3d86fb63e3aad08623610aa3c17b4}{Cube} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_cube_aa814e979cecb8c451fdb332ded2cea1e}{$\sim$\+Cube} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_cube_aa08ee7691f94b33978f17358577c82a4}{set\+Draw\+Border} (G\+Lboolean d)
+\begin{DoxyCompactList}\small\item\em Turns on and off the drawing of the box border. \end{DoxyCompactList}\item 
+void \hyperlink{class_cube_a80707754f50abfb13f6a106f117a59e9}{set\+Draw\+Faces} (G\+Lboolean d)
+\begin{DoxyCompactList}\small\item\em Turns on and off the drawing of the box faces. \end{DoxyCompactList}\item 
+void \hyperlink{class_cube_a215c64365cf3aeed78a9d3802ad1899e}{set\+Color\+Cube} (G\+Lboolean d)
+\begin{DoxyCompactList}\small\item\em Turns on and off the drawing of the multicolored box. \end{DoxyCompactList}\item 
+void \hyperlink{class_cube_a11b2c41497e69c2998766f3b34afcbfa}{set\+Color} (G\+Lfloat r, G\+Lfloat g, G\+Lfloat b, G\+Lfloat a=1)
+\begin{DoxyCompactList}\small\item\em Sets the solid box color. \end{DoxyCompactList}\item 
+void \hyperlink{class_cube_a30eb89f673d01f908328523377a2ba7d}{set\+Border\+Color} (G\+Lfloat r, G\+Lfloat g, G\+Lfloat b, G\+Lfloat a=1)
+\begin{DoxyCompactList}\small\item\em Sets the border color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cube_ab26b72a81376fd5dc4fcc7f0b715b087}\label{class_cube_ab26b72a81376fd5dc4fcc7f0b715b087}} 
+void \hyperlink{class_cube_ab26b72a81376fd5dc4fcc7f0b715b087}{draw} ()
+\begin{DoxyCompactList}\small\item\em Draws the box to the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The cube class draws a cube of side lengths 1 centered at the origin. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cube_a06f3d86fb63e3aad08623610aa3c17b4}\label{class_cube_a06f3d86fb63e3aad08623610aa3c17b4}} 
+\index{Cube@{Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{Cube()}{Cube()}}
+{\footnotesize\ttfamily Cube\+::\+Cube (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Simply stores the pointer of the \hyperlink{class_graphics_engine}{Graphics\+Engine}. \mbox{\Hypertarget{class_cube_aa814e979cecb8c451fdb332ded2cea1e}\label{class_cube_aa814e979cecb8c451fdb332ded2cea1e}} 
+\index{Cube@{Cube}!````~Cube@{$\sim$\+Cube}}
+\index{````~Cube@{$\sim$\+Cube}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{$\sim$\+Cube()}{~Cube()}}
+{\footnotesize\ttfamily Cube\+::$\sim$\+Cube (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Removes allocated data from the graphics card. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cube_a30eb89f673d01f908328523377a2ba7d}\label{class_cube_a30eb89f673d01f908328523377a2ba7d}} 
+\index{Cube@{Cube}!set\+Border\+Color@{set\+Border\+Color}}
+\index{set\+Border\+Color@{set\+Border\+Color}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{set\+Border\+Color()}{setBorderColor()}}
+{\footnotesize\ttfamily void Cube\+::set\+Border\+Color (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r,  }\item[{G\+Lfloat}]{g,  }\item[{G\+Lfloat}]{b,  }\item[{G\+Lfloat}]{a = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Sets the border color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & --- Red channel for the border color. \\
+\hline
+{\em g} & --- Green channel for the border color. \\
+\hline
+{\em b} & --- Blue channel for the border color. \\
+\hline
+{\em a} & --- Alpha channel for the border color. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cube_a11b2c41497e69c2998766f3b34afcbfa}\label{class_cube_a11b2c41497e69c2998766f3b34afcbfa}} 
+\index{Cube@{Cube}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void Cube\+::set\+Color (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r,  }\item[{G\+Lfloat}]{g,  }\item[{G\+Lfloat}]{b,  }\item[{G\+Lfloat}]{a = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Sets the solid box color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & --- Red channel for the box color.\\
+\hline
+{\em g} & --- Green channel for the box color.\\
+\hline
+{\em b} & --- Blue channel for the box color.\\
+\hline
+{\em a} & --- Alpha channel for the box color. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cube_a215c64365cf3aeed78a9d3802ad1899e}\label{class_cube_a215c64365cf3aeed78a9d3802ad1899e}} 
+\index{Cube@{Cube}!set\+Color\+Cube@{set\+Color\+Cube}}
+\index{set\+Color\+Cube@{set\+Color\+Cube}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{set\+Color\+Cube()}{setColorCube()}}
+{\footnotesize\ttfamily void Cube\+::set\+Color\+Cube (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{b }\end{DoxyParamCaption})}
+
+
+
+Turns on and off the drawing of the multicolored box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & --- True to use the multicolored box and false for a solid color box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cube_aa08ee7691f94b33978f17358577c82a4}\label{class_cube_aa08ee7691f94b33978f17358577c82a4}} 
+\index{Cube@{Cube}!set\+Draw\+Border@{set\+Draw\+Border}}
+\index{set\+Draw\+Border@{set\+Draw\+Border}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{set\+Draw\+Border()}{setDrawBorder()}}
+{\footnotesize\ttfamily void Cube\+::set\+Draw\+Border (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{d }\end{DoxyParamCaption})}
+
+
+
+Turns on and off the drawing of the box border. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & --- True to turn the border drawing on and false for off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cube_a80707754f50abfb13f6a106f117a59e9}\label{class_cube_a80707754f50abfb13f6a106f117a59e9}} 
+\index{Cube@{Cube}!set\+Draw\+Faces@{set\+Draw\+Faces}}
+\index{set\+Draw\+Faces@{set\+Draw\+Faces}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{set\+Draw\+Faces()}{setDrawFaces()}}
+{\footnotesize\ttfamily void Cube\+::set\+Draw\+Faces (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{d }\end{DoxyParamCaption})}
+
+
+
+Turns on and off the drawing of the box faces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & --- True to turn the face drawing on and false for off. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/rclocker1/\+Graphics/\+H\+W6/\+Box\+Animations/\hyperlink{_cube_8h}{Cube.\+h}\item 
+/home/rclocker1/\+Graphics/\+H\+W6/\+Box\+Animations/\hyperlink{_cube_8cpp}{Cube.\+cpp}\end{DoxyCompactItemize}

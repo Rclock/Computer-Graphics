@@ -1,0 +1,345 @@
+\hypertarget{class_graphics_engine}{}\section{Graphics\+Engine Class Reference}
+\label{class_graphics_engine}\index{Graphics\+Engine@{Graphics\+Engine}}
+
+
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program.  
+
+
+
+
+{\ttfamily \#include $<$Graphics\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Graphics\+Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Graphics\+Engine\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}{Graphics\+Engine} (std\+::string title=\char`\"{}Open\+GL Window\char`\"{}, G\+Lint Major\+Ver=3, G\+Lint Minor\+Ver=3, int width=600, int height=600)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}{$\sim$\+Graphics\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a02f488184662f6bedacfb77f38a6da64}{select\+Box} (G\+Lfloat x, G\+Lfloat y)
+\begin{DoxyCompactList}\small\item\em Select a single box. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a2ff9c9a258f4ba3295c89dc1ae5dc4b1}{check\+Red} (G\+Lfloat x, G\+Lfloat y)
+\begin{DoxyCompactList}\small\item\em Check or make a box red. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_adf448561f5df07f42050cb0f5483eacd}{create\+Boxes} (G\+Lfloat cx, G\+Lfloat cy, G\+Lfloat w, G\+Lfloat h)
+\begin{DoxyCompactList}\small\item\em Create new boxes. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_add65dfb7d27e2aae2344240a45dd45a0}{compare\+To\+All\+Boxes\+Delete} (G\+Lfloat x, G\+Lfloat y)
+\begin{DoxyCompactList}\small\item\em Delete a given box in those coords. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a2cccf1122d2083c4064dedcba89aa994}{compare\+To\+All\+Boxes\+Drag} (G\+Lfloat x, G\+Lfloat y)
+\begin{DoxyCompactList}\small\item\em Drag a given box in those coords. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_ae10f5983900c72c2997ed6665bb245be}{drag\+Selected\+Boxes} (G\+Lfloat x, G\+Lfloat y)
+\begin{DoxyCompactList}\small\item\em Drag all selected boxes. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a926e151acd90fc95722d740c4cd02995}{select\+All} ()
+\begin{DoxyCompactList}\small\item\em Select every box. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_aa786a083387002aa1445026627a51b0a}{deselect\+All} ()
+\begin{DoxyCompactList}\small\item\em Deselect every box. \end{DoxyCompactList}\item 
+bool \hyperlink{class_graphics_engine_a4a2634a2624f603abf53b3b2746ba8c6}{compare\+To\+All\+Boxes} (G\+Lfloat x, G\+Lfloat y)
+\begin{DoxyCompactList}\small\item\em Compares mouse coords to all boxes. \end{DoxyCompactList}\item 
+bool \hyperlink{class_graphics_engine_a683606dd2698ae7a7fbcc892ff4a54ba}{compare\+To\+All\+Selected\+Boxes} (G\+Lfloat x, G\+Lfloat y)
+\begin{DoxyCompactList}\small\item\em Compares mouse coords to all selected boxes. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}{display} ()
+\begin{DoxyCompactList}\small\item\em The function responsible for drawing to the Open\+GL frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}\label{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}} 
+void \hyperlink{class_graphics_engine_a7f549d3ad00c34e61d067fdd2a911034}{change\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Changes the fill, line, and point mode being used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}\label{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}} 
+void \hyperlink{class_graphics_engine_a7b12982b41cbdb107f48863798be2ed7}{screenshot} ()
+\begin{DoxyCompactList}\small\item\em Saves a screenshot of the current display to a file, Screen\+Shot\#\#\#.png. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}\label{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}} 
+void \hyperlink{class_graphics_engine_a6a38e40ee4227a8b53dddf07f92323ee}{resize} ()
+\begin{DoxyCompactList}\small\item\em Handles the resizing events of the window. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}{set\+Size} (unsigned int, unsigned int)
+\begin{DoxyCompactList}\small\item\em Sets the size of the rendering window. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a7f09e50b78a6957ce0bcc2442ba49e06}{move\+Selected\+Left} ()
+\begin{DoxyCompactList}\small\item\em These move selected boxes in the 4 directions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a3de0f5b6a7ee163e3cd81cd70b6b2aa2}\label{class_graphics_engine_a3de0f5b6a7ee163e3cd81cd70b6b2aa2}} 
+void \hyperlink{class_graphics_engine_a3de0f5b6a7ee163e3cd81cd70b6b2aa2}{move\+Selected\+Right} ()
+\begin{DoxyCompactList}\small\item\em Moves all selected boxes to the right in the state processor. Called when the right arrow key is down. Checks boolean selected and performs arithmetic, changes centers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_ab4f08b6ecf4daefa6face72775ea318e}\label{class_graphics_engine_ab4f08b6ecf4daefa6face72775ea318e}} 
+void \hyperlink{class_graphics_engine_ab4f08b6ecf4daefa6face72775ea318e}{move\+Selected\+Up} ()
+\begin{DoxyCompactList}\small\item\em Moves all selected boxes up in the state processor. Called when the up arrow key is down. Checks boolean selected and performs arithmetic, changes centers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a6e2faebbfce2dee0bc68386931b529d6}\label{class_graphics_engine_a6e2faebbfce2dee0bc68386931b529d6}} 
+void \hyperlink{class_graphics_engine_a6e2faebbfce2dee0bc68386931b529d6}{move\+Selected\+Down} ()
+\begin{DoxyCompactList}\small\item\em Moves all selected boxes down in the state processor. Called when the down arrow key is down. Checks boolean selected and performs arithmetic, changes centers. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_engine_a6b07e2201e276bb406d3436d382049c9}{increase\+Width} ()
+\begin{DoxyCompactList}\small\item\em These mess with widths and heights, of the selected boxes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_aeced42d59dd8966281f7cb069ee236fb}\label{class_graphics_engine_aeced42d59dd8966281f7cb069ee236fb}} 
+void \hyperlink{class_graphics_engine_aeced42d59dd8966281f7cb069ee236fb}{decrease\+Width} ()
+\begin{DoxyCompactList}\small\item\em Decreases width of all selected boxes. Called in the state processor. Checks boolean selected and does arithmetic. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a75af3db266c0f72e26578cf621a6ac16}\label{class_graphics_engine_a75af3db266c0f72e26578cf621a6ac16}} 
+void \hyperlink{class_graphics_engine_a75af3db266c0f72e26578cf621a6ac16}{increase\+Height} ()
+\begin{DoxyCompactList}\small\item\em Increases height of all selected boxes. Called in the state processor. Checks boolean selected and does arithmetic. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graphics_engine_a10341af9b8f2ab6e51580ed9fa4c142f}\label{class_graphics_engine_a10341af9b8f2ab6e51580ed9fa4c142f}} 
+void \hyperlink{class_graphics_engine_a10341af9b8f2ab6e51580ed9fa4c142f}{decrease\+Height} ()
+\begin{DoxyCompactList}\small\item\em Decreases height of all selected boxes. Called in the state processor. Checks boolean selected and does arithmetic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graphics_engine_a799f855079745093d56161b88c2c1b52}\label{class_graphics_engine_a799f855079745093d56161b88c2c1b52}} 
+sf\+::\+Vector2f {\bfseries click\+Origin}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_graphics_engine}{Graphics\+Engine} class is an extension of sf\+::\+Render\+Window which handles all of the graphics rendering in the program. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}\label{class_graphics_engine_a458fa2b36f864e0820a0a54ad58ff1c3}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\index{Graphics\+Engine@{Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{Graphics\+Engine()}{GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::\+Graphics\+Engine (\begin{DoxyParamCaption}\item[{std\+::string}]{title = {\ttfamily \char`\"{}OpenGL~Window\char`\"{}},  }\item[{G\+Lint}]{Major\+Ver = {\ttfamily 3},  }\item[{G\+Lint}]{Minor\+Ver = {\ttfamily 3},  }\item[{int}]{width = {\ttfamily 600},  }\item[{int}]{height = {\ttfamily 600} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & --- Title to be placed in the titlebar of the graphics window. \\
+\hline
+{\em Major\+Ver} & --- The Open\+GL major version that is requested. \\
+\hline
+{\em Minor\+Ver} & --- The Open\+GL minor version that is requested. \\
+\hline
+{\em width} & --- The width (in pixels) of the graphics window. \\
+\hline
+{\em height} & --- The height (in pixels) of the graphics window.\\
+\hline
+\end{DoxyParams}
+Creates rendering window, enables G\+L\+EW, loads the shaders, and sets some initial data settings. \mbox{\Hypertarget{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}\label{class_graphics_engine_ab67afeefbc9f1c284f6ce310c31ae8f6}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}}
+\index{````~Graphics\+Engine@{$\sim$\+Graphics\+Engine}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Graphics\+Engine()}{~GraphicsEngine()}}
+{\footnotesize\ttfamily Graphics\+Engine\+::$\sim$\+Graphics\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Currently empty, no allocated memory to clear. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphics_engine_a2ff9c9a258f4ba3295c89dc1ae5dc4b1}\label{class_graphics_engine_a2ff9c9a258f4ba3295c89dc1ae5dc4b1}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!check\+Red@{check\+Red}}
+\index{check\+Red@{check\+Red}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{check\+Red()}{checkRed()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::check\+Red (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})}
+
+
+
+Check or make a box red. 
+
+Checks if the given mouse coordinates are over a given box, will change the box\textquotesingle{}s color to red if true. Calls a box function to do this. Will revert back to normal colors also.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & --- mouse x position converetd \\
+\hline
+{\em y} & --- mouse y position converted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a4a2634a2624f603abf53b3b2746ba8c6}\label{class_graphics_engine_a4a2634a2624f603abf53b3b2746ba8c6}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!compare\+To\+All\+Boxes@{compare\+To\+All\+Boxes}}
+\index{compare\+To\+All\+Boxes@{compare\+To\+All\+Boxes}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{compare\+To\+All\+Boxes()}{compareToAllBoxes()}}
+{\footnotesize\ttfamily bool Graphics\+Engine\+::compare\+To\+All\+Boxes (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})}
+
+
+
+Compares mouse coords to all boxes. 
+
+This function compares the given mouse screen coordinates to every box on the screen, returns true on the first one you are in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & --- Converted mouse position x coordinate \\
+\hline
+{\em y} & --- Converted mouse position y coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_add65dfb7d27e2aae2344240a45dd45a0}\label{class_graphics_engine_add65dfb7d27e2aae2344240a45dd45a0}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!compare\+To\+All\+Boxes\+Delete@{compare\+To\+All\+Boxes\+Delete}}
+\index{compare\+To\+All\+Boxes\+Delete@{compare\+To\+All\+Boxes\+Delete}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{compare\+To\+All\+Boxes\+Delete()}{compareToAllBoxesDelete()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::compare\+To\+All\+Boxes\+Delete (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})}
+
+
+
+Delete a given box in those coords. 
+
+This function compares given mouse coordinates and finds which box you are over. It will delete that box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & --- converted mouse x coordinate \\
+\hline
+{\em y} & --- converted mouse y coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a2cccf1122d2083c4064dedcba89aa994}\label{class_graphics_engine_a2cccf1122d2083c4064dedcba89aa994}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!compare\+To\+All\+Boxes\+Drag@{compare\+To\+All\+Boxes\+Drag}}
+\index{compare\+To\+All\+Boxes\+Drag@{compare\+To\+All\+Boxes\+Drag}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{compare\+To\+All\+Boxes\+Drag()}{compareToAllBoxesDrag()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::compare\+To\+All\+Boxes\+Drag (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})}
+
+
+
+Drag a given box in those coords. 
+
+Sets up differences to drag boxes. Uses mouse coordinates and arithmetic to determine what to change to the box centers, calls a box function to use the differences to drag the boxes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & --- converted mouse x \\
+\hline
+{\em y} & --- converted mouse y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a683606dd2698ae7a7fbcc892ff4a54ba}\label{class_graphics_engine_a683606dd2698ae7a7fbcc892ff4a54ba}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!compare\+To\+All\+Selected\+Boxes@{compare\+To\+All\+Selected\+Boxes}}
+\index{compare\+To\+All\+Selected\+Boxes@{compare\+To\+All\+Selected\+Boxes}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{compare\+To\+All\+Selected\+Boxes()}{compareToAllSelectedBoxes()}}
+{\footnotesize\ttfamily bool Graphics\+Engine\+::compare\+To\+All\+Selected\+Boxes (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})}
+
+
+
+Compares mouse coords to all selected boxes. 
+
+This function is similar to the regular compare\+To\+All\+Boxes function, except for selected boxes only. If you are over a selected box with the mouse, this will return true.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & --- Covnerted mouse x position \\
+\hline
+{\em y} & --- Converted mouse y position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_adf448561f5df07f42050cb0f5483eacd}\label{class_graphics_engine_adf448561f5df07f42050cb0f5483eacd}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!create\+Boxes@{create\+Boxes}}
+\index{create\+Boxes@{create\+Boxes}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{create\+Boxes()}{createBoxes()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::create\+Boxes (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{cx,  }\item[{G\+Lfloat}]{cy,  }\item[{G\+Lfloat}]{w,  }\item[{G\+Lfloat}]{h }\end{DoxyParamCaption})}
+
+
+
+Create new boxes. 
+
+Dynamically allocates memory and creates a new box there at the end of the vector. \mbox{\Hypertarget{class_graphics_engine_aa786a083387002aa1445026627a51b0a}\label{class_graphics_engine_aa786a083387002aa1445026627a51b0a}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!deselect\+All@{deselect\+All}}
+\index{deselect\+All@{deselect\+All}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{deselect\+All()}{deselectAll()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::deselect\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deselect every box. 
+
+Deselects all boxes in the vector that are selected. Loops to the vector size and calls a box function. \mbox{\Hypertarget{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}\label{class_graphics_engine_a2f0bdf1a47bf9e8d4f1c9525c2ebc8f9}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!display@{display}}
+\index{display@{display}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function responsible for drawing to the Open\+GL frame buffer. 
+
+This function clears the screen and calls the draw functions of the box and yellow outline. \mbox{\Hypertarget{class_graphics_engine_ae10f5983900c72c2997ed6665bb245be}\label{class_graphics_engine_ae10f5983900c72c2997ed6665bb245be}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!drag\+Selected\+Boxes@{drag\+Selected\+Boxes}}
+\index{drag\+Selected\+Boxes@{drag\+Selected\+Boxes}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{drag\+Selected\+Boxes()}{dragSelectedBoxes()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::drag\+Selected\+Boxes (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})}
+
+
+
+Drag all selected boxes. 
+
+Drags selected boxes. Loops through all selected boxes and makes differences, calls box function to drag that box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & --- converted mouse x \\
+\hline
+{\em y} & --- converted mouse y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_a6b07e2201e276bb406d3436d382049c9}\label{class_graphics_engine_a6b07e2201e276bb406d3436d382049c9}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!increase\+Width@{increase\+Width}}
+\index{increase\+Width@{increase\+Width}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{increase\+Width()}{increaseWidth()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::increase\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+These mess with widths and heights, of the selected boxes. 
+
+Increases width of all selected boxes. Called in the state processor. Checks boolean selected and does arithmetic. \mbox{\Hypertarget{class_graphics_engine_a7f09e50b78a6957ce0bcc2442ba49e06}\label{class_graphics_engine_a7f09e50b78a6957ce0bcc2442ba49e06}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!move\+Selected\+Left@{move\+Selected\+Left}}
+\index{move\+Selected\+Left@{move\+Selected\+Left}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{move\+Selected\+Left()}{moveSelectedLeft()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::move\+Selected\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+These move selected boxes in the 4 directions. 
+
+Moves all selected boxes to the left in the state processor. Called when the left arrow key is down. Checks boolean selected and performs arithmetic, changes centers. \mbox{\Hypertarget{class_graphics_engine_a926e151acd90fc95722d740c4cd02995}\label{class_graphics_engine_a926e151acd90fc95722d740c4cd02995}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!select\+All@{select\+All}}
+\index{select\+All@{select\+All}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{select\+All()}{selectAll()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::select\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Select every box. 
+
+selects all of the boxes in the vector. Calls a box function to do so in each iteration of loop. No parameters. \mbox{\Hypertarget{class_graphics_engine_a02f488184662f6bedacfb77f38a6da64}\label{class_graphics_engine_a02f488184662f6bedacfb77f38a6da64}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!select\+Box@{select\+Box}}
+\index{select\+Box@{select\+Box}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{select\+Box()}{selectBox()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::select\+Box (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y }\end{DoxyParamCaption})}
+
+
+
+Select a single box. 
+
+Selects a box. Calls a box function to do this. Basically sets a boolean to true.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & --- converted mouse x \\
+\hline
+{\em y} & --- converted mouse y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}\label{class_graphics_engine_aac1a9cc3d195ed1f28018dffd80dae41}} 
+\index{Graphics\+Engine@{Graphics\+Engine}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Graphics\+Engine@{Graphics\+Engine}}
+\subsubsection{\texorpdfstring{set\+Size()}{setSize()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+::set\+Size (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets the size of the rendering window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & --- the width in pixels of the new size.\\
+\hline
+{\em height} & --- the height in pixels of the new size. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/rclocker1/\+Graphics/\+H\+W3/\+Problem3/\hyperlink{_graphics_engine_8h}{Graphics\+Engine.\+h}\item 
+/home/rclocker1/\+Graphics/\+H\+W3/\+Problem3/\hyperlink{_graphics_engine_8cpp}{Graphics\+Engine.\+cpp}\end{DoxyCompactItemize}

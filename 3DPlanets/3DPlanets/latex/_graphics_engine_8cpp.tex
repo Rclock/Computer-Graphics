@@ -1,0 +1,60 @@
+\hypertarget{_graphics_engine_8cpp}{}\section{Graphics\+Engine.\+cpp File Reference}
+\label{_graphics_engine_8cpp}\index{Graphics\+Engine.\+cpp@{Graphics\+Engine.\+cpp}}
+
+
+Main graphics driver for the program.  
+
+
+{\ttfamily \#include \char`\"{}Graphics\+Engine.\+h\char`\"{}}\newline
+Include dependency graph for Graphics\+Engine.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_graphics_engine_8cpp_a7bea8e644a6c7043973aa43ce9b1d309}{num\+Digits} (int n)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main graphics driver for the program. 
+
+This class extends sf\+::\+Render\+Window.
+
+\begin{DoxyAuthor}{Author}
+Ryan Clocker 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+4/12/2019 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_graphics_engine_8cpp_a7bea8e644a6c7043973aa43ce9b1d309}\label{_graphics_engine_8cpp_a7bea8e644a6c7043973aa43ce9b1d309}} 
+\index{Graphics\+Engine.\+cpp@{Graphics\+Engine.\+cpp}!num\+Digits@{num\+Digits}}
+\index{num\+Digits@{num\+Digits}!Graphics\+Engine.\+cpp@{Graphics\+Engine.\+cpp}}
+\subsubsection{\texorpdfstring{num\+Digits()}{numDigits()}}
+{\footnotesize\ttfamily int num\+Digits (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & --- Title to be placed in the titlebar of the graphics window. \\
+\hline
+{\em Major\+Ver} & --- The Open\+GL major version that is requested. \\
+\hline
+{\em Minor\+Ver} & --- The Open\+GL minor version that is requested. \\
+\hline
+{\em width} & --- The width (in pixels) of the graphics window. \\
+\hline
+{\em height} & --- The height (in pixels) of the graphics window.\\
+\hline
+\end{DoxyParams}
+Creates rendering window, loads the shaders, and sets some initial data settings.
+
+The constructor also sets things up for the cube map, all of the textures, and some lighting things.$>$ Used for formatting the X Y Z in freetype 

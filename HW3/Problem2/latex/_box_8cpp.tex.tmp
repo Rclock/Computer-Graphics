@@ -1,0 +1,29 @@
+\hypertarget{_box_8cpp}{}\section{Box.\+cpp File Reference}
+\label{_box_8cpp}\index{Box.\+cpp@{Box.\+cpp}}
+
+
+Simple rectangle object for drawing.  
+
+
+{\ttfamily \#include \char`\"{}Box.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for Box.\+cpp\+:
+% FIG 0
+
+
+\subsection{Detailed Description}
+Simple rectangle object for drawing. 
+
+Simple rectangle object with Open\+GL data loading and drawing interfaces. The data that is being stored is a created in two separate arrays, one for vertices and the other for color. These blocks of data are transferred to a single array buffer on the graphics card in two separate locations (that is the data is not intermixed) and hence we can set up the reading pointers as having tightly packed data. There is also an index array of 6 values \{0, 3, 2, 0, 2, 1\} that represent the vertices that will be drawn in two triangles. So one triangle will use vertices (0, 3, 2) and the other will use vertices (0, 2, 1).
+
+\hyperlink{class_box}{Box} can be changed to different colors and compare coordinates to itself.
+
+\begin{DoxyAuthor}{Author}
+Ryan Clocker
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2/25/2019 
+\end{DoxyDate}

@@ -1,0 +1,166 @@
+\hypertarget{class_box}{}\section{Box Class Reference}
+\label{class_box}\index{Box@{Box}}
+
+
+The \hyperlink{class_box}{Box} class holds position and color data for a multicolored rectangle. It also has facilities for loading the data to the graphics card and invoking draw commands on the data.  
+
+
+
+
+{\ttfamily \#include $<$Box.\+h$>$}
+
+
+
+Inheritance diagram for Box\+:
+% FIG 0
+
+
+Collaboration diagram for Box\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_box_a60ab766bbad3c0e5abe69b50cb3fe6ed}{Box} (G\+Lfloat cx=0, G\+Lfloat cy=0, G\+Lfloat w=1, G\+Lfloat h=1)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_box_a6a5e09398e85d602a046b429062fb9c2}{$\sim$\+Box} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_box_a272734cc296e7b34a53efc6f06336b00}{set\+Width} (G\+Lfloat w)
+\begin{DoxyCompactList}\small\item\em Resets the width of the box. \end{DoxyCompactList}\item 
+void \hyperlink{class_box_ac5556af3ef01d51abbf22d98c6c5880c}{set\+Height} (G\+Lfloat h)
+\begin{DoxyCompactList}\small\item\em Resets the height of the box. \end{DoxyCompactList}\item 
+void \hyperlink{class_box_a0f33ff4b10edd0fe29ebd65087842610}{set\+Center} (G\+Lfloat cx, G\+Lfloat cy)
+\begin{DoxyCompactList}\small\item\em Resets the center of the box. \end{DoxyCompactList}\item 
+G\+Lfloat \hyperlink{class_box_a02d15c0149fb43c84c831142697ebc6f}{get\+Width} ()
+\begin{DoxyCompactList}\small\item\em Changes the color of the selected vertex. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_box_ab4283a4e09faa73b25e32a5942377a4e}\label{class_box_ab4283a4e09faa73b25e32a5942377a4e}} 
+G\+Lfloat \hyperlink{class_box_ab4283a4e09faa73b25e32a5942377a4e}{get\+Height} ()
+\begin{DoxyCompactList}\small\item\em Returns the height of the rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{class_box_afe94c473ef4bb934fc6dd9a554ec4e37}{get\+Center} (G\+Lfloat $\ast$c)
+\begin{DoxyCompactList}\small\item\em Populates the array c with the (x, y) coordinates of the center. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_box_a17f768f00ee22cb18146a4150f9ae396}\label{class_box_a17f768f00ee22cb18146a4150f9ae396}} 
+void \hyperlink{class_box_a17f768f00ee22cb18146a4150f9ae396}{draw} ()
+\begin{DoxyCompactList}\small\item\em Draws the rectangle to the Open\+GL window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_box}{Box} class holds position and color data for a multicolored rectangle. It also has facilities for loading the data to the graphics card and invoking draw commands on the data. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_box_a60ab766bbad3c0e5abe69b50cb3fe6ed}\label{class_box_a60ab766bbad3c0e5abe69b50cb3fe6ed}} 
+\index{Box@{Box}!Box@{Box}}
+\index{Box@{Box}!Box@{Box}}
+\subsubsection{\texorpdfstring{Box()}{Box()}}
+{\footnotesize\ttfamily Box\+::\+Box (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{cx = {\ttfamily 0},  }\item[{G\+Lfloat}]{cy = {\ttfamily 0},  }\item[{G\+Lfloat}]{w = {\ttfamily 1},  }\item[{G\+Lfloat}]{h = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cx} & --- X position of the center. \\
+\hline
+{\em cx} & --- Y position of the center. \\
+\hline
+{\em w} & --- The width of the box. \\
+\hline
+{\em h} & --- The height of the box.\\
+\hline
+\end{DoxyParams}
+Creates a box object, loads the attributes, generates the needed buffers and I\+Ds, and finally loads the object data up to the graphics card. \mbox{\Hypertarget{class_box_a6a5e09398e85d602a046b429062fb9c2}\label{class_box_a6a5e09398e85d602a046b429062fb9c2}} 
+\index{Box@{Box}!````~Box@{$\sim$\+Box}}
+\index{````~Box@{$\sim$\+Box}!Box@{Box}}
+\subsubsection{\texorpdfstring{$\sim$\+Box()}{~Box()}}
+{\footnotesize\ttfamily Box\+::$\sim$\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Clears the graphics memory used for the rectangle. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_box_afe94c473ef4bb934fc6dd9a554ec4e37}\label{class_box_afe94c473ef4bb934fc6dd9a554ec4e37}} 
+\index{Box@{Box}!get\+Center@{get\+Center}}
+\index{get\+Center@{get\+Center}!Box@{Box}}
+\subsubsection{\texorpdfstring{get\+Center()}{getCenter()}}
+{\footnotesize\ttfamily void Box\+::get\+Center (\begin{DoxyParamCaption}\item[{G\+Lfloat $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Populates the array c with the (x, y) coordinates of the center. 
+
+The array c must have length at least two. \mbox{\Hypertarget{class_box_a02d15c0149fb43c84c831142697ebc6f}\label{class_box_a02d15c0149fb43c84c831142697ebc6f}} 
+\index{Box@{Box}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Box@{Box}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily G\+Lfloat Box\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Changes the color of the selected vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & --- Number of the vertex to alter. Valid numbers are 0, 1, 2, 3, with 0 representing the upper left vertex and then moving clockwise for the other three vertices.\\
+\hline
+{\em r} & --- Red intensity for the vertex.\\
+\hline
+{\em g} & --- Green intensity for the vertex.\\
+\hline
+{\em b} & --- Blue intensity for the vertex.\\
+\hline
+\end{DoxyParams}
+Resets the color of vertex v to the new (r, g, b) value and calls the data loading method. Returns the width of the rectangle. \mbox{\Hypertarget{class_box_a0f33ff4b10edd0fe29ebd65087842610}\label{class_box_a0f33ff4b10edd0fe29ebd65087842610}} 
+\index{Box@{Box}!set\+Center@{set\+Center}}
+\index{set\+Center@{set\+Center}!Box@{Box}}
+\subsubsection{\texorpdfstring{set\+Center()}{setCenter()}}
+{\footnotesize\ttfamily void Box\+::set\+Center (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{cx,  }\item[{G\+Lfloat}]{cy }\end{DoxyParamCaption})}
+
+
+
+Resets the center of the box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cx} & --- X position of the center.\\
+\hline
+{\em cx} & --- Y position of the center.\\
+\hline
+\end{DoxyParams}
+Resets the center of the box and then calls the data loading method. \mbox{\Hypertarget{class_box_ac5556af3ef01d51abbf22d98c6c5880c}\label{class_box_ac5556af3ef01d51abbf22d98c6c5880c}} 
+\index{Box@{Box}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!Box@{Box}}
+\subsubsection{\texorpdfstring{set\+Height()}{setHeight()}}
+{\footnotesize\ttfamily void Box\+::set\+Height (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{h }\end{DoxyParamCaption})}
+
+
+
+Resets the height of the box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & --- The height of the box.\\
+\hline
+\end{DoxyParams}
+Resets the height of the box and then calls the data loading method. \mbox{\Hypertarget{class_box_a272734cc296e7b34a53efc6f06336b00}\label{class_box_a272734cc296e7b34a53efc6f06336b00}} 
+\index{Box@{Box}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!Box@{Box}}
+\subsubsection{\texorpdfstring{set\+Width()}{setWidth()}}
+{\footnotesize\ttfamily void Box\+::set\+Width (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{w }\end{DoxyParamCaption})}
+
+
+
+Resets the width of the box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & --- The width of the box.\\
+\hline
+\end{DoxyParams}
+Resets the width of the box and then calls the data loading method. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_box_8h}{Box.\+h}\item 
+\hyperlink{_box_8cpp}{Box.\+cpp}\end{DoxyCompactItemize}

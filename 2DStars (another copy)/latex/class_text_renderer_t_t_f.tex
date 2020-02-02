@@ -1,0 +1,287 @@
+\hypertarget{class_text_renderer_t_t_f}{}\section{Text\+Renderer\+T\+TF Class Reference}
+\label{class_text_renderer_t_t_f}\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+
+
+This class encapsulates the details of rendering a True\+Type font on an Open\+GL window.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Renderer\+T\+T\+F.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_text_renderer_t_t_f_a3e2faacd9efeadf1b3e3226798ac720c}{Text\+Renderer\+T\+TF} (std\+::string font\+File=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_text_renderer_t_t_f_aa516278b8a3837fb84a698a53b9d9323}{$\sim$\+Text\+Renderer\+T\+TF} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_text_renderer_t_t_f_abf833b9d51f930b3e3ccfe8794aa0abe}{set\+Screen\+Size} (G\+Luint w, G\+Luint h)
+\begin{DoxyCompactList}\small\item\em Loads in the the size of the screen. \end{DoxyCompactList}\item 
+void \hyperlink{class_text_renderer_t_t_f_aef124230f4c3564b097ed844e052a2ce}{set\+Color} (G\+Lfloat r, G\+Lfloat g, G\+Lfloat b, G\+Lfloat a)
+\begin{DoxyCompactList}\small\item\em Sets the color of the font. \end{DoxyCompactList}\item 
+void \hyperlink{class_text_renderer_t_t_f_aeca067cccd24f121ca17e44445e7ad5a}{set\+Color} (G\+Lfloat c\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Sets the color of the font. \end{DoxyCompactList}\item 
+void \hyperlink{class_text_renderer_t_t_f_a65a7ec5a55cb3f887494eaf95e78d7c9}{set\+Font\+Size} (G\+Luint sz)
+\begin{DoxyCompactList}\small\item\em Sets the size of the font in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_renderer_t_t_f_ae03c8165f75f127be678f7d45b78bbdf}\label{class_text_renderer_t_t_f_ae03c8165f75f127be678f7d45b78bbdf}} 
+G\+Luint \hyperlink{class_text_renderer_t_t_f_ae03c8165f75f127be678f7d45b78bbdf}{get\+Font\+Size} ()
+\begin{DoxyCompactList}\small\item\em Returns the current font size, that is, the number of vertical pixels used in the diaplay of the font. \end{DoxyCompactList}\item 
+void \hyperlink{class_text_renderer_t_t_f_aedfacf050040104b67f45e1c6f86b12d}{load\+Font} (std\+::string font\+File)
+\begin{DoxyCompactList}\small\item\em Loads a True\+Type font file into the rendering system. \end{DoxyCompactList}\item 
+G\+Lboolean \hyperlink{class_text_renderer_t_t_f_acd5638f9f9220a8ca146a3f15a88139e}{is\+Error} ()
+\begin{DoxyCompactList}\small\item\em Reports font, shader, freetype, and glew loading and initializing errors. \end{DoxyCompactList}\item 
+int \hyperlink{class_text_renderer_t_t_f_a485f53b24384306441987b52b6065af6}{text\+Width} (std\+::string text)
+\begin{DoxyCompactList}\small\item\em Returns the pixel width of the text using the current font and size. \end{DoxyCompactList}\item 
+int \hyperlink{class_text_renderer_t_t_f_a64698c7661b1e10f08e41fcf8ae9d8f5}{text\+Width} (const char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Returns the pixel width of the text using the current font and size. \end{DoxyCompactList}\item 
+void \hyperlink{class_text_renderer_t_t_f_a766eef34ac1aa3a409a37b28d744a501}{draw} (std\+::string text, G\+Luint xpos, G\+Luint ypos, G\+Lfloat rot=0)
+\begin{DoxyCompactList}\small\item\em Renders text to the Open\+GL window. \end{DoxyCompactList}\item 
+void \hyperlink{class_text_renderer_t_t_f_a131804eb5f8fc3c6f7e102ed2b003145}{draw} (const char $\ast$text, G\+Luint xpos, G\+Luint ypos, G\+Lfloat rot=0)
+\begin{DoxyCompactList}\small\item\em Renders text to the Open\+GL window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class encapsulates the details of rendering a True\+Type font on an Open\+GL window. 
+
+This class encapsulates the details of rendering a True\+Type font on an Open\+GL window as a 2-\/D overlay. There are accessor methods for changing the font size and color. Methods for loading a True\+Type font file, finding the pixel width of a string with the current font and size, and a draw command allowing for placement and rotation.
+
+\begin{DoxyNote}{Note}
+The current window width and height need to be loaded into the structure for the position and font size to correspond to a number of pixels.
+
+To set the size, simply call the set\+Screen\+Size(w, h) method where w and h are the width and height, in pixels, of the Open\+GL window. This can be done in the resize routine of the windowing system or simply in the display routine before the text is rendered.
+
+The draw method has the form, draw(text, xpos, ypos, rot) where text is either a char$\ast$ type string or a std\+::string type. The parameters xpos and ypos are the x and y positions of the lower left corner of the containing box for the text given in pixels if the window width and height were set correctly. The rot parameter is optional, its default is 0, and it specifies the counter clockwise rotation of the text in degrees centered around the (xpos, ypos) point.
+
+In this system, positions are given in terms of pixel locations with the (0, 0) location being in the lower left corner of the Open\+GL screen. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_a3e2faacd9efeadf1b3e3226798ac720c}\label{class_text_renderer_t_t_f_a3e2faacd9efeadf1b3e3226798ac720c}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{Text\+Renderer\+T\+T\+F()}{TextRendererTTF()}}
+{\footnotesize\ttfamily Text\+Renderer\+T\+T\+F\+::\+Text\+Renderer\+T\+TF (\begin{DoxyParamCaption}\item[{std\+::string}]{font\+File = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+File} & --- Optional, the filename, and relative path, of the Tru\+Type font file to be loaded.\\
+\hline
+\end{DoxyParams}
+Creates a text renderer object,
+
+
+\begin{DoxyItemize}
+\item Loads the default attributes
+\item Initializes Free\+Type
+\item Initializes G\+L\+EW
+\item Loads the text rendering shaders (stored in memory)
+\item Generates the needed buffers
+\item Calls the font loading method if a font file was given in the parameter list. 
+\end{DoxyItemize}\mbox{\Hypertarget{class_text_renderer_t_t_f_aa516278b8a3837fb84a698a53b9d9323}\label{class_text_renderer_t_t_f_aa516278b8a3837fb84a698a53b9d9323}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!````~Text\+Renderer\+T\+TF@{$\sim$\+Text\+Renderer\+T\+TF}}
+\index{````~Text\+Renderer\+T\+TF@{$\sim$\+Text\+Renderer\+T\+TF}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{$\sim$\+Text\+Renderer\+T\+T\+F()}{~TextRendererTTF()}}
+{\footnotesize\ttfamily Text\+Renderer\+T\+T\+F\+::$\sim$\+Text\+Renderer\+T\+TF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+No implementation needed at this time. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_a766eef34ac1aa3a409a37b28d744a501}\label{class_text_renderer_t_t_f_a766eef34ac1aa3a409a37b28d744a501}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!draw@{draw}}
+\index{draw@{draw}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Text\+Renderer\+T\+T\+F\+::draw (\begin{DoxyParamCaption}\item[{std\+::string}]{text,  }\item[{G\+Luint}]{xpos,  }\item[{G\+Luint}]{ypos,  }\item[{G\+Lfloat}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Renders text to the Open\+GL window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & --- String to be displayed. \\
+\hline
+{\em xpos} & --- Horizontal pixel position for the lower left corner of the text box. \\
+\hline
+{\em ypos} & --- Vertical pixel position for the lower left corner of the text box. \\
+\hline
+{\em rot} & --- Optional, counter clockwise degree rotation of the text around the (xpos, ypos) position.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The set\+Screen\+Size(w, h) method must be called before this method for the positions and sizes to correspond to pixels. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_a131804eb5f8fc3c6f7e102ed2b003145}\label{class_text_renderer_t_t_f_a131804eb5f8fc3c6f7e102ed2b003145}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!draw@{draw}}
+\index{draw@{draw}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Text\+Renderer\+T\+T\+F\+::draw (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text,  }\item[{G\+Luint}]{xpos,  }\item[{G\+Luint}]{ypos,  }\item[{G\+Lfloat}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Renders text to the Open\+GL window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & --- char$\ast$ type string to be displayed. \\
+\hline
+{\em xpos} & --- Horizontal pixel position for the lower left corner of the text box. \\
+\hline
+{\em ypos} & --- Vertical pixel position for the lower left corner of the text box. \\
+\hline
+{\em rot} & --- Optional, counter clockwise degree rotation of the text around the (xpos, ypos) position.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The set\+Screen\+Size(w, h) method must be called before this method for the positions and sizes to correspond to pixels. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_acd5638f9f9220a8ca146a3f15a88139e}\label{class_text_renderer_t_t_f_acd5638f9f9220a8ca146a3f15a88139e}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!is\+Error@{is\+Error}}
+\index{is\+Error@{is\+Error}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{is\+Error()}{isError()}}
+{\footnotesize\ttfamily G\+Lboolean Text\+Renderer\+T\+T\+F\+::is\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reports font, shader, freetype, and glew loading and initializing errors. 
+
+Tracks any errors and reports a boolean to the calling method. Returns false if all is well and text can be rendered to the screen. Returns true if there is an error that would prevent text rendering. \mbox{\Hypertarget{class_text_renderer_t_t_f_aedfacf050040104b67f45e1c6f86b12d}\label{class_text_renderer_t_t_f_aedfacf050040104b67f45e1c6f86b12d}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!load\+Font@{load\+Font}}
+\index{load\+Font@{load\+Font}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{load\+Font()}{loadFont()}}
+{\footnotesize\ttfamily void Text\+Renderer\+T\+T\+F\+::load\+Font (\begin{DoxyParamCaption}\item[{std\+::string}]{font\+File }\end{DoxyParamCaption})}
+
+
+
+Loads a True\+Type font file into the rendering system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+File} & --- String file name and path to the font file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_aef124230f4c3564b097ed844e052a2ce}\label{class_text_renderer_t_t_f_aef124230f4c3564b097ed844e052a2ce}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Text\+Renderer\+T\+T\+F\+::set\+Color (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r,  }\item[{G\+Lfloat}]{g,  }\item[{G\+Lfloat}]{b,  }\item[{G\+Lfloat}]{a }\end{DoxyParamCaption})}
+
+
+
+Sets the color of the font. 
+
+Font colors are given in (r, g, b, a) coordinates, values are in \mbox{[}0, 1\mbox{]} with 0 being no intensity (and transparent for the alpha channel) to 1 being the highest intensity (and opaque for the alpha channel)
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & --- Red \\
+\hline
+{\em g} & --- Green \\
+\hline
+{\em b} & --- Blue \\
+\hline
+{\em a} & --- Alpha \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_aeca067cccd24f121ca17e44445e7ad5a}\label{class_text_renderer_t_t_f_aeca067cccd24f121ca17e44445e7ad5a}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Text\+Renderer\+T\+T\+F\+::set\+Color (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{c\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Sets the color of the font. 
+
+Font colors are given in (r, g, b, a) coordinates, values are in \mbox{[}0, 1\mbox{]} with 0 being no intensity (and transparent for the alpha channel) to 1 being the highest intensity (and opaque for the alpha channel)
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & --- Vector of 4 floats representing (r, g, b, a) values. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_a65a7ec5a55cb3f887494eaf95e78d7c9}\label{class_text_renderer_t_t_f_a65a7ec5a55cb3f887494eaf95e78d7c9}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!set\+Font\+Size@{set\+Font\+Size}}
+\index{set\+Font\+Size@{set\+Font\+Size}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{set\+Font\+Size()}{setFontSize()}}
+{\footnotesize\ttfamily void Text\+Renderer\+T\+T\+F\+::set\+Font\+Size (\begin{DoxyParamCaption}\item[{G\+Luint}]{sz }\end{DoxyParamCaption})}
+
+
+
+Sets the size of the font in pixels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz} & --- Size of the font. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_abf833b9d51f930b3e3ccfe8794aa0abe}\label{class_text_renderer_t_t_f_abf833b9d51f930b3e3ccfe8794aa0abe}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!set\+Screen\+Size@{set\+Screen\+Size}}
+\index{set\+Screen\+Size@{set\+Screen\+Size}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{set\+Screen\+Size()}{setScreenSize()}}
+{\footnotesize\ttfamily void Text\+Renderer\+T\+T\+F\+::set\+Screen\+Size (\begin{DoxyParamCaption}\item[{G\+Luint}]{w,  }\item[{G\+Luint}]{h }\end{DoxyParamCaption})}
+
+
+
+Loads in the the size of the screen. 
+
+Loads in the the size of the screen, needed before text rendering so that the x and y scaling of the font are correct and correspond to actual pixel positions and sizes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & --- Current screen width.\\
+\hline
+{\em h} & --- Current screen height. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_a485f53b24384306441987b52b6065af6}\label{class_text_renderer_t_t_f_a485f53b24384306441987b52b6065af6}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!text\+Width@{text\+Width}}
+\index{text\+Width@{text\+Width}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{text\+Width()}{textWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Text\+Renderer\+T\+T\+F\+::text\+Width (\begin{DoxyParamCaption}\item[{std\+::string}]{text }\end{DoxyParamCaption})}
+
+
+
+Returns the pixel width of the text using the current font and size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & --- String to be analyzed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The set\+Screen\+Size(w, h) method must be called before this method for the positions and sizes to correspond to pixels. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_text_renderer_t_t_f_a64698c7661b1e10f08e41fcf8ae9d8f5}\label{class_text_renderer_t_t_f_a64698c7661b1e10f08e41fcf8ae9d8f5}} 
+\index{Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}!text\+Width@{text\+Width}}
+\index{text\+Width@{text\+Width}!Text\+Renderer\+T\+TF@{Text\+Renderer\+T\+TF}}
+\subsubsection{\texorpdfstring{text\+Width()}{textWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Text\+Renderer\+T\+T\+F\+::text\+Width (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})}
+
+
+
+Returns the pixel width of the text using the current font and size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & --- char$\ast$ type string to be analyzed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The set\+Screen\+Size(w, h) method must be called before this method for the positions and sizes to correspond to pixels. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_text_renderer_t_t_f_8h}{Text\+Renderer\+T\+T\+F.\+h}\item 
+\hyperlink{_text_renderer_t_t_f_8cpp}{Text\+Renderer\+T\+T\+F.\+cpp}\end{DoxyCompactItemize}

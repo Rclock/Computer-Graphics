@@ -1,0 +1,129 @@
+# depslib dependency file v1.0
+1516011872 source:/home/rclocker1/Graphics/HW6/PolarExpress/Axes.cpp
+	"Axes.h"
+
+1515990034 /home/rclocker1/Graphics/HW6/PolarExpress/Axes.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1553273398 /home/rclocker1/Graphics/HW6/PolarExpress/ProgramDefines.h
+
+1515992974 source:/home/rclocker1/Graphics/HW6/PolarExpress/Cube.cpp
+	"Cube.h"
+
+1515990098 /home/rclocker1/Graphics/HW6/PolarExpress/Cube.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1553742130 source:/home/rclocker1/Graphics/HW6/PolarExpress/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+
+1553741566 /home/rclocker1/Graphics/HW6/PolarExpress/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	"Track.h"
+	"Ties.h"
+	"Axes.h"
+	"LoadShaders.h"
+	"Cube.h"
+	"ProgramDefines.h"
+	"SphericalCamera.h"
+	"YPRCamera.h"
+
+1514175394 /home/rclocker1/Graphics/HW6/PolarExpress/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1516237996 /home/rclocker1/Graphics/HW6/PolarExpress/SphericalCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<math.h>
+	"ProgramDefines.h"
+
+1553742562 /home/rclocker1/Graphics/HW6/PolarExpress/YPRCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1514174390 source:/home/rclocker1/Graphics/HW6/PolarExpress/LoadShaders.cpp
+	"LoadShaders.h"
+
+1553742781 source:/home/rclocker1/Graphics/HW6/PolarExpress/main.cpp
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1515992806 /home/rclocker1/Graphics/HW6/PolarExpress/UI.h
+	"GraphicsEngine.h"
+
+1553631304 source:/home/rclocker1/Graphics/HW6/PolarExpress/SphericalCamera.cpp
+	"SphericalCamera.h"
+
+1553742577 source:/home/rclocker1/Graphics/HW6/PolarExpress/UI.cpp
+	"UI.h"
+
+1553742405 source:/home/rclocker1/Graphics/HW6/PolarExpress/YPRCamera.cpp
+	"YPRCamera.h"
+
+1553742210 source:/home/rclocker1/Graphics/HW6/PolarExpress/Track.cpp
+	"Track.h"
+
+1553741610 /home/rclocker1/Graphics/HW6/PolarExpress/Track.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<stdio.h>
+	<iostream>
+	<string>
+	<cmath>
+	"ProgramDefines.h"
+
+1553742311 source:/home/rclocker1/Graphics/HW6/PolarExpress/Ties.cpp
+	"Ties.h"
+
+1553741792 /home/rclocker1/Graphics/HW6/PolarExpress/Ties.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<stdio.h>
+	<iostream>
+	<string>
+	<cmath>
+	"ProgramDefines.h"
+

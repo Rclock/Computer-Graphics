@@ -1,0 +1,53 @@
+\hypertarget{_text_renderer_t_t_f_8h}{}\section{Text\+Renderer\+T\+T\+F.\+h File Reference}
+\label{_text_renderer_t_t_f_8h}\index{Text\+Renderer\+T\+T\+F.\+h@{Text\+Renderer\+T\+T\+F.\+h}}
+
+
+Header file for \hyperlink{_text_renderer_t_t_f_8cpp}{Text\+Renderer\+T\+T\+F.\+cpp}.  
+
+
+{\ttfamily \#include $<$G\+L/glew.\+h$>$}\newline
+{\ttfamily \#include $<$glm/glm.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/type\+\_\+ptr.\+hpp$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$ft2build.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Load\+Shaders.\+h\char`\"{}}\newline
+Include dependency graph for Text\+Renderer\+T\+T\+F.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{struct_text_renderer_t_t_f_point}{Text\+Renderer\+T\+T\+F\+Point}
+\begin{DoxyCompactList}\small\item\em Coordinate and texture coordinate positions needed for the font rendering shader. \end{DoxyCompactList}\item 
+class \hyperlink{class_text_renderer_t_t_f}{Text\+Renderer\+T\+TF}
+\begin{DoxyCompactList}\small\item\em This class encapsulates the details of rendering a True\+Type font on an Open\+GL window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for \hyperlink{_text_renderer_t_t_f_8cpp}{Text\+Renderer\+T\+T\+F.\+cpp}. 
+
+The majority of the code in this class structure was taken from Open\+GL Programming wikibook\+: \href{http://en.wikibooks.org/wiki/OpenGL_Programming}{\tt http\+://en.\+wikibooks.\+org/wiki/\+Open\+G\+L\+\_\+\+Programming} The original file was in the public domain and was written by Guus Sliepen and Sylvain Beucler. It was then altered by Don Spickler to remove its dependency on S\+DL and make it more transferable between windowing systems. In addition, the code was written to be easy to integrate into the modern Open\+GL graphics rendering system and rotation of text was added to the functionality.
+
+There are several dependencies needed to use this class,
+
+
+\begin{DoxyItemize}
+\item Freetype libraries
+\item glm matrix arithmetic headers
+\item \hyperlink{_load_shaders_8h}{Load\+Shaders.\+h} and \hyperlink{_load_shaders_8cpp}{Load\+Shaders.\+cpp} to be compiled into the project.
+\item G\+L\+EW
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Guus Sliepen, Sylvain Beucler, and Don Spickler 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+1/12/2018 
+\end{DoxyDate}

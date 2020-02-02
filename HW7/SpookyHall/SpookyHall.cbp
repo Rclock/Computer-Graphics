@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SpookyHall" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SpookyHall" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SpookyHall" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Axes.cpp" />
+		<Unit filename="Axes.h" />
+		<Unit filename="Cube.cpp" />
+		<Unit filename="Cube.h" />
+		<Unit filename="FragmentCubeMap.glsl" />
+		<Unit filename="GraphicsEngine.cpp" />
+		<Unit filename="GraphicsEngine.h" />
+		<Unit filename="Light.cpp" />
+		<Unit filename="Light.h" />
+		<Unit filename="LoadShaders.cpp" />
+		<Unit filename="LoadShaders.h" />
+		<Unit filename="Material.cpp" />
+		<Unit filename="Material.h" />
+		<Unit filename="MaterialPresets.h" />
+		<Unit filename="Models.cpp" />
+		<Unit filename="Models.h" />
+		<Unit filename="PhongMultipleLightsAndTexture.glsl" />
+		<Unit filename="ProgramDefines.h" />
+		<Unit filename="Shape.cpp" />
+		<Unit filename="Shape.h" />
+		<Unit filename="SphericalCamera.cpp" />
+		<Unit filename="SphericalCamera.h" />
+		<Unit filename="UI.cpp" />
+		<Unit filename="UI.h" />
+		<Unit filename="VertexShaderCubeMap.glsl" />
+		<Unit filename="VertexShaderLightingTexture.glsl" />
+		<Unit filename="YPRCamera.cpp" />
+		<Unit filename="YPRCamera.h" />
+		<Unit filename="cb.bmp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

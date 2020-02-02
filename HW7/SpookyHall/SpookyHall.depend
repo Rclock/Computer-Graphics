@@ -1,0 +1,175 @@
+# depslib dependency file v1.0
+1516460340 source:/home/rclocker1/Graphics/HW7/SpookyHall/Axes.cpp
+	"Axes.h"
+
+1515990034 /home/rclocker1/Graphics/HW7/SpookyHall/Axes.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1458505150 /home/rclocker1/Graphics/HW7/SpookyHall/ProgramDefines.h
+
+1556226052 source:/home/rclocker1/Graphics/HW7/SpookyHall/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+
+1555955068 /home/rclocker1/Graphics/HW7/SpookyHall/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"SphericalCamera.h"
+	"YPRCamera.h"
+	"Axes.h"
+	"teapot.h"
+	"Material.h"
+	"Light.h"
+	"MaterialPresets.h"
+	"Models.h"
+	"Cube.h"
+
+1514175394 /home/rclocker1/Graphics/HW7/SpookyHall/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1516237996 /home/rclocker1/Graphics/HW7/SpookyHall/SphericalCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<math.h>
+	"ProgramDefines.h"
+
+1516466034 /home/rclocker1/Graphics/HW7/SpookyHall/YPRCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1516841510 /home/rclocker1/Graphics/HW7/SpookyHall/teapot.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	"Shape.h"
+
+1515306440 /home/rclocker1/Graphics/HW7/SpookyHall/Shape.h
+
+1516465148 /home/rclocker1/Graphics/HW7/SpookyHall/Material.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1516465124 /home/rclocker1/Graphics/HW7/SpookyHall/Light.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1555973356 /home/rclocker1/Graphics/HW7/SpookyHall/MaterialPresets.h
+	"Material.h"
+
+1517364898 /home/rclocker1/Graphics/HW7/SpookyHall/Models.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1555861861 source:/home/rclocker1/Graphics/HW7/SpookyHall/Light.cpp
+	"Light.h"
+
+1514174390 source:/home/rclocker1/Graphics/HW7/SpookyHall/LoadShaders.cpp
+	"LoadShaders.h"
+
+1517542172 source:/home/rclocker1/Graphics/HW7/SpookyHall/main.cpp
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1516322894 /home/rclocker1/Graphics/HW7/SpookyHall/UI.h
+	"GraphicsEngine.h"
+
+1458854976 source:/home/rclocker1/Graphics/HW7/SpookyHall/Material.cpp
+	"Material.h"
+
+1518290022 source:/home/rclocker1/Graphics/HW7/SpookyHall/Models.cpp
+	"Models.h"
+
+1516839706 source:/home/rclocker1/Graphics/HW7/SpookyHall/Plane.cpp
+	"Plane.h"
+
+1516839684 /home/rclocker1/Graphics/HW7/SpookyHall/Plane.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1515306700 source:/home/rclocker1/Graphics/HW7/SpookyHall/Shape.cpp
+	"Shape.h"
+
+1516845746 source:/home/rclocker1/Graphics/HW7/SpookyHall/Sphere.cpp
+	"Sphere.h"
+
+1516845896 /home/rclocker1/Graphics/HW7/SpookyHall/Sphere.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1516238648 source:/home/rclocker1/Graphics/HW7/SpookyHall/SphericalCamera.cpp
+	"SphericalCamera.h"
+
+1556225897 source:/home/rclocker1/Graphics/HW7/SpookyHall/UI.cpp
+	"UI.h"
+
+1555986365 source:/home/rclocker1/Graphics/HW7/SpookyHall/YPRCamera.cpp
+	"YPRCamera.h"
+
+1515990098 /home/rclocker1/Graphics/HW7/SpookyHall/Cube.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1515992974 source:/home/rclocker1/Graphics/HW7/SpookyHall/Cube.cpp
+	"Cube.h"
+

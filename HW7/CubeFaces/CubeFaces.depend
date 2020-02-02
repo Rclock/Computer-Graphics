@@ -1,0 +1,176 @@
+# depslib dependency file v1.0
+1516460340 source:/home/rclocker1/Graphics/HW7/CubeFaces/Axes.cpp
+	"Axes.h"
+
+1515990034 /home/rclocker1/Graphics/HW7/CubeFaces/Axes.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1458505150 /home/rclocker1/Graphics/HW7/CubeFaces/ProgramDefines.h
+
+1556223118 source:/home/rclocker1/Graphics/HW7/CubeFaces/Cube.cpp
+	"Cube.h"
+
+1556207687 /home/rclocker1/Graphics/HW7/CubeFaces/Cube.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1515306440 /home/rclocker1/Graphics/HW7/CubeFaces/Shape.h
+
+1556224386 source:/home/rclocker1/Graphics/HW7/CubeFaces/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+
+1556224354 /home/rclocker1/Graphics/HW7/CubeFaces/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"SphericalCamera.h"
+	"YPRCamera.h"
+	"Axes.h"
+	"teapot.h"
+	"Material.h"
+	"Light.h"
+	"MaterialPresets.h"
+	"Models.h"
+	"Cube.h"
+
+1514175394 /home/rclocker1/Graphics/HW7/CubeFaces/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1516237996 /home/rclocker1/Graphics/HW7/CubeFaces/SphericalCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<math.h>
+	"ProgramDefines.h"
+
+1516466034 /home/rclocker1/Graphics/HW7/CubeFaces/YPRCamera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"ProgramDefines.h"
+
+1516465148 /home/rclocker1/Graphics/HW7/CubeFaces/Material.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1516465124 /home/rclocker1/Graphics/HW7/CubeFaces/Light.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1459030624 /home/rclocker1/Graphics/HW7/CubeFaces/MaterialPresets.h
+	"Material.h"
+
+1517364898 /home/rclocker1/Graphics/HW7/CubeFaces/Models.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1458852310 source:/home/rclocker1/Graphics/HW7/CubeFaces/Light.cpp
+	"Light.h"
+
+1514174390 source:/home/rclocker1/Graphics/HW7/CubeFaces/LoadShaders.cpp
+	"LoadShaders.h"
+
+1556224814 source:/home/rclocker1/Graphics/HW7/CubeFaces/main.cpp
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1516322894 /home/rclocker1/Graphics/HW7/CubeFaces/UI.h
+	"GraphicsEngine.h"
+
+1458854976 source:/home/rclocker1/Graphics/HW7/CubeFaces/Material.cpp
+	"Material.h"
+
+1518290482 source:/home/rclocker1/Graphics/HW7/CubeFaces/Models.cpp
+	"Models.h"
+
+1516839706 source:/home/rclocker1/Graphics/HW7/CubeFaces/Plane.cpp
+	"Plane.h"
+
+1516839684 /home/rclocker1/Graphics/HW7/CubeFaces/Plane.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1515306700 source:/home/rclocker1/Graphics/HW7/CubeFaces/Shape.cpp
+	"Shape.h"
+
+1516845746 source:/home/rclocker1/Graphics/HW7/CubeFaces/Sphere.cpp
+	"Sphere.h"
+
+1516845896 /home/rclocker1/Graphics/HW7/CubeFaces/Sphere.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1516238648 source:/home/rclocker1/Graphics/HW7/CubeFaces/SphericalCamera.cpp
+	"SphericalCamera.h"
+
+1556224666 source:/home/rclocker1/Graphics/HW7/CubeFaces/UI.cpp
+	"UI.h"
+
+1516466086 source:/home/rclocker1/Graphics/HW7/CubeFaces/YPRCamera.cpp
+	"YPRCamera.h"
+
+1516841510 /home/rclocker1/Graphics/HW7/CubeFaces/teapot.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	"Shape.h"
+

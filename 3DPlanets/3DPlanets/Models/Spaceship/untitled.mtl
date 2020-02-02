@@ -1,0 +1,67 @@
+# Blender MTL File: 'None'
+# Material Count: 6
+
+newmtl None
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl exhaust_burn.024
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.782175 0.800000 0.762171
+Ks 0.500000 0.500000 0.500000
+Ke 0.977719 1.000000 0.952714
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl glow_disc.024
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.782175 0.800000 0.762171
+Ks 0.500000 0.500000 0.500000
+Ke 0.977719 1.000000 0.952714
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl hull.024
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.223725 0.223714 0.222469
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump /home/rclocker1/.config/blender/2.79/scripts/addons/add_mesh_SpaceshipGenerator/textures/hull_normal.png
+
+newmtl hull_dark.024
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.067118 0.067114 0.066741
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump /home/rclocker1/.config/blender/2.79/scripts/addons/add_mesh_SpaceshipGenerator/textures/hull_normal.png
+
+newmtl hull_lights.024
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.223725 0.223714 0.222469
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump /home/rclocker1/.config/blender/2.79/scripts/addons/add_mesh_SpaceshipGenerator/textures/hull_normal.png
+map_Kd /home/rclocker1/.config/blender/2.79/scripts/addons/add_mesh_SpaceshipGenerator/textures/hull_lights_diffuse.png
+map_Ke /home/rclocker1/.config/blender/2.79/scripts/addons/add_mesh_SpaceshipGenerator/textures/hull_lights_emit.png

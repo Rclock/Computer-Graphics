@@ -1,0 +1,70 @@
+\hypertarget{class_u_i}{}\section{UI Class Reference}
+\label{class_u_i}\index{UI@{UI}}
+
+
+The \hyperlink{class_u_i}{UI} class handles the user interface event processing for the program. It contains a pointer to the graphics engine as the communication link to the graphics and scene objects.  
+
+
+
+
+{\ttfamily \#include $<$U\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_u_i_a9c605272304cb2d5efff79edb32e9241}{UI} (\hyperlink{class_graphics_engine}{Graphics\+Engine} $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_u_i_a1b23d0c64c7cbb3d143d90ec532a7ccd}{$\sim$\+UI} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_u_i_a440e133dbf19d82b8b40809644494068}{process\+Events} ()
+\begin{DoxyCompactList}\small\item\em The method handles the S\+F\+ML event processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_u_i}{UI} class handles the user interface event processing for the program. It contains a pointer to the graphics engine as the communication link to the graphics and scene objects. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_i_a9c605272304cb2d5efff79edb32e9241}\label{class_u_i_a9c605272304cb2d5efff79edb32e9241}} 
+\index{UI@{UI}!UI@{UI}}
+\index{UI@{UI}!UI@{UI}}
+\subsubsection{\texorpdfstring{U\+I()}{UI()}}
+{\footnotesize\ttfamily U\+I\+::\+UI (\begin{DoxyParamCaption}\item[{\hyperlink{class_graphics_engine}{Graphics\+Engine} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & --- Pointer to the \hyperlink{class_graphics_engine}{Graphics\+Engine} that this interface processor is attached.\\
+\hline
+\end{DoxyParams}
+Simply stores the pointer of the \hyperlink{class_graphics_engine}{Graphics\+Engine}. \mbox{\Hypertarget{class_u_i_a1b23d0c64c7cbb3d143d90ec532a7ccd}\label{class_u_i_a1b23d0c64c7cbb3d143d90ec532a7ccd}} 
+\index{UI@{UI}!````~UI@{$\sim$\+UI}}
+\index{````~UI@{$\sim$\+UI}!UI@{UI}}
+\subsubsection{\texorpdfstring{$\sim$\+U\+I()}{~UI()}}
+{\footnotesize\ttfamily U\+I\+::$\sim$\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+No implementation needed at this point. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_i_a440e133dbf19d82b8b40809644494068}\label{class_u_i_a440e133dbf19d82b8b40809644494068}} 
+\index{UI@{UI}!process\+Events@{process\+Events}}
+\index{process\+Events@{process\+Events}!UI@{UI}}
+\subsubsection{\texorpdfstring{process\+Events()}{processEvents()}}
+{\footnotesize\ttfamily void U\+I\+::process\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The method handles the S\+F\+ML event processing. 
+
+This method processes all events in the current S\+F\+ML event queue and calls the corresponding processing method. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_u_i_8h}{U\+I.\+h}\item 
+\hyperlink{_u_i_8cpp}{U\+I.\+cpp}\end{DoxyCompactItemize}

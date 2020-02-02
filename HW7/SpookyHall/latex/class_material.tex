@@ -1,0 +1,312 @@
+\hypertarget{class_material}{}\section{Material Class Reference}
+\label{class_material}\index{Material@{Material}}
+
+
+The \hyperlink{class_material}{Material} class is simply a class for holding Phong model material properties.  
+
+
+
+
+{\ttfamily \#include $<$Material.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_material_a137e987401b63eb7c6c27c3e38bc74b5}\label{class_material_a137e987401b63eb7c6c27c3e38bc74b5}} 
+\hyperlink{class_material_a137e987401b63eb7c6c27c3e38bc74b5}{Material} ()
+\begin{DoxyCompactList}\small\item\em Constructor, default. \end{DoxyCompactList}\item 
+\hyperlink{class_material_aa08d070b8078bc0e4c8074335005c527}{Material} (glm\+::vec4 a, glm\+::vec4 d, glm\+::vec4 s, glm\+::vec4 e, float sh)
+\begin{DoxyCompactList}\small\item\em Sets all of the material attributes. \end{DoxyCompactList}\item 
+\hyperlink{class_material_a310fdb9e639b7cd494b9b7c818bebd5b}{Material} (float ar, float ag, float ab, float aa, float dr, float dg, float db, float da, float sr, float sg, float sb, float sa, float er, float eg, float eb, float ea, float sh)
+\begin{DoxyCompactList}\small\item\em Sets all of the material attributes using floats. \end{DoxyCompactList}\item 
+\hyperlink{class_material_a2c19452d71f54075df8f5405b03129f4}{$\sim$\+Material} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_aab8e68d084dd7ec2ab9da966ec56233e}{set\+Material} (glm\+::vec4 a, glm\+::vec4 d, glm\+::vec4 s, glm\+::vec4 e, float sh)
+\begin{DoxyCompactList}\small\item\em Sets all of the material attributes. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_afcf7517c0f0f2b17546c469a9ebe7e06}{set\+Material} (float ar, float ag, float ab, float aa, float dr, float dg, float db, float da, float sr, float sg, float sb, float sa, float er, float eg, float eb, float ea, float sh)
+\begin{DoxyCompactList}\small\item\em Sets all of the material attributes using floats. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_material_a5dd60583476a8d3e3398022b7fe5cd36}\label{class_material_a5dd60583476a8d3e3398022b7fe5cd36}} 
+glm\+::vec4 \hyperlink{class_material_a5dd60583476a8d3e3398022b7fe5cd36}{get\+Ambient} ()
+\begin{DoxyCompactList}\small\item\em Returns the ambient color vector of the material. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_material_aacea5d2542fc837b58bfc37aaa677857}\label{class_material_aacea5d2542fc837b58bfc37aaa677857}} 
+glm\+::vec4 \hyperlink{class_material_aacea5d2542fc837b58bfc37aaa677857}{get\+Diffuse} ()
+\begin{DoxyCompactList}\small\item\em Returns the diffuse color vector of the material. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_material_a59a0fb77d79ffa449bb4fe8304ee2a36}\label{class_material_a59a0fb77d79ffa449bb4fe8304ee2a36}} 
+glm\+::vec4 \hyperlink{class_material_a59a0fb77d79ffa449bb4fe8304ee2a36}{get\+Specular} ()
+\begin{DoxyCompactList}\small\item\em Returns the specular color vector of the material. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_material_a98367e6c3ff4f5da195cf4489b5edae9}\label{class_material_a98367e6c3ff4f5da195cf4489b5edae9}} 
+glm\+::vec4 \hyperlink{class_material_a98367e6c3ff4f5da195cf4489b5edae9}{get\+Emission} ()
+\begin{DoxyCompactList}\small\item\em Returns the emission color vector of the material. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_material_af4a4b75421a39120c621d26403ed2050}\label{class_material_af4a4b75421a39120c621d26403ed2050}} 
+float \hyperlink{class_material_af4a4b75421a39120c621d26403ed2050}{get\+Shininess} ()
+\begin{DoxyCompactList}\small\item\em Returns the shininess exponent of the material. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_a72f9946f0d3569afa18ae03e275f8dfd}{set\+Ambient} (glm\+::vec4 a)
+\begin{DoxyCompactList}\small\item\em Sets the ambient material color. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_a700d4a180aeef13e35bb937d4da541df}{set\+Diffuse} (glm\+::vec4 d)
+\begin{DoxyCompactList}\small\item\em Sets the diffuse material color. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_a99ecd0beb0aae8eed8099a198be9e142}{set\+Specular} (glm\+::vec4 s)
+\begin{DoxyCompactList}\small\item\em Sets the specular material color. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_ace85799daadb777e5ce13b0326a84895}{set\+Emission} (glm\+::vec4 e)
+\begin{DoxyCompactList}\small\item\em Sets the emission material color. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_a090352914f8d55b4bc4d3fdda38832c8}{set\+Shininess} (float sh)
+\begin{DoxyCompactList}\small\item\em Sets the shininess exponent of the material. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_ace31bcfa4a27db13a08fd377a14a6365}{set\+Ambient} (float ar, float ag, float ab, float aa)
+\begin{DoxyCompactList}\small\item\em Sets all of the ambient attributes using floats. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_aff3b4318d5fe7e4072a586f7d30d7f32}{set\+Diffuse} (float dr, float dg, float db, float da)
+\begin{DoxyCompactList}\small\item\em Sets all of the diffuse attributes using floats. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_a9767d6b00b8d49174629baed01b7e3cf}{set\+Specular} (float sr, float sg, float sb, float sa)
+\begin{DoxyCompactList}\small\item\em Sets all of the specular attributes using floats. \end{DoxyCompactList}\item 
+void \hyperlink{class_material_ab74b07e791097ac543577b178a673b49}{set\+Emission} (float er, float eg, float eb, float ea)
+\begin{DoxyCompactList}\small\item\em Sets all of the emission attributes using floats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_material}{Material} class is simply a class for holding Phong model material properties. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_material_aa08d070b8078bc0e4c8074335005c527}\label{class_material_aa08d070b8078bc0e4c8074335005c527}} 
+\index{Material@{Material}!Material@{Material}}
+\index{Material@{Material}!Material@{Material}}
+\subsubsection{\texorpdfstring{Material()}{Material()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Material\+::\+Material (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{a,  }\item[{glm\+::vec4}]{d,  }\item[{glm\+::vec4}]{s,  }\item[{glm\+::vec4}]{e,  }\item[{float}]{sh }\end{DoxyParamCaption})}
+
+
+
+Sets all of the material attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & --- Ambient color of the material. \\
+\hline
+{\em d} & --- Diffuse color of the material. \\
+\hline
+{\em s} & --- Specular color of the material. \\
+\hline
+{\em e} & --- Emission color of the material. \\
+\hline
+{\em sh} & --- Shininess exponent of the material. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a310fdb9e639b7cd494b9b7c818bebd5b}\label{class_material_a310fdb9e639b7cd494b9b7c818bebd5b}} 
+\index{Material@{Material}!Material@{Material}}
+\index{Material@{Material}!Material@{Material}}
+\subsubsection{\texorpdfstring{Material()}{Material()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Material\+::\+Material (\begin{DoxyParamCaption}\item[{float}]{ar,  }\item[{float}]{ag,  }\item[{float}]{ab,  }\item[{float}]{aa,  }\item[{float}]{dr,  }\item[{float}]{dg,  }\item[{float}]{db,  }\item[{float}]{da,  }\item[{float}]{sr,  }\item[{float}]{sg,  }\item[{float}]{sb,  }\item[{float}]{sa,  }\item[{float}]{er,  }\item[{float}]{eg,  }\item[{float}]{eb,  }\item[{float}]{ea,  }\item[{float}]{sh }\end{DoxyParamCaption})}
+
+
+
+Sets all of the material attributes using floats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar,ag,ab,aa} & --- Ambient color of the light. \\
+\hline
+{\em dr,dg,db,da} & --- Diffuse color of the light. \\
+\hline
+{\em sr,sg,sb,sa} & --- Specular color of the light. \\
+\hline
+{\em er,eg,eb,ea} & --- Emission color of the light. \\
+\hline
+{\em sh} & --- Shininess exponent of the material. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a2c19452d71f54075df8f5405b03129f4}\label{class_material_a2c19452d71f54075df8f5405b03129f4}} 
+\index{Material@{Material}!````~Material@{$\sim$\+Material}}
+\index{````~Material@{$\sim$\+Material}!Material@{Material}}
+\subsubsection{\texorpdfstring{$\sim$\+Material()}{~Material()}}
+{\footnotesize\ttfamily Material\+::$\sim$\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+No implementation needed at this point. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_material_a72f9946f0d3569afa18ae03e275f8dfd}\label{class_material_a72f9946f0d3569afa18ae03e275f8dfd}} 
+\index{Material@{Material}!set\+Ambient@{set\+Ambient}}
+\index{set\+Ambient@{set\+Ambient}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Ambient()}{setAmbient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Ambient (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{a }\end{DoxyParamCaption})}
+
+
+
+Sets the ambient material color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & --- Ambient color of the material. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_ace31bcfa4a27db13a08fd377a14a6365}\label{class_material_ace31bcfa4a27db13a08fd377a14a6365}} 
+\index{Material@{Material}!set\+Ambient@{set\+Ambient}}
+\index{set\+Ambient@{set\+Ambient}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Ambient()}{setAmbient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Ambient (\begin{DoxyParamCaption}\item[{float}]{ar,  }\item[{float}]{ag,  }\item[{float}]{ab,  }\item[{float}]{aa }\end{DoxyParamCaption})}
+
+
+
+Sets all of the ambient attributes using floats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar,ag,ab,aa} & --- Ambient color of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a700d4a180aeef13e35bb937d4da541df}\label{class_material_a700d4a180aeef13e35bb937d4da541df}} 
+\index{Material@{Material}!set\+Diffuse@{set\+Diffuse}}
+\index{set\+Diffuse@{set\+Diffuse}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Diffuse()}{setDiffuse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Diffuse (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{d }\end{DoxyParamCaption})}
+
+
+
+Sets the diffuse material color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & --- Diffuse color of the material. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_aff3b4318d5fe7e4072a586f7d30d7f32}\label{class_material_aff3b4318d5fe7e4072a586f7d30d7f32}} 
+\index{Material@{Material}!set\+Diffuse@{set\+Diffuse}}
+\index{set\+Diffuse@{set\+Diffuse}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Diffuse()}{setDiffuse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Diffuse (\begin{DoxyParamCaption}\item[{float}]{dr,  }\item[{float}]{dg,  }\item[{float}]{db,  }\item[{float}]{da }\end{DoxyParamCaption})}
+
+
+
+Sets all of the diffuse attributes using floats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dr,dg,db,da} & --- Diffuse color of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_ace85799daadb777e5ce13b0326a84895}\label{class_material_ace85799daadb777e5ce13b0326a84895}} 
+\index{Material@{Material}!set\+Emission@{set\+Emission}}
+\index{set\+Emission@{set\+Emission}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Emission()}{setEmission()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Emission (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{e }\end{DoxyParamCaption})}
+
+
+
+Sets the emission material color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & --- Emission color of the material. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_ab74b07e791097ac543577b178a673b49}\label{class_material_ab74b07e791097ac543577b178a673b49}} 
+\index{Material@{Material}!set\+Emission@{set\+Emission}}
+\index{set\+Emission@{set\+Emission}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Emission()}{setEmission()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Emission (\begin{DoxyParamCaption}\item[{float}]{er,  }\item[{float}]{eg,  }\item[{float}]{eb,  }\item[{float}]{ea }\end{DoxyParamCaption})}
+
+
+
+Sets all of the emission attributes using floats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em er,eg,eb,ea} & --- Emission color of the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_aab8e68d084dd7ec2ab9da966ec56233e}\label{class_material_aab8e68d084dd7ec2ab9da966ec56233e}} 
+\index{Material@{Material}!set\+Material@{set\+Material}}
+\index{set\+Material@{set\+Material}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Material()}{setMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Material (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{a,  }\item[{glm\+::vec4}]{d,  }\item[{glm\+::vec4}]{s,  }\item[{glm\+::vec4}]{e,  }\item[{float}]{sh }\end{DoxyParamCaption})}
+
+
+
+Sets all of the material attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & --- Ambient color of the material. \\
+\hline
+{\em d} & --- Diffuse color of the material. \\
+\hline
+{\em s} & --- Specular color of the material. \\
+\hline
+{\em e} & --- Emission color of the material. \\
+\hline
+{\em sh} & --- Shininess exponent of the material. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_afcf7517c0f0f2b17546c469a9ebe7e06}\label{class_material_afcf7517c0f0f2b17546c469a9ebe7e06}} 
+\index{Material@{Material}!set\+Material@{set\+Material}}
+\index{set\+Material@{set\+Material}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Material()}{setMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Material (\begin{DoxyParamCaption}\item[{float}]{ar,  }\item[{float}]{ag,  }\item[{float}]{ab,  }\item[{float}]{aa,  }\item[{float}]{dr,  }\item[{float}]{dg,  }\item[{float}]{db,  }\item[{float}]{da,  }\item[{float}]{sr,  }\item[{float}]{sg,  }\item[{float}]{sb,  }\item[{float}]{sa,  }\item[{float}]{er,  }\item[{float}]{eg,  }\item[{float}]{eb,  }\item[{float}]{ea,  }\item[{float}]{sh }\end{DoxyParamCaption})}
+
+
+
+Sets all of the material attributes using floats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar,ag,ab,aa} & --- Ambient color of the light. \\
+\hline
+{\em dr,dg,db,da} & --- Diffuse color of the light. \\
+\hline
+{\em sr,sg,sb,sa} & --- Specular color of the light. \\
+\hline
+{\em er,eg,eb,ea} & --- Emission color of the light. \\
+\hline
+{\em sh} & --- Shininess exponent of the material. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a090352914f8d55b4bc4d3fdda38832c8}\label{class_material_a090352914f8d55b4bc4d3fdda38832c8}} 
+\index{Material@{Material}!set\+Shininess@{set\+Shininess}}
+\index{set\+Shininess@{set\+Shininess}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Shininess()}{setShininess()}}
+{\footnotesize\ttfamily void Material\+::set\+Shininess (\begin{DoxyParamCaption}\item[{float}]{sh }\end{DoxyParamCaption})}
+
+
+
+Sets the shininess exponent of the material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sh} & --- Shininess exponent. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a99ecd0beb0aae8eed8099a198be9e142}\label{class_material_a99ecd0beb0aae8eed8099a198be9e142}} 
+\index{Material@{Material}!set\+Specular@{set\+Specular}}
+\index{set\+Specular@{set\+Specular}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Specular()}{setSpecular()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Specular (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{s }\end{DoxyParamCaption})}
+
+
+
+Sets the specular material color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & --- Specular color of the material. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a9767d6b00b8d49174629baed01b7e3cf}\label{class_material_a9767d6b00b8d49174629baed01b7e3cf}} 
+\index{Material@{Material}!set\+Specular@{set\+Specular}}
+\index{set\+Specular@{set\+Specular}!Material@{Material}}
+\subsubsection{\texorpdfstring{set\+Specular()}{setSpecular()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Material\+::set\+Specular (\begin{DoxyParamCaption}\item[{float}]{sr,  }\item[{float}]{sg,  }\item[{float}]{sb,  }\item[{float}]{sa }\end{DoxyParamCaption})}
+
+
+
+Sets all of the specular attributes using floats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sr,sg,sb,sa} & --- Specular color of the light. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_material_8h}{Material.\+h}\item 
+\hyperlink{_material_8cpp}{Material.\+cpp}\end{DoxyCompactItemize}

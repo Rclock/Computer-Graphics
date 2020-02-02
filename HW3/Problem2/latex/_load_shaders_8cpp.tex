@@ -1,0 +1,284 @@
+\hypertarget{_load_shaders_8cpp}{}\section{Load\+Shaders.\+cpp File Reference}
+\label{_load_shaders_8cpp}\index{Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}}
+
+
+Shader loader helper functions.  
+
+
+{\ttfamily \#include \char`\"{}Load\+Shaders.\+h\char`\"{}}\newline
+Include dependency graph for Load\+Shaders.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const G\+Lchar $\ast$ \hyperlink{_load_shaders_8cpp_a144be781f4556204c4b01fb3a4f88385}{Read\+Shader} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Reads a shader file and returns the string of the file contents. Used by the Load\+Shaders\+From\+File functions. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{_load_shaders_8cpp_a126660ec3457a1d6d9e29a332dbb3e81}{get\+Shader\+String} (G\+Lenum type)
+\begin{DoxyCompactList}\small\item\em Returns a string representing the shader type, for error reporting. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{_load_shaders_8cpp_a1dbfa5b9e86fc7a6a261c0e18959f3d9}{Load\+Shaders\+From\+File} (\hyperlink{struct_shader_info}{Shader\+Info} $\ast$shaders)
+\begin{DoxyCompactList}\small\item\em Takes a \hyperlink{struct_shader_info}{Shader\+Info} array containing the shader types and filenames for the shader code. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{_load_shaders_8cpp_ae83c8455f7f415c40202fd1f5c8bfe86}{Load\+Shaders\+From\+Memory} (\hyperlink{struct_shader_info}{Shader\+Info} $\ast$shaders)
+\begin{DoxyCompactList}\small\item\em Takes a \hyperlink{struct_shader_info}{Shader\+Info} array containing the shader types and strings of the shader code. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{_load_shaders_8cpp_a56971569916e75110a773f2fb44fff4f}{Load\+Shaders\+From\+File} (std\+::string vertfn, std\+::string fragfn)
+\begin{DoxyCompactList}\small\item\em Takes the filenames for the vertex shader and the fragment shader and loads them into a shader program. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{_load_shaders_8cpp_a51984ba615aeca110195cbb8a993f5b9}{Load\+Shaders\+From\+Memory} (std\+::string vertcode, std\+::string fragcode)
+\begin{DoxyCompactList}\small\item\em Takes the code strings for the vertex shader and the fragment shader and loads them into a shader program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Shader loader helper functions. 
+
+These functions were added to and altered from code found on the web. There was no reference to the original creator of the code in either the code files or the web page linking to them.
+
+\begin{DoxyAuthor}{Author}
+Don Spickler 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12/21/2017
+\end{DoxyDate}
+\hypertarget{_load_shaders_8cpp_use}{}\subsection{Usage}\label{_load_shaders_8cpp_use}
+None of these functions will invoke the gl\+Use\+Program function since it the user may wish to load in several shader programs.\hypertarget{_load_shaders_8cpp_loadvffile}{}\subsubsection{Loading Vertex and Fragment Shaders from Files}\label{_load_shaders_8cpp_loadvffile}
+The files Shader1.\+vert and Shader1.\+frag are the vertex and fragment shaders respectively.
+
+
+\begin{DoxyCode}
+GLuint program = \hyperlink{_load_shaders_8cpp_a1dbfa5b9e86fc7a6a261c0e18959f3d9}{LoadShadersFromFile}(\textcolor{stringliteral}{"Shader1.vert"}, \textcolor{stringliteral}{"Shader1.frag"});
+
+\textcolor{keywordflow}{if} (!program)
+\{
+    cerr << \textcolor{stringliteral}{"Could not load Shader programs."} << endl;
+    exit(EXIT\_FAILURE);
+\}
+
+glUseProgram(program);
+\end{DoxyCode}
+\hypertarget{_load_shaders_8cpp_loadvfmemory}{}\subsubsection{Loading Vertex and Fragment Shaders from Memory}\label{_load_shaders_8cpp_loadvfmemory}
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{string} vertexShader =
+    \textcolor{stringliteral}{"#version 330 core\(\backslash\)n"}
+    \textcolor{stringliteral}{"layout(location = 0) in vec4 position;\(\backslash\)n"}
+    \textcolor{stringliteral}{"layout(location = 1) in vec4 icolor;\(\backslash\)n"}
+    \textcolor{stringliteral}{"out vec4 color;\(\backslash\)n"}
+    \textcolor{stringliteral}{"void main()\(\backslash\)n"}
+    \textcolor{stringliteral}{"\{\(\backslash\)n"}
+    \textcolor{stringliteral}{"    color = icolor;\(\backslash\)n"}
+    \textcolor{stringliteral}{"    gl\_Position = position;\(\backslash\)n"}
+    \textcolor{stringliteral}{"\}\(\backslash\)n"};
+
+\textcolor{keywordtype}{string} fragmentShader =
+    \textcolor{stringliteral}{"#version 330 core\(\backslash\)n"}
+    \textcolor{stringliteral}{"in  vec4 color;\(\backslash\)n"}
+    \textcolor{stringliteral}{"out vec4 fColor;\(\backslash\)n"}
+    \textcolor{stringliteral}{"void main()\(\backslash\)n"}
+    \textcolor{stringliteral}{"\{\(\backslash\)n"}
+    \textcolor{stringliteral}{"    fColor = color;\(\backslash\)n"}
+    \textcolor{stringliteral}{"\}\(\backslash\)n"};
+
+GLuint program = \hyperlink{_load_shaders_8cpp_ae83c8455f7f415c40202fd1f5c8bfe86}{LoadShadersFromMemory}(vertexShader, fragmentShader);
+
+\textcolor{keywordflow}{if} (!program)
+\{
+    cerr << \textcolor{stringliteral}{"Could not load Shader programs."} << endl;
+    exit(EXIT\_FAILURE);
+\}
+
+glUseProgram(program);
+\end{DoxyCode}
+\hypertarget{_load_shaders_8cpp_loadfile}{}\subsubsection{Loading Shaders from Files}\label{_load_shaders_8cpp_loadfile}
+The files Shader1.\+vert and Shader1.\+frag are the vertex and fragment shaders respectively.
+
+
+\begin{DoxyCode}
+\hyperlink{struct_shader_info}{ShaderInfo} shaders[] =
+\{
+    \{GL\_VERTEX\_SHADER, \textcolor{stringliteral}{"Shader1.vert"}\},
+    \{GL\_FRAGMENT\_SHADER, \textcolor{stringliteral}{"Shader1.frag"}\},
+    \{GL\_NONE\}
+\};
+
+GLuint program = \hyperlink{_load_shaders_8cpp_a1dbfa5b9e86fc7a6a261c0e18959f3d9}{LoadShadersFromFile}(shaders);
+
+\textcolor{keywordflow}{if} (!program)
+\{
+    cerr << \textcolor{stringliteral}{"Could not load Shader programs."} << endl;
+    exit(EXIT\_FAILURE);
+\}
+
+glUseProgram(program);
+\end{DoxyCode}
+\hypertarget{_load_shaders_8cpp_loadmemory}{}\subsubsection{Loading Shaders from Memory}\label{_load_shaders_8cpp_loadmemory}
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{string} vertexShader =
+    \textcolor{stringliteral}{"#version 330 core\(\backslash\)n"}
+    \textcolor{stringliteral}{"layout(location = 0) in vec4 position;\(\backslash\)n"}
+    \textcolor{stringliteral}{"layout(location = 1) in vec4 icolor;\(\backslash\)n"}
+    \textcolor{stringliteral}{"out vec4 color;\(\backslash\)n"}
+    \textcolor{stringliteral}{"void main()\(\backslash\)n"}
+    \textcolor{stringliteral}{"\{\(\backslash\)n"}
+    \textcolor{stringliteral}{"    color = icolor;\(\backslash\)n"}
+    \textcolor{stringliteral}{"    gl\_Position = position;\(\backslash\)n"}
+    \textcolor{stringliteral}{"\}\(\backslash\)n"};
+
+\textcolor{keywordtype}{string} fragmentShader =
+    \textcolor{stringliteral}{"#version 330 core\(\backslash\)n"}
+    \textcolor{stringliteral}{"in  vec4 color;\(\backslash\)n"}
+    \textcolor{stringliteral}{"out vec4 fColor;\(\backslash\)n"}
+    \textcolor{stringliteral}{"void main()\(\backslash\)n"}
+    \textcolor{stringliteral}{"\{\(\backslash\)n"}
+    \textcolor{stringliteral}{"    fColor = color;\(\backslash\)n"}
+    \textcolor{stringliteral}{"\}\(\backslash\)n"};
+
+\hyperlink{struct_shader_info}{ShaderInfo} shaders[] =
+\{
+    \{GL\_VERTEX\_SHADER, \textcolor{stringliteral}{""}, vertexShader\},
+    \{GL\_FRAGMENT\_SHADER, \textcolor{stringliteral}{""}, fragmentShader\},
+    \{GL\_NONE\}
+\};
+
+GLuint program = \hyperlink{_load_shaders_8cpp_ae83c8455f7f415c40202fd1f5c8bfe86}{LoadShadersFromMemory}(shaders);
+
+\textcolor{keywordflow}{if} (!program)
+\{
+    cerr << \textcolor{stringliteral}{"Could not load Shader programs."} << endl;
+    exit(EXIT\_FAILURE);
+\}
+
+glUseProgram(program);
+\end{DoxyCode}
+ 
+
+
+
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License.
+\end{DoxyCopyright}
+This software is provided as-\/is, without warranty of A\+NY K\+I\+ND, either expressed or implied, including but not limited to the implied warranties of merchant ability and/or fitness for a particular purpose. The authors shall N\+OT be held liable for A\+NY damage to you, your computer, or to anyone or anything else, that may result from its use, or misuse. All trademarks and other registered names contained in this package are the property of their respective owners. U\+SE OF T\+H\+IS S\+O\+F\+T\+W\+A\+RE I\+N\+D\+I\+C\+A\+T\+ES T\+H\+AT Y\+OU A\+G\+R\+EE TO T\+HE A\+B\+O\+VE C\+O\+N\+D\+I\+T\+I\+O\+NS. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_load_shaders_8cpp_a126660ec3457a1d6d9e29a332dbb3e81}\label{_load_shaders_8cpp_a126660ec3457a1d6d9e29a332dbb3e81}} 
+\index{Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}!get\+Shader\+String@{get\+Shader\+String}}
+\index{get\+Shader\+String@{get\+Shader\+String}!Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}}
+\subsubsection{\texorpdfstring{get\+Shader\+String()}{getShaderString()}}
+{\footnotesize\ttfamily std\+::string get\+Shader\+String (\begin{DoxyParamCaption}\item[{G\+Lenum}]{type }\end{DoxyParamCaption})}
+
+
+
+Returns a string representing the shader type, for error reporting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & --- Enum for the type of shader, G\+L\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER, G\+L\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER, ...\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the shader type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_load_shaders_8cpp_a1dbfa5b9e86fc7a6a261c0e18959f3d9}\label{_load_shaders_8cpp_a1dbfa5b9e86fc7a6a261c0e18959f3d9}} 
+\index{Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}!Load\+Shaders\+From\+File@{Load\+Shaders\+From\+File}}
+\index{Load\+Shaders\+From\+File@{Load\+Shaders\+From\+File}!Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}}
+\subsubsection{\texorpdfstring{Load\+Shaders\+From\+File()}{LoadShadersFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G\+Luint Load\+Shaders\+From\+File (\begin{DoxyParamCaption}\item[{\hyperlink{struct_shader_info}{Shader\+Info} $\ast$}]{shaders }\end{DoxyParamCaption})}
+
+
+
+Takes a \hyperlink{struct_shader_info}{Shader\+Info} array containing the shader types and filenames for the shader code. 
+
+Reads the files, compiles and links the code, and returns the shader program identifier, or 0 on failure. The array of structures is terminated by a final Shader with the \char`\"{}type\char`\"{} field set to G\+L\+\_\+\+N\+O\+NE.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shaders} & --- An array of \hyperlink{struct_shader_info}{Shader\+Info} structures, one for each type of shader to be loaded into a shader program.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Identifier for the shader program. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_load_shaders_8cpp_a56971569916e75110a773f2fb44fff4f}\label{_load_shaders_8cpp_a56971569916e75110a773f2fb44fff4f}} 
+\index{Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}!Load\+Shaders\+From\+File@{Load\+Shaders\+From\+File}}
+\index{Load\+Shaders\+From\+File@{Load\+Shaders\+From\+File}!Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}}
+\subsubsection{\texorpdfstring{Load\+Shaders\+From\+File()}{LoadShadersFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G\+Luint Load\+Shaders\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{vertfn,  }\item[{std\+::string}]{fragfn }\end{DoxyParamCaption})}
+
+
+
+Takes the filenames for the vertex shader and the fragment shader and loads them into a shader program. 
+
+Reads the files, compiles and links the code, and returns the shader program identifier, or 0 on failure. The array of structures is terminated by a final Shader with the \char`\"{}type\char`\"{} field set to G\+L\+\_\+\+N\+O\+NE.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertfn} & --- The filename for the vertex shader.\\
+\hline
+{\em fragfn} & --- The filename for the fragment shader.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Identifier for the shader program. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_load_shaders_8cpp_ae83c8455f7f415c40202fd1f5c8bfe86}\label{_load_shaders_8cpp_ae83c8455f7f415c40202fd1f5c8bfe86}} 
+\index{Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}!Load\+Shaders\+From\+Memory@{Load\+Shaders\+From\+Memory}}
+\index{Load\+Shaders\+From\+Memory@{Load\+Shaders\+From\+Memory}!Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}}
+\subsubsection{\texorpdfstring{Load\+Shaders\+From\+Memory()}{LoadShadersFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G\+Luint Load\+Shaders\+From\+Memory (\begin{DoxyParamCaption}\item[{\hyperlink{struct_shader_info}{Shader\+Info} $\ast$}]{shaders }\end{DoxyParamCaption})}
+
+
+
+Takes a \hyperlink{struct_shader_info}{Shader\+Info} array containing the shader types and strings of the shader code. 
+
+Compiles and links the code, and returns the shader program identifier, or 0 on failure. The array of structures is terminated by a final Shader with the \char`\"{}type\char`\"{} field set to G\+L\+\_\+\+N\+O\+NE.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shaders} & --- An array of \hyperlink{struct_shader_info}{Shader\+Info} structures, one for each type of shader to be loaded into a shader program.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Identifier for the shader program. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_load_shaders_8cpp_a51984ba615aeca110195cbb8a993f5b9}\label{_load_shaders_8cpp_a51984ba615aeca110195cbb8a993f5b9}} 
+\index{Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}!Load\+Shaders\+From\+Memory@{Load\+Shaders\+From\+Memory}}
+\index{Load\+Shaders\+From\+Memory@{Load\+Shaders\+From\+Memory}!Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}}
+\subsubsection{\texorpdfstring{Load\+Shaders\+From\+Memory()}{LoadShadersFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G\+Luint Load\+Shaders\+From\+Memory (\begin{DoxyParamCaption}\item[{std\+::string}]{vertcode,  }\item[{std\+::string}]{fragcode }\end{DoxyParamCaption})}
+
+
+
+Takes the code strings for the vertex shader and the fragment shader and loads them into a shader program. 
+
+Compiles and links the code, and returns the shader program identifier, or 0 on failure. The array of structures is terminated by a final Shader with the \char`\"{}type\char`\"{} field set to G\+L\+\_\+\+N\+O\+NE.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertcode} & --- The code string for the vertex shader.\\
+\hline
+{\em fragcode} & --- The code string for the fragment shader.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Identifier for the shader program. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_load_shaders_8cpp_a144be781f4556204c4b01fb3a4f88385}\label{_load_shaders_8cpp_a144be781f4556204c4b01fb3a4f88385}} 
+\index{Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}!Read\+Shader@{Read\+Shader}}
+\index{Read\+Shader@{Read\+Shader}!Load\+Shaders.\+cpp@{Load\+Shaders.\+cpp}}
+\subsubsection{\texorpdfstring{Read\+Shader()}{ReadShader()}}
+{\footnotesize\ttfamily const G\+Lchar$\ast$ Read\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Reads a shader file and returns the string of the file contents. Used by the Load\+Shaders\+From\+File functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & --- Name of shader file to be loaded.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the file contents. 
+\end{DoxyReturn}

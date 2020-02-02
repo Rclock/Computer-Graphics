@@ -1,0 +1,248 @@
+# depslib dependency file v1.0
+1514174390 source:/home/rclocker1/Graphics/2DStars/LoadShaders.cpp
+	"LoadShaders.h"
+
+1514175394 /home/rclocker1/Graphics/2DStars/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1552010569 source:/home/rclocker1/Graphics/2DStars/main.cpp
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1555030563 /home/rclocker1/Graphics/2DStars/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<vector>
+	"Star.h"
+	"Circle.h"
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"Plane.h"
+	"Models.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1554414938 /home/rclocker1/Graphics/2DStars/Star.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1552010584 /home/rclocker1/Graphics/2DStars/ProgramDefines.h
+
+1552010590 /home/rclocker1/Graphics/2DStars/UI.h
+	"GraphicsEngine.h"
+
+1554494680 source:/home/rclocker1/Graphics/2DStars/Star.cpp
+	"Star.h"
+	<cmath>
+
+1553053717 source:/home/rclocker1/Graphics/2DStars/UI.cpp
+	"UI.h"
+
+1557023146 source:/home/rclocker1/Graphics/2DStars/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+	<math.h>
+	<cmath>
+	<vector>
+
+1554415845 /home/rclocker1/Graphics/2DStars/Plane.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1554416079 /home/rclocker1/Graphics/2DStars/Shape.h
+
+1554490691 source:/home/rclocker1/Graphics/2DStars/Plane.cpp
+	"Plane.h"
+
+1554416107 source:/home/rclocker1/Graphics/2DStars/Shape.cpp
+	"Shape.h"
+
+1557023234 source:/home/rclocker1/Graphics/2DStars/Circle.cpp
+	"Circle.h"
+	<cmath>
+
+1557023071 /home/rclocker1/Graphics/2DStars/Circle.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1516248570 /home/rclocker1/Graphics/2DStars/Models.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1516464154 source:/home/rclocker1/Graphics/2DStars/Models.cpp
+	"Models.h"
+
+1557249613 source:/home/rclocker1/Graphics/2DStars (another copy)/Circle.cpp
+	"Circle.h"
+	<cmath>
+
+1557243216 /home/rclocker1/Graphics/2DStars (another copy)/Circle.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1552010584 /home/rclocker1/Graphics/2DStars (another copy)/ProgramDefines.h
+
+1557853354 source:/home/rclocker1/Graphics/2DStars (another copy)/GraphicsEngine.cpp
+	"GraphicsEngine.h"
+	<math.h>
+	<cmath>
+	<vector>
+
+1557852480 /home/rclocker1/Graphics/2DStars (another copy)/GraphicsEngine.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<string>
+	<stdio.h>
+	<vector>
+	"Star.h"
+	"Circle.h"
+	"LoadShaders.h"
+	"ProgramDefines.h"
+	"Plane.h"
+	"Models.h"
+	"TextRendererTTF.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1554414938 /home/rclocker1/Graphics/2DStars (another copy)/Star.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<iostream>
+	"ProgramDefines.h"
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1514175394 /home/rclocker1/Graphics/2DStars (another copy)/LoadShaders.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<string>
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1554415845 /home/rclocker1/Graphics/2DStars (another copy)/Plane.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1554416079 /home/rclocker1/Graphics/2DStars (another copy)/Shape.h
+
+1516248570 /home/rclocker1/Graphics/2DStars (another copy)/Models.h
+	<OpenGL/gl3.h>
+	<OpenGL/glu.h>
+	<GL/glew.h>
+	<math.h>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"ProgramDefines.h"
+	"Shape.h"
+
+1514174390 source:/home/rclocker1/Graphics/2DStars (another copy)/LoadShaders.cpp
+	"LoadShaders.h"
+
+1557852920 source:/home/rclocker1/Graphics/2DStars (another copy)/main.cpp
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	<string>
+	"GraphicsEngine.h"
+	"UI.h"
+
+1552010590 /home/rclocker1/Graphics/2DStars (another copy)/UI.h
+	"GraphicsEngine.h"
+
+1516464154 source:/home/rclocker1/Graphics/2DStars (another copy)/Models.cpp
+	"Models.h"
+
+1557241177 source:/home/rclocker1/Graphics/2DStars (another copy)/Plane.cpp
+	"Plane.h"
+
+1554416107 source:/home/rclocker1/Graphics/2DStars (another copy)/Shape.cpp
+	"Shape.h"
+
+1557852489 source:/home/rclocker1/Graphics/2DStars (another copy)/Star.cpp
+	"Star.h"
+	<cmath>
+
+1557852699 source:/home/rclocker1/Graphics/2DStars (another copy)/UI.cpp
+	"UI.h"
+
+1515903122 /home/rclocker1/Graphics/2DStars (another copy)/TextRendererTTF.h
+	<OpenGL/gl3.h>
+	<GL/glew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<ft2build.h>
+	"LoadShaders.h"
+
+1515903134 source:/home/rclocker1/Graphics/2DStars (another copy)/TextRendererTTF.cpp
+	"TextRendererTTF.h"
+

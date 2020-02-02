@@ -1,0 +1,520 @@
+\hypertarget{class_models}{}\section{Models Class Reference}
+\label{class_models}\index{Models@{Models}}
+
+
+The \hyperlink{class_models}{Models} class is simply a class for easy construction of a few 3-\/D mathematical objects.  
+
+
+
+
+{\ttfamily \#include $<$Models.\+h$>$}
+
+
+
+Inheritance diagram for Models\+:
+% FIG 0
+
+
+Collaboration diagram for Models\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_models_a3d822d79de8a3a3e4a89b48231110cec}\label{class_models_a3d822d79de8a3a3e4a89b48231110cec}} 
+\hyperlink{class_models_a3d822d79de8a3a3e4a89b48231110cec}{Models} ()
+\begin{DoxyCompactList}\small\item\em Constructor, default. \end{DoxyCompactList}\item 
+\hyperlink{class_models_aef02b88508c7cf66170381982e57ce3e}{$\sim$\+Models} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_models_a37639ded69e396965605f32b7a977166}\label{class_models_a37639ded69e396965605f32b7a977166}} 
+void \hyperlink{class_models_a37639ded69e396965605f32b7a977166}{Load\+Data\+To\+Graphics\+Card} ()
+\begin{DoxyCompactList}\small\item\em Loads the object data to the graphics card assuming that the positions of the vertices, colors, and normals are 0, 1, and 2 respectively. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a714b178453d5794649be0f0ca76fc938}{Load\+Data\+To\+Graphics\+Card} (G\+Lint v, G\+Lint c, G\+Lint n)
+\begin{DoxyCompactList}\small\item\em Loads the object data to the graphics card. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_models_a9919b08422ec91e79a3084ce7e565429}\label{class_models_a9919b08422ec91e79a3084ce7e565429}} 
+void \hyperlink{class_models_a9919b08422ec91e79a3084ce7e565429}{reload\+Data} ()
+\begin{DoxyCompactList}\small\item\em Loads the object data to the graphics card. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_models_a302e2de33467a2cdb283c9b34ced49b6}\label{class_models_a302e2de33467a2cdb283c9b34ced49b6}} 
+void \hyperlink{class_models_a302e2de33467a2cdb283c9b34ced49b6}{draw} ()
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_adeedf0eee4b0d37e98b6d829b2e71603}{set\+Draw\+Border} (G\+Lboolean d)
+\begin{DoxyCompactList}\small\item\em Sets the border drawing flag. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_abbc31fff246bd46bc2bfc38571549a4e}{set\+Draw\+Faces} (G\+Lboolean d)
+\begin{DoxyCompactList}\small\item\em Sets the face drawing flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_models_a9a80a903200981fac7abffab9dd3efe1}\label{class_models_a9a80a903200981fac7abffab9dd3efe1}} 
+void {\bfseries set\+Color\+Cube} (G\+Lboolean d)
+\item 
+void \hyperlink{class_models_a670367b44d29eb20dff40ad475f071c7}{set\+Color} (G\+Lfloat r, G\+Lfloat g, G\+Lfloat b)
+\begin{DoxyCompactList}\small\item\em Sets the face color. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_ac4adff6206ead1a88b9e443be33cfc54}{set\+Border\+Color} (G\+Lfloat r, G\+Lfloat g, G\+Lfloat b)
+\begin{DoxyCompactList}\small\item\em Sets the border color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_models_abd75acf49362833593d8ced9c98c7358}\label{class_models_abd75acf49362833593d8ced9c98c7358}} 
+void \hyperlink{class_models_abd75acf49362833593d8ced9c98c7358}{create\+Normals} ()
+\begin{DoxyCompactList}\small\item\em Uses the data set to determine the normals at each vertex. The algorithm uses the 8 vertices around each vertex and the 8 triangles produced by each of the consecutive vertices and averages the normals. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_models_ad4bdadc9465206d334f0cf2df69dcf40}\label{class_models_ad4bdadc9465206d334f0cf2df69dcf40}} 
+void \hyperlink{class_models_ad4bdadc9465206d334f0cf2df69dcf40}{reverse\+Normals} ()
+\begin{DoxyCompactList}\small\item\em Reverses all of the normals on the normal array. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a815ab35b893796d6d214f1bc68588dc1}{create\+Sphere\+O\+BJ} (G\+Lfloat r, G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Creates a sphere. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_af9e1eef42ba62fffd95359811f540287}{create\+Partial\+Sphere\+O\+BJ} (G\+Lfloat r, G\+Lint ilon, G\+Lint ilat, G\+Lfloat begintheta, G\+Lfloat endtheta, G\+Lfloat beginpsy, G\+Lfloat endpsy)
+\begin{DoxyCompactList}\small\item\em Creates a partial sphere. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a95f0ccb59a00210e0f8cc683f15cf1e2}{create\+Torus\+O\+BJ} (G\+Lfloat irad, G\+Lfloat orad, G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Creates a torus. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a61ce3d8672c6593f28c2be44b3a67201}{create\+Partial\+Torus\+O\+BJ} (G\+Lfloat irad, G\+Lfloat orad, G\+Lint ilon, G\+Lint ilat, G\+Lfloat begintheta, G\+Lfloat endtheta, G\+Lfloat beginpsy, G\+Lfloat endpsy)
+\begin{DoxyCompactList}\small\item\em Creates a partial torus. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a227641d74dbb3f535da1ed5869b94804}{create\+Trefoil\+O\+BJ} (G\+Lfloat amp, G\+Lfloat numtwists, G\+Lfloat rmaj, G\+Lfloat rmin, G\+Lfloat elongfact, G\+Lint lon, G\+Lint lat)
+\begin{DoxyCompactList}\small\item\em Creates a trefoil. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_ab14e5a0994902113c4a104d97924b3a3}{create\+Umbilic\+Torus\+O\+BJ} (G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Creates an umbilic torus. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a4f35e25b5362120188dab01cd3e146cd}{create\+Braided\+Torus\+O\+BJ} (G\+Lfloat amp, G\+Lfloat numtwists, G\+Lfloat rmaj, G\+Lfloat rmin, G\+Lfloat elongfact, G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Creates a braided torus. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a447859a7d2ec5fbe587b1172a223444e}{create\+Exp\+Horn\+O\+BJ} (G\+Lfloat r1, G\+Lfloat r2, G\+Lfloat len, G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Creates an exponential horn. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_afd82cc2a704f451f71ee1e28bbe32c3e}{create\+Quad\+Horn\+O\+BJ} (G\+Lfloat r1, G\+Lfloat r2, G\+Lfloat len, G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Creates a quadratic horn. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a2504fa72fb311c5d58dff1d2bdfce25d}{create\+Helical\+Torus\+O\+BJ} (G\+Lfloat irad, G\+Lfloat orad, G\+Lfloat str\+Fact, G\+Lfloat begang, G\+Lfloat endang, G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Creates a helical torus. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a420d727630be57b658a41d03c8f07c31}{create\+Mobius\+O\+BJ} (G\+Lfloat begv, G\+Lfloat endv, G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Creates a Mobius strip. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_abc441fa42f0079a0847e72f66131c8c9}{create\+Tessellated\+Wall\+O\+BJ} (G\+Lfloat width, G\+Lfloat height, G\+Lint ilon, G\+Lint ilat)
+\begin{DoxyCompactList}\small\item\em Creates a tessellated wall. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a055117dcb741c6c0e757d4bf656c9d37}{perturb\+Veritces} (float a)
+\begin{DoxyCompactList}\small\item\em Adds a random perturbation to the vertices in the model. \end{DoxyCompactList}\item 
+void \hyperlink{class_models_a7ad633fb35b0f6e083f92bd573c68201}{perturb\+Normals\+Random} (float a)
+\begin{DoxyCompactList}\small\item\em Adds a random perturbation to the normals in the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_models}{Models} class is simply a class for easy construction of a few 3-\/D mathematical objects. 
+
+Use of this class is straight forward. Declare a \hyperlink{class_models}{Models} object, call one of the create methods to generate the data sets, call the load method to load the data to the graphics card (the three parameters are the data positions of the vertices, colors, and normals in that order, which are expected by the shader), and then in your display function call the draw method.
+
+
+\begin{DoxyCode}
+\hyperlink{class_models}{Models} obj;
+
+obj.\hyperlink{class_models_a815ab35b893796d6d214f1bc68588dc1}{createSphereOBJ}(0.25, 7, 7);
+obj.\hyperlink{class_models_a37639ded69e396965605f32b7a977166}{LoadDataToGraphicsCard}(0, 1, 2);
+
+obj.\hyperlink{class_models_a302e2de33467a2cdb283c9b34ced49b6}{draw}();
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_models_aef02b88508c7cf66170381982e57ce3e}\label{class_models_aef02b88508c7cf66170381982e57ce3e}} 
+\index{Models@{Models}!````~Models@{$\sim$\+Models}}
+\index{````~Models@{$\sim$\+Models}!Models@{Models}}
+\subsubsection{\texorpdfstring{$\sim$\+Models()}{~Models()}}
+{\footnotesize\ttfamily Models\+::$\sim$\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Removes the data files on both the C\+PU and G\+PU. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_models_a4f35e25b5362120188dab01cd3e146cd}\label{class_models_a4f35e25b5362120188dab01cd3e146cd}} 
+\index{Models@{Models}!create\+Braided\+Torus\+O\+BJ@{create\+Braided\+Torus\+O\+BJ}}
+\index{create\+Braided\+Torus\+O\+BJ@{create\+Braided\+Torus\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Braided\+Torus\+O\+B\+J()}{createBraidedTorusOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Braided\+Torus\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{amp,  }\item[{G\+Lfloat}]{numtwists,  }\item[{G\+Lfloat}]{rmaj,  }\item[{G\+Lfloat}]{rmin,  }\item[{G\+Lfloat}]{elongfact,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates a braided torus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amp} & --- Amplitude of the trefoil. \\
+\hline
+{\em numtwists} & --- Number of twists. \\
+\hline
+{\em rmaj} & --- Major radius. \\
+\hline
+{\em rmin} & --- Minor radius. \\
+\hline
+{\em elongfact} & --- Elongation factor. \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a447859a7d2ec5fbe587b1172a223444e}\label{class_models_a447859a7d2ec5fbe587b1172a223444e}} 
+\index{Models@{Models}!create\+Exp\+Horn\+O\+BJ@{create\+Exp\+Horn\+O\+BJ}}
+\index{create\+Exp\+Horn\+O\+BJ@{create\+Exp\+Horn\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Exp\+Horn\+O\+B\+J()}{createExpHornOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Exp\+Horn\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r1,  }\item[{G\+Lfloat}]{r2,  }\item[{G\+Lfloat}]{len,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates an exponential horn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r1} & --- Radius 1. \\
+\hline
+{\em r2} & --- Radius 2. \\
+\hline
+{\em len} & --- Length \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a2504fa72fb311c5d58dff1d2bdfce25d}\label{class_models_a2504fa72fb311c5d58dff1d2bdfce25d}} 
+\index{Models@{Models}!create\+Helical\+Torus\+O\+BJ@{create\+Helical\+Torus\+O\+BJ}}
+\index{create\+Helical\+Torus\+O\+BJ@{create\+Helical\+Torus\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Helical\+Torus\+O\+B\+J()}{createHelicalTorusOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Helical\+Torus\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{irad,  }\item[{G\+Lfloat}]{orad,  }\item[{G\+Lfloat}]{str\+Fact,  }\item[{G\+Lfloat}]{begang,  }\item[{G\+Lfloat}]{endang,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates a helical torus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em irad} & --- Inner radius of the torus. \\
+\hline
+{\em irad} & --- Outer radius of the torus. \\
+\hline
+{\em str\+Fact} & --- Stretch factor. \\
+\hline
+{\em begang} & --- Beginning angle. \\
+\hline
+{\em endang} & --- Ending angle. \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a420d727630be57b658a41d03c8f07c31}\label{class_models_a420d727630be57b658a41d03c8f07c31}} 
+\index{Models@{Models}!create\+Mobius\+O\+BJ@{create\+Mobius\+O\+BJ}}
+\index{create\+Mobius\+O\+BJ@{create\+Mobius\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Mobius\+O\+B\+J()}{createMobiusOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Mobius\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{begv,  }\item[{G\+Lfloat}]{endv,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates a Mobius strip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em begv} & --- Start to the v parameter range. \\
+\hline
+{\em endv} & --- End to the v parameter range. \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_af9e1eef42ba62fffd95359811f540287}\label{class_models_af9e1eef42ba62fffd95359811f540287}} 
+\index{Models@{Models}!create\+Partial\+Sphere\+O\+BJ@{create\+Partial\+Sphere\+O\+BJ}}
+\index{create\+Partial\+Sphere\+O\+BJ@{create\+Partial\+Sphere\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Partial\+Sphere\+O\+B\+J()}{createPartialSphereOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Partial\+Sphere\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat,  }\item[{G\+Lfloat}]{begintheta,  }\item[{G\+Lfloat}]{endtheta,  }\item[{G\+Lfloat}]{beginpsi,  }\item[{G\+Lfloat}]{endpsi }\end{DoxyParamCaption})}
+
+
+
+Creates a partial sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & --- Radius of the sphere. \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+{\em begintheta} & --- Beginning theta angle of the sphere object. \\
+\hline
+{\em endtheta} & --- Ending theta angle of the sphere object. \\
+\hline
+{\em beginpsi} & --- Beginning psi angle of the sphere object. \\
+\hline
+{\em endpsi} & --- Ending psi angle of the sphere object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a61ce3d8672c6593f28c2be44b3a67201}\label{class_models_a61ce3d8672c6593f28c2be44b3a67201}} 
+\index{Models@{Models}!create\+Partial\+Torus\+O\+BJ@{create\+Partial\+Torus\+O\+BJ}}
+\index{create\+Partial\+Torus\+O\+BJ@{create\+Partial\+Torus\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Partial\+Torus\+O\+B\+J()}{createPartialTorusOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Partial\+Torus\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{irad,  }\item[{G\+Lfloat}]{orad,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat,  }\item[{G\+Lfloat}]{begintheta,  }\item[{G\+Lfloat}]{endtheta,  }\item[{G\+Lfloat}]{beginpsi,  }\item[{G\+Lfloat}]{endpsi }\end{DoxyParamCaption})}
+
+
+
+Creates a partial torus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em irad} & --- Inner radius of the torus. \\
+\hline
+{\em irad} & --- Outer radius of the torus. \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+{\em begintheta} & --- Beginning theta angle of the torus object. \\
+\hline
+{\em endtheta} & --- Ending theta angle of the torus object. \\
+\hline
+{\em beginpsi} & --- Beginning psi angle of the torus object. \\
+\hline
+{\em endpsi} & --- Ending psi angle of the torus object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_afd82cc2a704f451f71ee1e28bbe32c3e}\label{class_models_afd82cc2a704f451f71ee1e28bbe32c3e}} 
+\index{Models@{Models}!create\+Quad\+Horn\+O\+BJ@{create\+Quad\+Horn\+O\+BJ}}
+\index{create\+Quad\+Horn\+O\+BJ@{create\+Quad\+Horn\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Quad\+Horn\+O\+B\+J()}{createQuadHornOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Quad\+Horn\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r1,  }\item[{G\+Lfloat}]{r2,  }\item[{G\+Lfloat}]{len,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates a quadratic horn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r1} & --- Radius 1. \\
+\hline
+{\em r2} & --- Radius 2. \\
+\hline
+{\em len} & --- Length \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a815ab35b893796d6d214f1bc68588dc1}\label{class_models_a815ab35b893796d6d214f1bc68588dc1}} 
+\index{Models@{Models}!create\+Sphere\+O\+BJ@{create\+Sphere\+O\+BJ}}
+\index{create\+Sphere\+O\+BJ@{create\+Sphere\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Sphere\+O\+B\+J()}{createSphereOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Sphere\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates a sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & --- Radius of the sphere. \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_abc441fa42f0079a0847e72f66131c8c9}\label{class_models_abc441fa42f0079a0847e72f66131c8c9}} 
+\index{Models@{Models}!create\+Tessellated\+Wall\+O\+BJ@{create\+Tessellated\+Wall\+O\+BJ}}
+\index{create\+Tessellated\+Wall\+O\+BJ@{create\+Tessellated\+Wall\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Tessellated\+Wall\+O\+B\+J()}{createTessellatedWallOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Tessellated\+Wall\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{width,  }\item[{G\+Lfloat}]{height,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates a tessellated wall. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & --- Width of the plane. \\
+\hline
+{\em height} & --- Height of the plane. \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a95f0ccb59a00210e0f8cc683f15cf1e2}\label{class_models_a95f0ccb59a00210e0f8cc683f15cf1e2}} 
+\index{Models@{Models}!create\+Torus\+O\+BJ@{create\+Torus\+O\+BJ}}
+\index{create\+Torus\+O\+BJ@{create\+Torus\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Torus\+O\+B\+J()}{createTorusOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Torus\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{irad,  }\item[{G\+Lfloat}]{orad,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates a torus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em irad} & --- Inner radius of the torus. \\
+\hline
+{\em irad} & --- Outer radius of the torus. \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a227641d74dbb3f535da1ed5869b94804}\label{class_models_a227641d74dbb3f535da1ed5869b94804}} 
+\index{Models@{Models}!create\+Trefoil\+O\+BJ@{create\+Trefoil\+O\+BJ}}
+\index{create\+Trefoil\+O\+BJ@{create\+Trefoil\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Trefoil\+O\+B\+J()}{createTrefoilOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Trefoil\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{amp,  }\item[{G\+Lfloat}]{numtwists,  }\item[{G\+Lfloat}]{rmaj,  }\item[{G\+Lfloat}]{rmin,  }\item[{G\+Lfloat}]{elongfact,  }\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates a trefoil. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amp} & --- Amplitude of the trefoil. \\
+\hline
+{\em numtwists} & --- Number of twists. \\
+\hline
+{\em rmaj} & --- Major radius. \\
+\hline
+{\em rmin} & --- Minor radius. \\
+\hline
+{\em elongfact} & --- Elongation factor. \\
+\hline
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_ab14e5a0994902113c4a104d97924b3a3}\label{class_models_ab14e5a0994902113c4a104d97924b3a3}} 
+\index{Models@{Models}!create\+Umbilic\+Torus\+O\+BJ@{create\+Umbilic\+Torus\+O\+BJ}}
+\index{create\+Umbilic\+Torus\+O\+BJ@{create\+Umbilic\+Torus\+O\+BJ}!Models@{Models}}
+\subsubsection{\texorpdfstring{create\+Umbilic\+Torus\+O\+B\+J()}{createUmbilicTorusOBJ()}}
+{\footnotesize\ttfamily void Models\+::create\+Umbilic\+Torus\+O\+BJ (\begin{DoxyParamCaption}\item[{G\+Lint}]{ilon,  }\item[{G\+Lint}]{ilat }\end{DoxyParamCaption})}
+
+
+
+Creates an umbilic torus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ilon} & --- Number of longitudinal divisions. \\
+\hline
+{\em ilat} & --- Number of latitude divisions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a714b178453d5794649be0f0ca76fc938}\label{class_models_a714b178453d5794649be0f0ca76fc938}} 
+\index{Models@{Models}!Load\+Data\+To\+Graphics\+Card@{Load\+Data\+To\+Graphics\+Card}}
+\index{Load\+Data\+To\+Graphics\+Card@{Load\+Data\+To\+Graphics\+Card}!Models@{Models}}
+\subsubsection{\texorpdfstring{Load\+Data\+To\+Graphics\+Card()}{LoadDataToGraphicsCard()}}
+{\footnotesize\ttfamily void Models\+::\+Load\+Data\+To\+Graphics\+Card (\begin{DoxyParamCaption}\item[{G\+Lint}]{v,  }\item[{G\+Lint}]{c,  }\item[{G\+Lint}]{n }\end{DoxyParamCaption})}
+
+
+
+Loads the object data to the graphics card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & --- Shader position of the vertex data. \\
+\hline
+{\em c} & --- Shader position of the vertex color. \\
+\hline
+{\em n} & --- Shader position of the vertex normal. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a7ad633fb35b0f6e083f92bd573c68201}\label{class_models_a7ad633fb35b0f6e083f92bd573c68201}} 
+\index{Models@{Models}!perturb\+Normals\+Random@{perturb\+Normals\+Random}}
+\index{perturb\+Normals\+Random@{perturb\+Normals\+Random}!Models@{Models}}
+\subsubsection{\texorpdfstring{perturb\+Normals\+Random()}{perturbNormalsRandom()}}
+{\footnotesize\ttfamily void Models\+::perturb\+Normals\+Random (\begin{DoxyParamCaption}\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+Adds a random perturbation to the normals in the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & --- Maximum perturbation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a055117dcb741c6c0e757d4bf656c9d37}\label{class_models_a055117dcb741c6c0e757d4bf656c9d37}} 
+\index{Models@{Models}!perturb\+Veritces@{perturb\+Veritces}}
+\index{perturb\+Veritces@{perturb\+Veritces}!Models@{Models}}
+\subsubsection{\texorpdfstring{perturb\+Veritces()}{perturbVeritces()}}
+{\footnotesize\ttfamily void Models\+::perturb\+Veritces (\begin{DoxyParamCaption}\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+Adds a random perturbation to the vertices in the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & --- Maximum perturbation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_ac4adff6206ead1a88b9e443be33cfc54}\label{class_models_ac4adff6206ead1a88b9e443be33cfc54}} 
+\index{Models@{Models}!set\+Border\+Color@{set\+Border\+Color}}
+\index{set\+Border\+Color@{set\+Border\+Color}!Models@{Models}}
+\subsubsection{\texorpdfstring{set\+Border\+Color()}{setBorderColor()}}
+{\footnotesize\ttfamily void Models\+::set\+Border\+Color (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r,  }\item[{G\+Lfloat}]{g,  }\item[{G\+Lfloat}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the border color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & --- Red component of the border. \\
+\hline
+{\em g} & --- Green component of the border. \\
+\hline
+{\em b} & --- Blue component of the border. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_a670367b44d29eb20dff40ad475f071c7}\label{class_models_a670367b44d29eb20dff40ad475f071c7}} 
+\index{Models@{Models}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Models@{Models}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void Models\+::set\+Color (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{r,  }\item[{G\+Lfloat}]{g,  }\item[{G\+Lfloat}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the face color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & --- Red component of the face. \\
+\hline
+{\em g} & --- Green component of the face. \\
+\hline
+{\em b} & --- Blue component of the face. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_adeedf0eee4b0d37e98b6d829b2e71603}\label{class_models_adeedf0eee4b0d37e98b6d829b2e71603}} 
+\index{Models@{Models}!set\+Draw\+Border@{set\+Draw\+Border}}
+\index{set\+Draw\+Border@{set\+Draw\+Border}!Models@{Models}}
+\subsubsection{\texorpdfstring{set\+Draw\+Border()}{setDrawBorder()}}
+{\footnotesize\ttfamily void Models\+::set\+Draw\+Border (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{d }\end{DoxyParamCaption})}
+
+
+
+Sets the border drawing flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & --- New value of the border drawing flag. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_models_abbc31fff246bd46bc2bfc38571549a4e}\label{class_models_abbc31fff246bd46bc2bfc38571549a4e}} 
+\index{Models@{Models}!set\+Draw\+Faces@{set\+Draw\+Faces}}
+\index{set\+Draw\+Faces@{set\+Draw\+Faces}!Models@{Models}}
+\subsubsection{\texorpdfstring{set\+Draw\+Faces()}{setDrawFaces()}}
+{\footnotesize\ttfamily void Models\+::set\+Draw\+Faces (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{d }\end{DoxyParamCaption})}
+
+
+
+Sets the face drawing flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & --- New value of the face drawing flag. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_models_8h}{Models.\+h}\item 
+\hyperlink{_models_8cpp}{Models.\+cpp}\end{DoxyCompactItemize}

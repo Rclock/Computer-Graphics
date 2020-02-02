@@ -1,0 +1,27 @@
+\hypertarget{_circle_8cpp}{}\section{Circle.\+cpp File Reference}
+\label{_circle_8cpp}\index{Circle.\+cpp@{Circle.\+cpp}}
+
+
+\hyperlink{class_circle}{Circle} object with color, scale factor, random speed.  
+
+
+{\ttfamily \#include \char`\"{}Circle.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for Circle.\+cpp\+:
+% FIG 0
+
+
+\subsection{Detailed Description}
+\hyperlink{class_circle}{Circle} object with color, scale factor, random speed. 
+
+Each circle is set up with a random scale factor to be used with a scaling matrix. Each circle has a randomly generated speed associated with it, which updates it\textquotesingle{}s position. Each circle is intialized with a random vec4 to send to the fragment shader also, which is changed if it bounces. Every circle starts at the center.
+
+\begin{DoxyAuthor}{Author}
+Ryan Clocker 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2/23/2019 
+\end{DoxyDate}
